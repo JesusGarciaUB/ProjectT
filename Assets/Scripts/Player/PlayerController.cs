@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
                 cF,
                 cColl,
                 speed * Time.deltaTime * collOffset);
+
+            if (count == 0) rb.MovePosition(rb.position + playerMovement * speed * Time.fixedDeltaTime);
         }
     }
 
