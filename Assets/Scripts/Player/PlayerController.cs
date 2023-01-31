@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 1f;
-    public float collOffset = 0.05f;
+    public float collOffset = 0.02f;
     public ContactFilter2D cF;
     Vector2 playerMovement;
     Rigidbody2D rb;
@@ -21,14 +21,29 @@ public class PlayerController : MonoBehaviour
     {
         if (playerMovement != Vector2.zero)
         {
-            int count = rb.Cast(
-                playerMovement,
-                cF,
-                cColl,
-                speed * Time.deltaTime * collOffset);
+           bool success = TryMove(playerMovement);
 
-            if (count == 0) rb.MovePosition(rb.position + playerMovement * speed * Time.fixedDeltaTime);
+            if (!success)
+            {
+                success = TryMove(new Vector2(playerMovement.x, 0));
+
+                if (!success) success = TryMove(new Vector2(0, playerMovement.y));
+            }
         }
+    }
+
+    private bool TryMove(Vector2 direction)
+    {
+        int count = rb.Cast(
+               direction,
+               cF,
+               cColl,
+               speed * Time.deltaTime + collOffset);
+
+        if (count == 0) {
+            rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+            return true;
+        } else return false;
     }
 
     void OnMove(InputValue movement)
