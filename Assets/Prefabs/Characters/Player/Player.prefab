@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: -1251700596544731276}
   - component: {fileID: 552634174737386715}
   - component: {fileID: -1646752555280820672}
+  - component: {fileID: 4010378917013108246}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,6 +152,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 993004b8d34f18f4c950b93eea8ef2aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
+  collOffset: 0.02
+  cF:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!61 &-1646752555280820672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -177,3 +194,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &4010378917013108246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3503582339349532181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a44d32c57cb0fb409dbdcd0fb3d0e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorPosition: 
