@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1836810688121242470}
   - component: {fileID: -358973395161003756}
   - component: {fileID: -7199409670958198461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SceneChange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41b13fb8fceb7be48acbbff4533e73ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  sceneBuildIndex: 0
 --- !u!61 &-7199409670958198461
 BoxCollider2D:
   m_ObjectHideFlags: 0

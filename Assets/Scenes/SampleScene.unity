@@ -2106,6 +2106,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3503582339349532181, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503582339349532181, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -4251,6 +4255,10 @@ PrefabInstance:
     - target: {fileID: 8308449217513820112, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
       propertyPath: m_Name
       value: SceneChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308449217513820112, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8308449217513820112, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
       propertyPath: m_TagString
