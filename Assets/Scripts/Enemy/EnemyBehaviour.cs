@@ -6,19 +6,18 @@ public class EnemyBehaviour : MonoBehaviour
 {
 
     public float speed;
-    public bool isHitting = false;
-    void Update()
+    private int hitcount;
+    private void FixedUpdate()
     {
-        if (!isHitting) transform.position = Vector3.MoveTowards(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position, speed * Time.deltaTime);
+        if (hitcount == 0) transform.position = Vector3.MoveTowards(transform.position, GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>().transform.position, speed * Time.deltaTime);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player") hitcount++;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "EnemyHitspot" || collision.gameObject.tag == "Player") isHitting = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "EnemyHitspot" || collision.gameObject.tag == "Player") isHitting = false;
+        if (collision.gameObject.tag == "Player") hitcount--;
     }
 }
