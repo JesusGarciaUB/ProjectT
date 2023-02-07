@@ -12,6 +12,7 @@ TagManager:
   - DoorRight
   - SpawnLeft
   - SpawnRight
+  - Follower
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Water
   - UI
   - SceneChange
-  - 
+  - GridChange
   - 
   - 
   - 
