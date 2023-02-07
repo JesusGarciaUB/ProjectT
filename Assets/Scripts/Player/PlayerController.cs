@@ -63,14 +63,14 @@ public class PlayerController : MonoBehaviour
 
     void SetLastPosition()
     {
-        if (playerMovement.x < 0)
-        {
-            animator.SetFloat("positionX", -1);
-            animator.SetFloat("positionY", 0);
-        }
         if (playerMovement.x > 0)
         {
             animator.SetFloat("positionX", 1);
+            animator.SetFloat("positionY", 0);
+        }
+        if (playerMovement.x < 0)
+        {
+            animator.SetFloat("positionX", -1);
             animator.SetFloat("positionY", 0);
         }
         if (playerMovement.y > 0)
@@ -84,6 +84,11 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("positionX", 0);
         }
 
+
+    }
+
+    void onFire()
+    {
 
     }
 }
