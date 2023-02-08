@@ -7,9 +7,14 @@ public class EnemyBehaviour : MonoBehaviour
 
     public float speed;
     private int hitcount;
+    private Transform target;
+    private void Start()
+    {
+        target = GameObject.FindWithTag("Player").transform;
+    }
     private void FixedUpdate()
     {
-        if (hitcount == 0) transform.position = Vector3.MoveTowards(transform.position, GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>().transform.position, speed * Time.deltaTime);
+        if (hitcount == 0) transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

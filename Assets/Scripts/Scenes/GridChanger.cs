@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Random;
 
 public class GridChanger : MonoBehaviour
 {
@@ -8,16 +9,19 @@ public class GridChanger : MonoBehaviour
     public Vector3 position = new Vector3(0,0,-10);
     private List<Transform> enemies = new List<Transform>();
     private List<Vector3> originalPosition = new List<Vector3>();
-
+    private int randEnemies;
+    public GameObject enemyPrefab;
+    private float randomPosX, randomPosY;
     private void Start()
     {
-        foreach (Transform enemy in transform)
+        randEnemies = Range(1, 5);
+        for (int x = 0; x < randEnemies; x++)
         {
-            if (enemy.tag == "Enemy")
-            {
-                enemies.Add(enemy);
-                originalPosition.Add(enemy.transform.position);
-            }
+            randomPosX = Range(-0.5f, 0.5f);
+            randomPosY = Range(-0.5f, 0.5f);
+            enemies.Add(Instantiate(enemyPrefab, new Vector3(position.x + randomPosX, position.y + randomPosY, 0), Quaternion.identity).transform);
+            originalPosition.Add(enemies[x].transform.position);
+            enemies[x].gameObject.SetActive(false);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
