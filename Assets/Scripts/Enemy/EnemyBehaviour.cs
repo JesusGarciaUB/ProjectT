@@ -4,26 +4,10 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-
-    public float speed;
-    private int hitcount;
-    private Transform target;
-    private void Start()
-    {
-        target = GameObject.FindWithTag("Player").transform;
-    }
+    int health;
     private void FixedUpdate()
     {
-        if (hitcount == 0) transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player") hitcount++;
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player") hitcount--;
+        
     }
 
 }
