@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
     List<RaycastHit2D> cColl = new List<RaycastHit2D>();
+    bool canMove = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,23 +22,28 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        animator.SetFloat("movementX", playerMovement.x);
-        animator.SetFloat("movementY", playerMovement.y);
         SetLastPosition();
-        if (playerMovement != Vector2.zero)
+        if (canMove)
         {
-           bool success = TryMove(playerMovement);
-
-            if (!success)
+            animator.SetFloat("movementX", playerMovement.x);
+            animator.SetFloat("movementY", playerMovement.y);
+            if (playerMovement != Vector2.zero)
             {
-                success = TryMove(new Vector2(playerMovement.x, 0));
+                animator.SetBool("isMoving", true);
+                bool success = TryMove(playerMovement);
 
-                if (!success) success = TryMove(new Vector2(0, playerMovement.y));
+                if (!success)
+                {
+                    success = TryMove(new Vector2(playerMovement.x, 0));
+
+                    if (!success) success = TryMove(new Vector2(0, playerMovement.y));
+                }
+
             }
-
-            animator.SetBool("isMoving", success);
-        }else{
-            animator.SetBool("isMoving", false);
+            else
+            {
+                animator.SetBool("isMoving", false);
+            }
         }
         
     }
@@ -63,6 +69,11 @@ public class PlayerController : MonoBehaviour
 
     void SetLastPosition()
     {
+        if (playerMovement.y > 0)
+        {
+            animator.SetFloat("positionY", 1);
+            animator.SetFloat("positionX", 0);
+        }
         if (playerMovement.x > 0)
         {
             animator.SetFloat("positionX", 1);
@@ -72,11 +83,6 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("positionX", -1);
             animator.SetFloat("positionY", 0);
-        }
-        if (playerMovement.y > 0)
-        {
-            animator.SetFloat("positionY", 1);
-            animator.SetFloat("positionX", 0);
         }
         if (playerMovement.y < 0)
         {
@@ -90,5 +96,14 @@ public class PlayerController : MonoBehaviour
     void OnFire()
     {
         animator.SetTrigger("swordAttack");
+    }
+
+    public void LockMovement() {
+        canMove = false;
+    }
+
+    public void UnlockMovement()
+    {
+        canMove = true;
     }
 }
