@@ -10,7 +10,7 @@ public class GridChanger : MonoBehaviour
     private List<Transform> enemies = new List<Transform>();
     private List<Vector3> originalPosition = new List<Vector3>();
     private int randEnemies;
-    public GameObject enemyPrefab;
+    public List<GameObject> enemyPrefab;
     private float randomPosX, randomPosY;
     private void Start()
     {
@@ -19,7 +19,7 @@ public class GridChanger : MonoBehaviour
         {
             randomPosX = Range(-0.5f, 0.5f);
             randomPosY = Range(-0.5f, 0.5f);
-            enemies.Add(Instantiate(enemyPrefab, new Vector3(position.x + randomPosX, position.y + randomPosY, 0), Quaternion.identity).transform);
+            enemies.Add(Instantiate(enemyPrefab[Range(0, 2)], new Vector3(position.x + randomPosX, position.y + randomPosY, 0), Quaternion.identity).transform);
             originalPosition.Add(enemies[x].transform.position);
             enemies[x].gameObject.SetActive(false);
         }
