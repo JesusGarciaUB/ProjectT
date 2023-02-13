@@ -5,9 +5,14 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public enum Direction { 
+        NONE, UP, DOWN, LEFT, RIGHT
+    };
+    public Direction dir = Direction.NONE;
     public float speed = 1f;
     public float collOffset = 0.02f;
     public ContactFilter2D cF;
+    public SwordAttack swordAttack;
     Vector2 playerMovement;
     Animator animator;
     Rigidbody2D rb;
@@ -16,6 +21,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        dir = Direction.DOWN;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -25,10 +31,11 @@ public class PlayerController : MonoBehaviour
         SetLastPosition();
         if (canMove)
         {
-            animator.SetFloat("movementX", playerMovement.x);
-            animator.SetFloat("movementY", playerMovement.y);
+            
             if (playerMovement != Vector2.zero)
             {
+                animator.SetFloat("movementX", playerMovement.x);
+                animator.SetFloat("movementY", playerMovement.y); 
                 animator.SetBool("isMoving", true);
                 bool success = TryMove(playerMovement);
 
@@ -69,23 +76,31 @@ public class PlayerController : MonoBehaviour
 
     void SetLastPosition()
     {
+        //Facing up
         if (playerMovement.y > 0)
         {
+            dir = Direction.UP;
             animator.SetFloat("positionY", 1);
             animator.SetFloat("positionX", 0);
         }
+        //Facing right
         if (playerMovement.x > 0)
         {
+            dir = Direction.RIGHT;
             animator.SetFloat("positionX", 1);
             animator.SetFloat("positionY", 0);
         }
+        //Facing left
         if (playerMovement.x < 0)
         {
+            dir = Direction.LEFT;
             animator.SetFloat("positionX", -1);
             animator.SetFloat("positionY", 0);
         }
+        //Facing down
         if (playerMovement.y < 0)
         {
+            dir = Direction.DOWN;
             animator.SetFloat("positionY", -1);
             animator.SetFloat("positionX", 0);
         }
@@ -96,6 +111,35 @@ public class PlayerController : MonoBehaviour
     void OnFire()
     {
         animator.SetTrigger("swordAttack");
+    }
+
+    public void SwordAttack()
+    {
+        LockMovement();
+
+        switch (dir)
+        {
+            case Direction.UP:
+                //print("Attack up");
+                //swordAttack.AttackUp();
+                break;
+            case Direction.DOWN:
+                print("Attack down");
+                swordAttack.AttackDown();
+                break;
+            case Direction.LEFT:
+                print("Attack left");
+                swordAttack.AttackLeft();
+                break;
+            case Direction.RIGHT:
+                print("Attack right");
+                swordAttack.AttackRight();
+                break;
+            default:
+                break;
+        }
+
+        swordAttack.StopAttack();
     }
 
     public void LockMovement() {
