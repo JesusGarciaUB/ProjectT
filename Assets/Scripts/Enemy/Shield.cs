@@ -10,5 +10,6 @@ public class Shield : Follower
         Armor = 2;
 
         base.Start();
+
     }
 }
