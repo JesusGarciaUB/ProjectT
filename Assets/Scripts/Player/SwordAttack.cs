@@ -59,7 +59,11 @@ public class SwordAttack : MonoBehaviour
 
             if (enemy != null)
             {
-                enemy.Health -= damage;
+                if (enemy.Armor <= 0)
+                {
+                    enemy.Health -= damage;
+                }
+                else enemy.Armor -= damage / 2;
             }
         }
     }

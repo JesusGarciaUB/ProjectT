@@ -5,8 +5,10 @@ using UnityEngine;
 public class Shield : Follower
 {
     // Update is called once per frame
-    void FixedUpdate()
+    private void Start()
     {
-        //base.FixedUpdate();
+        Armor = 2;
+
+        base.Start();
     }
 }

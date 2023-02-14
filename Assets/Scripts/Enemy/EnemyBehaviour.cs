@@ -11,7 +11,7 @@ public class EnemyBehaviour : MonoBehaviour
     protected Facing dir = Facing.NOONE;
     protected GameObject player;
 
-    private void Start()
+    protected void Start()
     {
         player = GameObject.FindWithTag("Player");
     }
@@ -30,7 +30,20 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
+    public int Armor
+    {
+        set
+        {
+            armor = value;
+        }
+        get
+        {
+            return armor;
+        }
+    }
+
     int health = 1;
+    int armor = 0;
     public bool isAlive = true;
 
     public void Defeated()
