@@ -19,28 +19,28 @@ public class SwordAttack : MonoBehaviour
     public void AttackRight()
     {
         swordCollider.enabled = true;
-        transform.position = new Vector3(transform.parent.position.x + 0.09f, transform.parent.position.y - 0.02f);
+        transform.position = new Vector3(transform.parent.position.x + 0.11f, transform.parent.position.y - 0.06f);
         attackOffset = transform.position;
     }
 
     public void AttackLeft()
     {
         swordCollider.enabled = true;
-        transform.position = new Vector3(transform.parent.position.x - 0.09f, transform.parent.position.y - 0.02f);
+        transform.position = new Vector3(transform.parent.position.x - 0.11f, transform.parent.position.y - 0.06f);
         attackOffset = transform.position;
     }
 
     public void AttackUp()
     {
         swordCollider.enabled = true;
-        transform.position = new Vector3(transform.parent.position.x + 0.02f, transform.parent.position.y + 0.11f);
+        transform.position = new Vector3(transform.parent.position.x, transform.parent.position.y + 0.03f);
         attackOffset = transform.position;
     }
 
     public void AttackDown()
     {
         swordCollider.enabled = true;
-        transform.position = new Vector3(transform.parent.position.x + 0.02f, transform.parent.position.y - 0.11f);
+        transform.position = new Vector3(transform.parent.position.x, transform.parent.position.y - 0.2f);
         attackOffset = transform.position;
     }
 
