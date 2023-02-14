@@ -46,7 +46,7 @@ public class EnemyBehaviour : MonoBehaviour
     int armor = 0;
     public bool isAlive = true;
 
-    public void Defeated()
+    virtual public void Defeated()
     {
         isAlive = false;
         transform.gameObject.SetActive(false);
