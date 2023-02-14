@@ -146,5 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b094c7c7b3204a043964180cc366d7f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAlive: 1
   distanceToPlayer: 0.7
-  speed: 1.5
+  speed: 1.2
