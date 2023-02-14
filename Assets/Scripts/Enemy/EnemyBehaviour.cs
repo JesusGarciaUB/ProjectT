@@ -4,10 +4,27 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    int health;
-    private void FixedUpdate()
+    public int Health
     {
-        
+        set{ 
+            health = value;
+            if (health <= 0)
+            {
+                Defeated();
+            }
+        }
+        get
+        {
+            return health;
+        }
+    }
+
+    int health = 1;
+    bool isAlive = true;
+
+    public void Defeated()
+    {
+        isAlive = false;
     }
 
 }
