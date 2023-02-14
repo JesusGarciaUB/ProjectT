@@ -6,12 +6,12 @@ public class Follower : EnemyBehaviour
 {
     public float speed;
     private int hitcount;
-    private Transform target;
+    protected Transform target;
     private void Start()
     {
         target = GameObject.FindWithTag("Player").transform;
     }
-    private void FixedUpdate()
+    protected void FixedUpdate()
     {
         if (hitcount == 0) transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }

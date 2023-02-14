@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class Shield : Follower
 {
-    private GameObject player;
     private Vector3 direction;
-    void Start()
-    {
-        player = GameObject.FindWithTag("Player");
-    }
-
+    float angle;
     // Update is called once per frame
     void FixedUpdate()
     {
-        direction = transform.position - player.transform.position;
+        direction = transform.position - target.position;
         direction.Normalize();
-        print(direction);
+
+
+        print(angle);
+
+        base.FixedUpdate();
     }
 }
