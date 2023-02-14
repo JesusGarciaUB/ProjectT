@@ -1,0 +1,1718 @@
+fileFormatVersion: 2
+guid: f930b16602013904c82745e3db7277c2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Khadim_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7111fcec70ad21243a74d224ed6d1e80
+      internalID: 690756045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc76206eb92309a4baba4dbb4a430f45
+      internalID: -329325356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f62f18082787e43a8d533cfee6baa8
+      internalID: -221232350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd0552a02f99094eac63d34b00ce2fc
+      internalID: -1481168380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f78687a0d393c4faaeecade7cadf0d
+      internalID: 524545795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287f6e533917bde4e985d2b4621d3029
+      internalID: -1222036791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_67
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b23c8a44fdbef4286db2feb376eb3f
+      internalID: -825399401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_68
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa047ea2e112db4b9e1ac44dd61b49e
+      internalID: 1553072706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_69
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3440ef9aa948a194db92d6918f6932ef
+      internalID: 315384556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb45ccd6a12f8342b1edb63f4147819
+      internalID: 308931769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4d3cbc8d2855f43bffeb101e2ddd92
+      internalID: 1602624860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0828eeed512c3d84a9f02d9231045bf0
+      internalID: 35679644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119bb914844f40a43a585dc596a561e5
+      internalID: -543640093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3ea49ab98adb34b90e43b2416d19ac
+      internalID: -692360663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f46ec5a252f3814e849f03782a3b2a1
+      internalID: -343222580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9e24f5c219e5c43b226c773ef50342
+      internalID: 1768786748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_77
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc639e0b23d3f941bd6a5c684f80050
+      internalID: 1625477397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_78
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63cf2011c389d84c804f0645de3de8d
+      internalID: -1706874169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4026845be308d4438bd700943e37af2
+      internalID: 525959196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_80
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da37185cbf68eeb4a859877d47ef1a5a
+      internalID: 2071140596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_81
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d980efdfa2d3afd428b80bf25942f3fa
+      internalID: 1405065124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5050567881de1b4ebd3d3c0143352f3
+      internalID: 276553836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_83
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ad8762da78c484f8e618b4078ea981
+      internalID: 1535048003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_84
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80658ef54fc9ac04fb1fe24db3b7a51b
+      internalID: -1336214132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_85
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83d4b368d25627489552a4a8ab794ab
+      internalID: 1731433395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_86
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab895d4e8f65214e9fa786f5ddc46a6
+      internalID: 1482152822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_87
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab0b3d531b34e54a95f107dc084ea0d
+      internalID: 910078666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c2522faaa13e544b981cb8c8e19b62
+      internalID: 2047742505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_89
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b612e49da3614408b9b3daa889bc3f
+      internalID: 125060086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_90
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c914f5e5eb584e04d954aa652e06876e
+      internalID: -1055622615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_91
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531a27f23a03d35438d16260cb2c8481
+      internalID: -1052261399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940bef90f28922940a36259f4c9fc415
+      internalID: -1457965938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_93
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9677583f97502fe478459ffdd8878df3
+      internalID: -638938638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_94
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0219ffb151a1aa842a200a78055abdef
+      internalID: -1589180889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_95
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd30da54d11a8f43b638e804543e22d
+      internalID: 123488116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_96
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2bd55780225d94cace62b8955a3436
+      internalID: 85897595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_173
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 766
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbe187920ba99d4897365463ca93338
+      internalID: 1652605671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_174
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 766
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3425651b90dee4db625a2d9440422d
+      internalID: 714428785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_175
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 766
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762dec9b669408d45b20ac6c56b02dbb
+      internalID: 131030521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_176
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 766
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24b4cb3be1b0f045b0a425ff457dd6b
+      internalID: 1208702729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_177
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 766
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e59deb15ba48694f9ed72ba02c8d131
+      internalID: 1418588512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_178
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 766
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79f915c19907c34fb1ba677c6f33619
+      internalID: -2067648734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_179
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 638
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baddd6fe0eddb84bbe9289a896696b1
+      internalID: 2026207588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_180
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 638
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede9e406df72c50439b6456632c3a110
+      internalID: 1891552351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_181
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 638
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66af2e3c760a49f488bb58d5022c5cc9
+      internalID: 119911737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_182
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 638
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6f17888a1cc814c980e4bc3f9ee5ba
+      internalID: 26363008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_183
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 638
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274f89e012ec57e48a1beaaba1dc980e
+      internalID: -1219691903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_184
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 638
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2faea36d21f8334b90146585b0975a0
+      internalID: 800043105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_186
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 446
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339afa110a5ebfb45af81d3c76f10caf
+      internalID: -1279411471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_187
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 446
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c48a87f771ae254487f98daca011340
+      internalID: -1143569595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_188
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 446
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6876633eaea0d4f8f262306a07cfd2
+      internalID: 2060923883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_189
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 446
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48500dd9294b85c459a239a97885418c
+      internalID: -205768904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_190
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 446
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0170c803b1b14724abd9d707bb566602
+      internalID: -982831670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_192
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 446
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafc9c32928e6f2498797df8399c6ce1
+      internalID: 2121588445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_194
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 254
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f894ab6fb2c8e42a6377fe36420b72
+      internalID: -1658077865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_195
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 254
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1341218794c3c6e4c9fc43c7e6976277
+      internalID: 1543287606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_196
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 254
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b418df99b38da4b90a2743aadc5a51
+      internalID: -1635270638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_197
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 254
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1611922c9d7eafc408f6f759be1f1660
+      internalID: 797643711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_199
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 254
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78123ba7c0ce6a3478be6d3e13f82364
+      internalID: 399870285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_201
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 190
+        width: 64
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1fadae4d634654790c5820d526c44e
+      internalID: -1059444183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_202
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 62
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7ea3a1e9461f343aace21edab510a8
+      internalID: 845165549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_203
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 62
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cb48d1cd01dc54dba0a92fc8457627
+      internalID: -1331439181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_204
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 62
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cc22d8bf5073d4db8a13eb9da2c05a
+      internalID: 1604356899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_205
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 62
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6a208ff46ec8c4e8c93eace0da00b1
+      internalID: -434525811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_206
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 62
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c276464a8af52424e8cb34edc5979340
+      internalID: -298414626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Khadim_208
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 62
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76829fd06df34b44b01f34093662c5d
+      internalID: 586324031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Khadim_175: 131030521
+      Khadim_209: 1027509197
+      Khadim_137: -122826022
+      Khadim_46: -557828353
+      Khadim_82: 276553836
+      Khadim_168: 1725677360
+      Khadim_125: -1821096197
+      Khadim_205: -434525811
+      Khadim_10: -1616133348
+      Khadim_53: -230372247
+      Khadim_19: 665779921
+      Khadim_121: -1870467498
+      Khadim_71: 1602624860
+      Khadim_118: -1612454656
+      Khadim_83: 1535048003
+      Khadim_208: 586324031
+      Khadim_109: 1361749585
+      Khadim_169: 1785678989
+      Khadim_173: 1652605671
+      Khadim_162: -141683092
+      Khadim_97: 430258453
+      Khadim_20: -2031306874
+      Khadim_207: -1722692146
+      Khadim_193: 826375450
+      Khadim_34: 1460757110
+      Khadim_88: 2047742505
+      Khadim_24: 1016935981
+      Khadim_178: -2067648734
+      Khadim_204: 1604356899
+      Khadim_49: 1816653663
+      Khadim_158: -524684119
+      Khadim_127: -1965396372
+      Khadim_33: 163978258
+      Khadim_41: 1756931195
+      Khadim_141: -215832708
+      Khadim_149: 1087858055
+      Khadim_163: 1305119251
+      Khadim_105: 1796988931
+      Khadim_35: 512916244
+      Khadim_194: -1658077865
+      Khadim_75: -343222580
+      Khadim_198: 1520123516
+      Khadim_196: -1635270638
+      Khadim_138: -1082785643
+      Khadim_135: 606330518
+      Khadim_23: -609670764
+      Khadim_68: 1553072706
+      Khadim_18: 1445066500
+      Khadim_86: 1482152822
+      Khadim_166: -2026469383
+      Khadim_111: 699675729
+      Khadim_32: -50766545
+      Khadim_9: 192393501
+      Khadim_89: 125060086
+      Khadim_67: -825399401
+      Khadim_181: 119911737
+      Khadim_202: 845165549
+      Khadim_13: -178891225
+      Khadim_177: 1418588512
+      Khadim_192: 2121588445
+      Khadim_21: 635032699
+      Khadim_182: 26363008
+      Khadim_38: 124018451
+      Khadim_107: -96410733
+      Khadim_26: 1310557006
+      Khadim_132: -288967366
+      Khadim_103: 1319085410
+      Khadim_156: -387238327
+      Khadim_101: 1421629562
+      Khadim_94: -1589180889
+      Khadim_161: 1696236172
+      Khadim_154: -256548356
+      Khadim_16: -517406485
+      Khadim_147: -1022832199
+      Khadim_43: -1734525290
+      Khadim_37: -168579587
+      Khadim_92: -1457965938
+      Khadim_180: 1891552351
+      Khadim_48: -1475866381
+      Khadim_12: 2026629029
+      Khadim_164: 303212018
+      Khadim_123: -1420962765
+      Khadim_206: -298414626
+      Khadim_62: -329325356
+      Khadim_4: 1365513497
+      Khadim_174: 714428785
+      Khadim_58: -330364431
+      Khadim_65: 524545795
+      Khadim_61: 690756045
+      Khadim_15: -553335593
+      Khadim_106: -589442263
+      Khadim_134: 1470854178
+      Khadim_77: 1625477397
+      Khadim_153: 1625272750
+      Khadim_44: 963748296
+      Khadim_143: -804439046
+      Khadim_148: -217782560
+      Khadim_56: 670404255
+      Khadim_14: 1136397375
+      Khadim_70: 308931769
+      Khadim_115: 1763828148
+      Khadim_17: 1973610728
+      Khadim_55: -1456713416
+      Khadim_3: 243873028
+      Khadim_189: -205768904
+      Khadim_145: 197774894
+      Khadim_120: -452951319
+      Khadim_144: -205950167
+      Khadim_170: 1487977333
+      Khadim_52: 983407005
+      Khadim_50: -278042368
+      Khadim_90: -1055622615
+      Khadim_200: -1046120036
+      Khadim_187: -1143569595
+      Khadim_191: -568211188
+      Khadim_40: -1714218241
+      Khadim_184: 800043105
+      Khadim_11: 1583479959
+      Khadim_76: 1768786748
+      Khadim_190: -982831670
+      Khadim_124: -2106626155
+      Khadim_146: -33854907
+      Khadim_93: -638938638
+      Khadim_152: 1744283809
+      Khadim_157: -217038708
+      Khadim_100: -1023023344
+      Khadim_112: 1615335615
+      Khadim_199: 399870285
+      Khadim_73: -543640093
+      Khadim_98: -139762452
+      Khadim_8: -2004318286
+      Khadim_39: -2039025116
+      Khadim_47: -1684658226
+      Khadim_69: 315384556
+      Khadim_27: 2082084756
+      Khadim_74: -692360663
+      Khadim_87: 910078666
+      Khadim_172: -110248915
+      Khadim_60: 1251352973
+      Khadim_117: 1716977974
+      Khadim_78: -1706874169
+      Khadim_159: 1467850156
+      Khadim_179: 2026207588
+      Khadim_203: -1331439181
+      Khadim_114: 123264874
+      Khadim_136: -1858159680
+      Khadim_139: -905638284
+      Khadim_126: -455356247
+      Khadim_108: -1213473114
+      Khadim_188: 2060923883
+      Khadim_81: 1405065124
+      Khadim_119: 1790553520
+      Khadim_66: -1222036791
+      Khadim_104: -1500902110
+      Khadim_195: 1543287606
+      Khadim_28: -1082019582
+      Khadim_30: -1555414322
+      Khadim_110: -1991070257
+      Khadim_130: 344267519
+      Khadim_25: -783885158
+      Khadim_84: -1336214132
+      Khadim_151: -465843503
+      Khadim_116: -54980026
+      Khadim_64: -1481168380
+      Khadim_165: -800249586
+      Khadim_51: -104591588
+      Khadim_0: 416635441
+      Khadim_122: 1053623704
+      Khadim_59: -1885170454
+      Khadim_31: -1644071182
+      Khadim_95: 123488116
+      Khadim_201: -1059444183
+      Khadim_128: -556811982
+      Khadim_54: -2004259487
+      Khadim_186: -1279411471
+      Khadim_160: 1074397762
+      Khadim_140: -365182772
+      Khadim_167: 1515126326
+      Khadim_63: -221232350
+      Khadim_36: -1463774812
+      Khadim_1: 1890418608
+      Khadim_2: 537922089
+      Khadim_99: 522949175
+      Khadim_129: -480432711
+      Khadim_91: -1052261399
+      Khadim_185: 168289471
+      Khadim_155: 49479272
+      Khadim_150: 153061773
+      Khadim_113: -1825835462
+      Khadim_5: -1958962684
+      Khadim_102: 1213948488
+      Khadim_79: 525959196
+      Khadim_183: -1219691903
+      Khadim_7: 1019875795
+      Khadim_176: 1208702729
+      Khadim_45: -1327569018
+      Khadim_142: -795119651
+      Khadim_72: 35679644
+      Khadim_133: -1935888174
+      Khadim_22: 1148065903
+      Khadim_85: 1731433395
+      Khadim_171: 1770417408
+      Khadim_96: 85897595
+      Khadim_57: -92561365
+      Khadim_6: 293829810
+      Khadim_42: 27593397
+      Khadim_131: -131055607
+      Khadim_197: 797643711
+      Khadim_80: 2071140596
+      Khadim_29: -203042339
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
