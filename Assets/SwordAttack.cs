@@ -45,7 +45,6 @@ public class SwordAttack : MonoBehaviour
 
     public void StopAttack()
     {
-        print("Stop attack");
         transform.position = new Vector3(transform.parent.position.x, transform.parent.position.y);
         attackOffset = transform.position;
         swordCollider.enabled = false;
