@@ -20,11 +20,12 @@ public class EnemyBehaviour : MonoBehaviour
     }
 
     int health = 1;
-    bool isAlive = true;
+    public bool isAlive = true;
 
     public void Defeated()
     {
         isAlive = false;
+        transform.gameObject.SetActive(false);
     }
 
 }

@@ -31,7 +31,8 @@ public class GridChanger : MonoBehaviour
 
             for (int x = 0; x < enemies.Count; x++)
             {
-                enemies[x].gameObject.SetActive(true);
+                if (enemies[x].GetComponent<EnemyBehaviour>().isAlive)
+                    enemies[x].gameObject.SetActive(true);
             }
         }
     }
