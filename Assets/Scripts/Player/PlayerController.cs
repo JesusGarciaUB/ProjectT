@@ -120,26 +120,20 @@ public class PlayerController : MonoBehaviour
         switch (dir)
         {
             case Direction.UP:
-                //print("Attack up");
-                //swordAttack.AttackUp();
+                swordAttack.AttackUp();
                 break;
             case Direction.DOWN:
-                print("Attack down");
                 swordAttack.AttackDown();
                 break;
             case Direction.LEFT:
-                print("Attack left");
                 swordAttack.AttackLeft();
                 break;
             case Direction.RIGHT:
-                print("Attack right");
                 swordAttack.AttackRight();
                 break;
             default:
                 break;
         }
-
-        swordAttack.StopAttack();
     }
 
     public void LockMovement() {
@@ -148,6 +142,7 @@ public class PlayerController : MonoBehaviour
 
     public void UnlockMovement()
     {
+        swordAttack.StopAttack();
         canMove = true;
     }
 }
