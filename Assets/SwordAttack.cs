@@ -12,36 +12,42 @@ public class SwordAttack : MonoBehaviour
     void Start()
     {
         swordCollider = GetComponent<Collider2D>();
+        swordCollider.enabled = false;
     }
 
     public void AttackRight()
     {
         swordCollider.enabled = true;
-        transform.position = new Vector3(transform.parent.position.x + 0.09f, transform.position.y - 0.02f);
+        transform.position = new Vector3(transform.parent.position.x + 0.09f, transform.parent.position.y - 0.02f);
         attackOffset = transform.position;
     }
 
     public void AttackLeft()
     {
         swordCollider.enabled = true;
-        transform.position = new Vector3(transform.parent.position.x - 0.09f, transform.position.y - 0.02f);
+        transform.position = new Vector3(transform.parent.position.x - 0.09f, transform.parent.position.y - 0.02f);
         attackOffset = transform.position;
     }
 
     public void AttackUp()
     {
         swordCollider.enabled = true;
-        transform.position = new Vector3(transform.parent.position.x, transform.position.y);
+        transform.position = new Vector3(transform.parent.position.x + 0.02f, transform.parent.position.y + 0.11f);
         attackOffset = transform.position;
     }
 
     public void AttackDown()
     {
         swordCollider.enabled = true;
+        transform.position = new Vector3(transform.parent.position.x + 0.02f, transform.parent.position.y - 0.11f);
+        attackOffset = transform.position;
     }
 
     public void StopAttack()
     {
+        print("Stop attack");
+        transform.position = new Vector3(transform.parent.position.x, transform.parent.position.y);
+        attackOffset = transform.position;
         swordCollider.enabled = false;
     }
 }

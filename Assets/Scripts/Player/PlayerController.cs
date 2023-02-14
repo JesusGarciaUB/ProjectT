@@ -120,8 +120,8 @@ public class PlayerController : MonoBehaviour
         switch (dir)
         {
             case Direction.UP:
-                //print("Attack up");
-                //swordAttack.AttackUp();
+                print("Attack up");
+                swordAttack.AttackUp();
                 break;
             case Direction.DOWN:
                 print("Attack down");
