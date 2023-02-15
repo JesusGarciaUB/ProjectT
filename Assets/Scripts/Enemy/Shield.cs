@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shield : EnemyBehaviour
 {
     // Update is called once per frame
-    private void Start()
+    private void Awake()
     {
         Armor = 2;
 
