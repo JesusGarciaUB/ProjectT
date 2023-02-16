@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a9b911b895f7bb4a9afc43560c41fad
+guid: 013e5e1dad3dd7f4b87ba1b4d4ee3058
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +76,1419 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: EnemyUnShielded_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f0edad2c2e91c41a3374c02f3eaf49
+      internalID: 206763717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22d379acf9b82542832ae5951fc6430
+      internalID: -2128657464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0483870b13965c140b3c6729e40ea3e6
+      internalID: -970011417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5920b8eb9acfd3f4bbd92d4a71210a1d
+      internalID: -1531519728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6181a9fc5af96c84fa19ee78664f68b9
+      internalID: 1192912758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5723e8cb8a3221943b36314ea42bfe5a
+      internalID: -1422879500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_67
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75152e5cdcbf7d947a6f5eccf40d31f3
+      internalID: 495498618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_68
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4215a11a8940e04428fd6845e06895dc
+      internalID: -1859574328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_69
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3b714f9f1f66045bf9bdc12fa23ec4
+      internalID: -582246164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11984266a0c24ba47863c24a69efe9b8
+      internalID: 1281267946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a00e93951e92a4da86070021713feb
+      internalID: 1975838445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3b221450bdf0646ac16d0a5635f1e7
+      internalID: -2085521778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39acd1ed165b7c439a6af275cefa45a
+      internalID: 1377897907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9e2c93b24ba9042870f0418ff05653
+      internalID: 2118190148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe302dfa0d6e35d4aa0a0f56f5ad2d52
+      internalID: -259779834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ab1c8618e41814d99f53df3ffab9cd
+      internalID: -486596706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_77
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564c17a996f5cc945a0eb3505bd5eacb
+      internalID: 448463388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_78
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e0dce43d33008409513c9ff480c180
+      internalID: -1130016938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ca52575f2bfee4ea032f9f0f0a0529
+      internalID: -346067341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_80
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca4a676d1768d64884c968f1c9909af
+      internalID: -1363661489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_81
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da79a948e7fcca84184dcb9d31fda431
+      internalID: 1586250065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dab4f1792b0624bb55ca21785f0246
+      internalID: -104886318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_83
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b40f517a4b6b03448402465acd8f352
+      internalID: -1763107127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_84
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6cb7cfed01fb4248a172f78690984c4
+      internalID: -1522753123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_85
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac992e171f89cc41aecfbea8e9bce3f
+      internalID: -1383922888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_86
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cc626674f1d51488a1832051e52c70
+      internalID: -192071683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_87
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b1bff6efbaf224fb5af6c2f5f842c7
+      internalID: -1149969367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac4ce0e73af35142a33d95eddde0a78
+      internalID: 1134114654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_89
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e36d009f49ebff498d15c2e0e785e32
+      internalID: 1333722366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_90
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d9bc83b2cb1c94f8f11db2eac39b38
+      internalID: -1020481673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_91
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5acff45a2daefe43a3471533c3afe30
+      internalID: 1967373258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c883e3e26c564459b2c3612a868679
+      internalID: 926511235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_93
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629776d5e50c1be4b9870cc42c43e8a1
+      internalID: -1868042195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_94
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ae838843b2ccb4486bd631ed183fd7
+      internalID: 495556371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_95
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1209f046e37a8447859fe7a93a4956c
+      internalID: -28818434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_96
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73c84fcb25e1df4ea24e6c10812b609
+      internalID: 904879522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_173
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf1076b5a0053b46bda2123a251b2d3
+      internalID: 544699171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_174
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bde214029647d4780f82f9c7625105
+      internalID: 996359124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_175
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae75a4529d8c2747b1b2bc2017bc883
+      internalID: -1527742914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_176
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7057a3a855a3aaf48a7d8c7cb7a608cf
+      internalID: -1244515971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_177
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4d9bd0014e5934aa3c565cc8c14ad6
+      internalID: 676033710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_178
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7298e3f84599b6d48abcbe814892b347
+      internalID: -333710645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_180
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 638
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16abc24744a7c9740b221eeaa0eae5b3
+      internalID: 1745569387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_181
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 638
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c22ac233b816a43b7d471e6acdcee0
+      internalID: 819160297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_182
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 638
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6410d57dfd184840afcec641594b72a
+      internalID: -92858158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_183
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 638
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482873393e9c0c74097fd842e58f6415
+      internalID: -1778467615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_184
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 638
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f972a58d0cdd774690258064a775df4
+      internalID: -702743065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_185
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 638
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b776a7f01d0b8846ad938ad983585e0
+      internalID: 399643783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_187
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 446
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fcbbc29895ee14198ffbe1d0af348a
+      internalID: -205405455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_188
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 446
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ce3b2c4e0786a4fa5417e74ededcc5
+      internalID: -1328948911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_189
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 446
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35567e07ab997647b1d821cc7f87261
+      internalID: 835534497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_190
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 446
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3ce83a40cccd54195b3499c9770bfd
+      internalID: -167789646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_192
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 446
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa81ca3e204281489a5099c0cd68287
+      internalID: 807081459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_194
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 446
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1d61c84c97bde44a90c925c835b90b
+      internalID: 2081027807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_196
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04347e6a3d8682e4484444f48da41cfb
+      internalID: -904888945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_197
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff09504a882f152479aeda15af163357
+      internalID: -258845326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_198
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f90327ff4eb1a24d807e699b5d9a86d
+      internalID: 1056816254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_199
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126c878ff49eade4988f1854b07b6a77
+      internalID: 1514887772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_204
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 190
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.25, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04db7cba746ace445bcffe5e8ded11ef
+      internalID: 1775817806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_205
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 190
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.25, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7057eca9b299ae34fa04ef1136c852bb
+      internalID: -1021493008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_206
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 62
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a0d8aafa156f84a9abe4061e8ba8e6
+      internalID: -1112006347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_207
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 62
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96447cda50773554eacbae5a686469f8
+      internalID: 1386647968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_208
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 62
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f48b51012e6c9e4aa37f171520ac55c
+      internalID: 595312163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_209
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 62
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e302ce078c2dc541aa08fc3571bf4b6
+      internalID: 991992557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_211
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 62
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c71c2a2670dac4469f53f538ee7c941
+      internalID: -872103458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyUnShielded_213
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 62
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c171f828a7ea23b44b0f2256aa537513
+      internalID: -827229176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +1499,222 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EnemyUnShielded_59: -1484661090
+      EnemyUnShielded_112: 513051856
+      EnemyUnShielded_149: 1621730458
+      EnemyUnShielded_89: 1333722366
+      EnemyUnShielded_14: -1721009823
+      EnemyUnShielded_87: -1149969367
+      EnemyUnShielded_94: 495556371
+      EnemyUnShielded_211: -872103458
+      EnemyUnShielded_148: 1503711168
+      EnemyUnShielded_64: -1531519728
+      EnemyUnShielded_45: 979558888
+      EnemyUnShielded_99: 452139717
+      EnemyUnShielded_140: 755602288
+      EnemyUnShielded_52: 675553089
+      EnemyUnShielded_163: -650607910
+      EnemyUnShielded_92: 926511235
+      EnemyUnShielded_174: 996359124
+      EnemyUnShielded_209: 991992557
+      EnemyUnShielded_156: 1916041247
+      EnemyUnShielded_180: 1745569387
+      EnemyUnShielded_86: -192071683
+      EnemyUnShielded_187: -205405455
+      EnemyUnShielded_67: 495498618
+      EnemyUnShielded_113: -601050116
+      EnemyUnShielded_104: -521080355
+      EnemyUnShielded_53: -1434096357
+      EnemyUnShielded_8: 490638565
+      EnemyUnShielded_157: -535600374
+      EnemyUnShielded_143: 1147915460
+      EnemyUnShielded_36: 774702030
+      EnemyUnShielded_127: -1846597061
+      EnemyUnShielded_101: 1629306981
+      EnemyUnShielded_58: 894606883
+      EnemyUnShielded_167: -2123673579
+      EnemyUnShielded_60: 569134778
+      EnemyUnShielded_165: 842771191
+      EnemyUnShielded_181: 819160297
+      EnemyUnShielded_62: -2128657464
+      EnemyUnShielded_119: 575528120
+      EnemyUnShielded_80: -1363661489
+      EnemyUnShielded_145: 503807805
+      EnemyUnShielded_105: -154621170
+      EnemyUnShielded_188: -1328948911
+      EnemyUnShielded_159: -1869287852
+      EnemyUnShielded_6: -833700944
+      EnemyUnShielded_65: 1192912758
+      EnemyUnShielded_22: 134314667
+      EnemyUnShielded_138: 1344037667
+      EnemyUnShielded_175: -1527742914
+      EnemyUnShielded_124: 662055975
+      EnemyUnShielded_40: 1271678916
+      EnemyUnShielded_10: 2008243049
+      EnemyUnShielded_168: -1525831523
+      EnemyUnShielded_169: -1167434658
+      EnemyUnShielded_203: -276115765
+      EnemyUnShielded_83: -1763107127
+      EnemyUnShielded_128: 1723107540
+      EnemyUnShielded_0: -1454774965
+      EnemyUnShielded_162: -1651027749
+      EnemyUnShielded_106: -291074310
+      EnemyUnShielded_30: 818160456
+      EnemyUnShielded_42: 1582534185
+      EnemyUnShielded_51: 1674577314
+      EnemyUnShielded_115: 861790544
+      EnemyUnShielded_97: 382750363
+      EnemyUnShielded_204: 1775817806
+      EnemyUnShielded_9: -1725814175
+      EnemyUnShielded_5: 312018541
+      EnemyUnShielded_134: 1483398379
+      EnemyUnShielded_31: -818598756
+      EnemyUnShielded_109: -1977226744
+      EnemyUnShielded_47: 1275341567
+      EnemyUnShielded_54: -470184338
+      EnemyUnShielded_25: -654682055
+      EnemyUnShielded_18: -1614582945
+      EnemyUnShielded_34: -928564060
+      EnemyUnShielded_117: -377588381
+      EnemyUnShielded_146: -955012090
+      EnemyUnShielded_139: -2056212837
+      EnemyUnShielded_82: -104886318
+      EnemyUnShielded_150: -961095020
+      EnemyUnShielded_213: -827229176
+      EnemyUnShielded_17: -2069313034
+      EnemyUnShielded_57: -1781678886
+      EnemyUnShielded_177: 676033710
+      EnemyUnShielded_136: 1859502840
+      EnemyUnShielded_11: 1855945811
+      EnemyUnShielded_107: 2050445901
+      EnemyUnShielded_116: -1782016128
+      EnemyUnShielded_178: -333710645
+      EnemyUnShielded_48: -261559011
+      EnemyUnShielded_114: 1505319802
+      EnemyUnShielded_20: 1561498149
+      EnemyUnShielded_77: 448463388
+      EnemyUnShielded_12: -680681299
+      EnemyUnShielded_142: -1971028937
+      EnemyUnShielded_206: -1112006347
+      EnemyUnShielded_207: 1386647968
+      EnemyUnShielded_2: 87745891
+      EnemyUnShielded_154: 63303582
+      EnemyUnShielded_37: 1465194898
+      EnemyUnShielded_212: 199528790
+      EnemyUnShielded_153: 2081586325
+      EnemyUnShielded_196: -904888945
+      EnemyUnShielded_191: -1237947785
+      EnemyUnShielded_126: 788172265
+      EnemyUnShielded_132: 193791807
+      EnemyUnShielded_4: -1506433027
+      EnemyUnShielded_13: 68450931
+      EnemyUnShielded_121: 1026617994
+      EnemyUnShielded_133: -1315911196
+      EnemyUnShielded_61: 206763717
+      EnemyUnShielded_123: 1272409389
+      EnemyUnShielded_197: -258845326
+      EnemyUnShielded_98: -1785055370
+      EnemyUnShielded_26: -2060318816
+      EnemyUnShielded_102: -485484373
+      EnemyUnShielded_161: -1232365691
+      EnemyUnShielded_19: -1964637882
+      EnemyUnShielded_164: 605094490
+      EnemyUnShielded_103: -827657253
+      EnemyUnShielded_160: -1235369957
+      EnemyUnShielded_91: 1967373258
+      EnemyUnShielded_56: -531496193
+      EnemyUnShielded_49: 574660874
+      EnemyUnShielded_193: 1404576726
+      EnemyUnShielded_100: 921679314
+      EnemyUnShielded_192: 807081459
+      EnemyUnShielded_35: 890705388
+      EnemyUnShielded_95: -28818434
+      EnemyUnShielded_63: -970011417
+      EnemyUnShielded_182: -92858158
+      EnemyUnShielded_111: 641810870
+      EnemyUnShielded_183: -1778467615
+      EnemyUnShielded_184: -702743065
+      EnemyUnShielded_172: 1358803598
+      EnemyUnShielded_81: 1586250065
+      EnemyUnShielded_214: 1528864545
+      EnemyUnShielded_151: 347324169
+      EnemyUnShielded_122: 359058207
+      EnemyUnShielded_199: 1514887772
+      EnemyUnShielded_3: 677864507
+      EnemyUnShielded_23: 1162433390
+      EnemyUnShielded_72: -2085521778
+      EnemyUnShielded_130: -1821394805
+      EnemyUnShielded_46: -1026452701
+      EnemyUnShielded_173: 544699171
+      EnemyUnShielded_141: -2028923728
+      EnemyUnShielded_125: -1035408805
+      EnemyUnShielded_28: 1940232366
+      EnemyUnShielded_44: -511229972
+      EnemyUnShielded_171: 190643763
+      EnemyUnShielded_158: -1543970765
+      EnemyUnShielded_202: -333166092
+      EnemyUnShielded_186: 799679220
+      EnemyUnShielded_194: 2081027807
+      EnemyUnShielded_73: 1377897907
+      EnemyUnShielded_185: 399643783
+      EnemyUnShielded_74: 2118190148
+      EnemyUnShielded_16: -45887404
+      EnemyUnShielded_15: 372946698
+      EnemyUnShielded_66: -1422879500
+      EnemyUnShielded_50: -1652013507
+      EnemyUnShielded_176: -1244515971
+      EnemyUnShielded_170: -1689166396
+      EnemyUnShielded_198: 1056816254
+      EnemyUnShielded_155: -2054559485
+      EnemyUnShielded_90: -1020481673
+      EnemyUnShielded_190: -167789646
+      EnemyUnShielded_208: 595312163
+      EnemyUnShielded_55: -117971483
+      EnemyUnShielded_32: 1198960630
+      EnemyUnShielded_166: 261996445
+      EnemyUnShielded_21: 506641596
+      EnemyUnShielded_43: -626453893
+      EnemyUnShielded_108: -95305239
+      EnemyUnShielded_131: 1609068945
+      EnemyUnShielded_75: -259779834
+      EnemyUnShielded_79: -346067341
+      EnemyUnShielded_93: -1868042195
+      EnemyUnShielded_27: -995407876
+      EnemyUnShielded_96: 904879522
+      EnemyUnShielded_78: -1130016938
+      EnemyUnShielded_110: 1346364003
+      EnemyUnShielded_38: 1548478334
+      EnemyUnShielded_120: -2066289765
+      EnemyUnShielded_200: -512584128
+      EnemyUnShielded_195: 682358461
+      EnemyUnShielded_152: 528810249
+      EnemyUnShielded_68: -1859574328
+      EnemyUnShielded_71: 1975838445
+      EnemyUnShielded_84: -1522753123
+      EnemyUnShielded_69: -582246164
+      EnemyUnShielded_76: -486596706
+      EnemyUnShielded_189: 835534497
+      EnemyUnShielded_1: -1515960011
+      EnemyUnShielded_144: -744904270
+      EnemyUnShielded_70: 1281267946
+      EnemyUnShielded_210: 1361245903
+      EnemyUnShielded_135: -1448981459
+      EnemyUnShielded_137: -1272532934
+      EnemyUnShielded_118: 1568935995
+      EnemyUnShielded_147: -593384541
+      EnemyUnShielded_24: -305625198
+      EnemyUnShielded_88: 1134114654
+      EnemyUnShielded_129: 842838808
+      EnemyUnShielded_41: -1975159960
+      EnemyUnShielded_205: -1021493008
+      EnemyUnShielded_179: -2004778602
+      EnemyUnShielded_85: -1383922888
+      EnemyUnShielded_7: -1199195059
+      EnemyUnShielded_201: -1918804850
+      EnemyUnShielded_33: 829786555
+      EnemyUnShielded_29: -1219932310
+      EnemyUnShielded_39: -1432092554
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
