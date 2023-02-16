@@ -15,4 +15,9 @@ public class Ranger : EnemyBehaviour
         rDirection.Normalize();
         transform.position = Vector3.Lerp(transform.position, player.transform.position + rDirection * distanceToPlayer, speed * Time.deltaTime);
     }
+
+    public override void Defeated()
+    {
+        base.Defeated();
+    }
 }
