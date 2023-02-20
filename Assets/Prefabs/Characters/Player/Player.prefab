@@ -324,6 +324,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   swordAttack: {fileID: 8871122201067800097}
+  bowAttack: {fileID: -275051273564516277, guid: d831da5243ad29f4281ba620674c46dd, type: 3}
 --- !u!95 &6686875965164495011
 Animator:
   serializedVersion: 4
