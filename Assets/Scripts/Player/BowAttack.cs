@@ -4,35 +4,16 @@ using UnityEngine;
 
 public class BowAttack : MonoBehaviour
 {
-    public Transform fireDirection;
     public GameObject arrowPrefab;
-    public float speed = 20f;
+    public float speed = 5f;
     public int damage = 1;
 
     // Update is called once per frame
-    public void AttackRight()
+    public void Attack()
     {
-        Instantiate(arrowPrefab);
-    }
-
-    public void AttackLeft()
-    {
-        
-    }
-
-    public void AttackUp()
-    {
-        
-    }
-
-    public void AttackDown()
-    {
-        
-    }
-
-    public void StopAttack()
-    {
-        
+        GameObject arrow = Instantiate(arrowPrefab, PersistentManager.Instance.PlayerGlobal.transform.position, PersistentManager.Instance.PlayerGlobal.transform.rotation);
+        Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
+        rb.AddForce(PersistentManager.Instance.PlayerGlobal.transform.up * speed, ForceMode2D.Impulse);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

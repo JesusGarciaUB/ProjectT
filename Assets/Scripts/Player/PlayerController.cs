@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public float collOffset = 0.02f;
     public ContactFilter2D cF;
     public SwordAttack swordAttack;
+    public BowAttack bowAttack;
     Vector2 playerMovement;
     Animator animator;
     Rigidbody2D rb;
@@ -120,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
     void OnBow()
     {
-        animator.SetTrigger("BowAttack");
+        animator.SetTrigger("bowAttack");
     }
 
     public void SwordAttack()
@@ -149,24 +150,7 @@ public class PlayerController : MonoBehaviour
     public void BowAttack()
     {
         LockMovement();
-
-        switch (dir)
-        {
-            case Direction.UP:
-                //.AttackUp();
-                break;
-            case Direction.DOWN:
-                //.AttackDown();
-                break;
-            case Direction.LEFT:
-                //.AttackLeft();
-                break;
-            case Direction.RIGHT:
-                //.AttackRight();
-                break;
-            default:
-                break;
-        }
+        bowAttack.Attack();
     }
 
 
