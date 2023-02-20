@@ -8,7 +8,12 @@ public class PlayerController : MonoBehaviour
     public enum Direction { 
         NONE, UP, DOWN, LEFT, RIGHT
     };
+    public enum WEAPON
+    {
+        SWORD, BOW
+    };
     public Direction dir = Direction.NONE;
+    public WEAPON weapon;
     public float speed = 1f;
     public float collOffset = 0.02f;
     public ContactFilter2D cF;
@@ -108,9 +113,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnFire()
+    void OnSword()
     {
         animator.SetTrigger("swordAttack");
+    }
+
+    void OnBow()
+    {
+        animator.SetTrigger("BowAttack");
     }
 
     public void SwordAttack()
@@ -135,6 +145,31 @@ public class PlayerController : MonoBehaviour
                 break;
         }
     }
+
+    public void BowAttack()
+    {
+        LockMovement();
+
+        switch (dir)
+        {
+            case Direction.UP:
+                //.AttackUp();
+                break;
+            case Direction.DOWN:
+                //.AttackDown();
+                break;
+            case Direction.LEFT:
+                //.AttackLeft();
+                break;
+            case Direction.RIGHT:
+                //.AttackRight();
+                break;
+            default:
+                break;
+        }
+    }
+
+
 
     public void EndSwordAttack()
     {
