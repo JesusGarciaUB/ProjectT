@@ -6,9 +6,10 @@ public class Follower : EnemyBehaviour
 {
     public float speed;
     public GameObject loot;
-    protected void FixedUpdate()
+    void FixedUpdate()
     {
-        if (hitcount == 0) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        if (!hitting) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        Attack();
     }
 
     public override void Defeated()
