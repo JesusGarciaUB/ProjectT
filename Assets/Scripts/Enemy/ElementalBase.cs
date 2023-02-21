@@ -26,6 +26,7 @@ public class ElementalBase : EnemyBehaviour
     void FixedUpdate()
     {
         if (Vector3.Distance(player.transform.position, transform.position) > MinDistance) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        Attack();
     }
 
     public override void Defeated()
