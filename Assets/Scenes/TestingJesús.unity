@@ -12216,6 +12216,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: -5871577910450829142, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 413121269931867456, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -13653,6 +13657,22 @@ PrefabInstance:
     - target: {fileID: 1468552802, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
       propertyPath: type
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575444161490244765, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575444161490244765, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575444161490244765, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575444161490244765, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6983229987186262259, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
       propertyPath: m_Name

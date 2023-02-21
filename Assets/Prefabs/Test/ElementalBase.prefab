@@ -146,6 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742739c238c916840980babe706b6f2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackCooldown: 2
+  damage: 5
   isAlive: 1
   type: 2
   MinDistance: 0.7

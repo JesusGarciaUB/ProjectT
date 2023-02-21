@@ -12,6 +12,7 @@ public class EnemyBehaviour : MonoBehaviour
     protected GameObject player;
     public float AttackCooldown;
     private float Cooldown;
+    public int damage;
 
     protected void Start()
     {
@@ -64,14 +65,25 @@ public class EnemyBehaviour : MonoBehaviour
         return angle;
     }
 
+    public int hitcount;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Player") {
-            GameObject objective = GameObject.FindGameObjectWithTag("Player");
+        if (collision.gameObject.tag == "Player") hitcount++;
+
+        if (hitcount > 0)
+        {
+            PlayerController objective = collision.collider.GetComponent<PlayerController>();
             if (Cooldown <= Time.time)
             {
-
+                objective.Health -= damage;
+                Cooldown = Time.time + AttackCooldown;
+                print("Attacked: " + damage);
             }
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player") hitcount--;
     }
 }
