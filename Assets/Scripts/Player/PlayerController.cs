@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public ContactFilter2D cF;
     public SwordAttack swordAttack;
     public BowAttack bowAttack;
+    public Menu menu;
     Vector2 playerMovement;
     Animator animator;
     Rigidbody2D rb;
@@ -138,6 +139,11 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("bowAttack");
     }
+
+    void OnMenu() {
+        menu.PauseGame();
+    }
+
 
     public void SwordAttack()
     {
