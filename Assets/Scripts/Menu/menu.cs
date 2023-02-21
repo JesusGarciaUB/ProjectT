@@ -25,5 +25,6 @@ public class Menu : MonoBehaviour
     {
         print("Pause");
         PauseGame();
+        ResumeGame();
     }
 }
