@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     Vector2 playerMovement;
     Animator animator;
     Rigidbody2D rb;
-    List<RaycastHit2D> cColl = new List<RaycastHit2D>();
+    public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
     bool canMove = true;
     // Start is called before the first frame update
     void Start()
@@ -32,12 +32,21 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public int health
+    public int Health
     {
         get { return health; }
-        set { health = value; } 
+        set 
+        { 
+            health = value; 
+            if (health <= 0) Defeated();
+        } 
     }
 
+    int health = 10;
+    private void Defeated()
+    {
+        transform.gameObject.SetActive(false);
+    }
     private void FixedUpdate()
     {
         SetLastPosition();
@@ -129,6 +138,7 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("bowAttack");
     }
+
 
     public void SwordAttack()
     {

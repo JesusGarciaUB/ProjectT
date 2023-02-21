@@ -11,11 +11,13 @@ public class EnemyBehaviour : MonoBehaviour
     protected Facing dir = Facing.NOONE;
     protected GameObject player;
     public float AttackCooldown;
-    private float Cooldown;
+    public int damage;
+    public bool canAttack;
 
     protected void Start()
     {
-        Cooldown = Time.time;
+        hitting = false;
+        canAttack = true;
         player = GameObject.FindWithTag("Player");
     }
     public int Health
@@ -64,14 +66,27 @@ public class EnemyBehaviour : MonoBehaviour
         return angle;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Player") {
-            GameObject objective = GameObject.FindGameObjectWithTag("Player");
-            if (Cooldown <= Time.time)
-            {
+    public bool hitting;
 
-            }
+    public bool Hitting
+    {
+        set { hitting = value; }
+        get { return hitting; }
+    }
+    protected void Attack()
+    {
+        if (hitting && canAttack)
+        {
+            PlayerController objective = player.GetComponent<PlayerController>();
+            objective.Health -= damage;
+            print("Attacked: " + damage);
+            StartCoroutine(StartCooldown());
         }
+    }
+    public IEnumerator StartCooldown()
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(AttackCooldown);
+        canAttack = true;
     }
 }

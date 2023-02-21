@@ -12212,10 +12212,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8718137416123307638, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 413121269931867456, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -12264,14 +12260,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4192035136894752240, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4192035136894752240, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
 --- !u!1 &648974025 stripped
@@ -12279,18 +12267,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4192035136894752240, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
   m_PrefabInstance: {fileID: 648974024}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &648974026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648974025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a44d32c57cb0fb409dbdcd0fb3d0e2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &787725251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13653,6 +13629,22 @@ PrefabInstance:
     - target: {fileID: 1468552802, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
       propertyPath: type
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575444161490244765, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575444161490244765, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575444161490244765, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575444161490244765, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6983229987186262259, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
       propertyPath: m_Name

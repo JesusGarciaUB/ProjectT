@@ -5,20 +5,11 @@ using UnityEngine;
 public class Follower : EnemyBehaviour
 {
     public float speed;
-    private int hitcount;
     public GameObject loot;
-    protected void FixedUpdate()
+    void FixedUpdate()
     {
-        if (hitcount == 0) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player") hitcount++;
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player") hitcount--;
+        if (!hitting) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        Attack();
     }
 
     public override void Defeated()

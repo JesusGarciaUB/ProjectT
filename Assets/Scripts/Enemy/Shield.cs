@@ -14,21 +14,11 @@ public class Shield : EnemyBehaviour
     }
 
     public float speed;
-    private int hitcount;
     protected void FixedUpdate()
     {
-        if (hitcount == 0) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        if (!hitting) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        Attack();
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player") hitcount++;
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player") hitcount--;
-    }
-
     public override void Defeated()
     {
         base.Defeated();
