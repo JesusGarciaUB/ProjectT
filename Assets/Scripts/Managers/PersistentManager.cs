@@ -6,6 +6,7 @@ public class PersistentManager : MonoBehaviour
 {
    
     public static PersistentManager Instance { get; private set; }
+    public GameObject PlayerGlobal;
 
     //Global variables
     public string spawnPoint;
@@ -18,5 +19,7 @@ public class PersistentManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else Destroy(gameObject);
+
+        PlayerGlobal = GameObject.FindGameObjectWithTag("Player");
     }
 }

@@ -8,15 +8,21 @@ public class PlayerController : MonoBehaviour
     public enum Direction { 
         NONE, UP, DOWN, LEFT, RIGHT
     };
+    public enum WEAPON
+    {
+        SWORD, BOW
+    };
     public Direction dir = Direction.NONE;
+    public WEAPON weapon;
     public float speed = 1f;
     public float collOffset = 0.02f;
     public ContactFilter2D cF;
     public SwordAttack swordAttack;
+    public BowAttack bowAttack;
     Vector2 playerMovement;
     Animator animator;
     Rigidbody2D rb;
-    List<RaycastHit2D> cColl = new List<RaycastHit2D>();
+    public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
     bool canMove = true;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +32,21 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    public int Health
+    {
+        get { return health; }
+        set 
+        { 
+            health = value; 
+            if (health <= 0) Defeated();
+        } 
+    }
+
+    int health = 10;
+    private void Defeated()
+    {
+        transform.gameObject.SetActive(false);
+    }
     private void FixedUpdate()
     {
         SetLastPosition();
@@ -108,9 +129,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnFire()
+    void OnSword()
     {
         animator.SetTrigger("swordAttack");
+    }
+
+    void OnBow()
+    {
+        animator.SetTrigger("bowAttack");
     }
 
     public void SwordAttack()
@@ -135,6 +161,14 @@ public class PlayerController : MonoBehaviour
                 break;
         }
     }
+
+    public void BowAttack()
+    {
+        LockMovement();
+        bowAttack.Attack();
+    }
+
+
 
     public void EndSwordAttack()
     {

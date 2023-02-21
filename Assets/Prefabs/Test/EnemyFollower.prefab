@@ -146,6 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c017d0827b0f0448ee508576ea5fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackCooldown: 2
+  damage: 1
   isAlive: 1
   speed: 0.4
   loot: {fileID: 2103183152607103511, guid: 014dd1bffd5b9ba4db676ed4e4db7062, type: 3}
