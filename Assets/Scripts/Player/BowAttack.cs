@@ -5,7 +5,8 @@ using UnityEngine;
 public class BowAttack : MonoBehaviour
 {
     public GameObject arrowPrefab;
-    public float speed = 20f;
+    public float speed = 3f;
+    public float arrowTimeOnScreen = 4f;
     public int damage = 1;
     private Quaternion rotation;
     private Vector3 trans;
@@ -22,18 +23,21 @@ public class BowAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
-        {
-            EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
+        EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
 
-            if (enemy != null)
+        if (enemy != null)
+        {
+            if (enemy.Armor <= 0)
             {
-                if (enemy.Armor <= 0)
-                {
-                    enemy.Health -= damage;
-                }
-                else enemy.Armor -= damage / 2;
+                enemy.Health -= damage;
             }
+            else enemy.Armor -= damage / 2;
+
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject, arrowTimeOnScreen);
         }
     }
 
