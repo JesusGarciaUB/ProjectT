@@ -32,6 +32,12 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    public int health
+    {
+        get { return health; }
+        set { health = value; } 
+    }
+
     private void FixedUpdate()
     {
         SetLastPosition();
