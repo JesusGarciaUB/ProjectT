@@ -184,4 +184,30 @@ public class PlayerController : MonoBehaviour
     {
         canMove = true;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
+
+            if (enemy != null)
+            {
+                enemy.Hitting = true;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
+
+            if (enemy != null)
+            {
+                enemy.Hitting = false;
+            }
+        }
+    }
 }
