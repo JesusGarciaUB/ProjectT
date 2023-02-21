@@ -19,5 +19,7 @@ public class PersistentManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else Destroy(gameObject);
+
+        PlayerGlobal = GameObject.FindGameObjectWithTag("Player");
     }
 }

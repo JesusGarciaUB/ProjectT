@@ -7,6 +7,7 @@ public class BowAttack : MonoBehaviour
     public GameObject arrowPrefab;
     public float speed = 5f;
     public int damage = 1;
+    private Quaternion rotation;
 
     // Update is called once per frame
     public void Attack()
@@ -30,6 +31,14 @@ public class BowAttack : MonoBehaviour
                 }
                 else enemy.Armor -= damage / 2;
             }
+        }
+    }
+
+    private void Update()
+    {
+        switch(PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().dir)
+        {
+
         }
     }
 
