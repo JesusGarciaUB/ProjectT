@@ -165,7 +165,6 @@ public class PlayerController : MonoBehaviour
 
     public void BowAttack()
     {
-        LockMovement();
         bowAttack.Attack();
     }
 
