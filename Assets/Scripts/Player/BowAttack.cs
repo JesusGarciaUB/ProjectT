@@ -23,17 +23,20 @@ public class BowAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
-
-        if (enemy != null)
+        if (collision.tag == "Enemy")
         {
-            if (enemy.Armor <= 0)
-            {
-                enemy.Health -= damage;
-            }
-            else enemy.Armor -= damage / 2;
+            EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
 
-            Destroy(gameObject);
+            if (enemy != null)
+            {
+                if (enemy.Armor <= 0)
+                {
+                    enemy.Health -= damage;
+                }
+                else enemy.Armor -= damage / 2;
+
+                Destroy(gameObject);
+            }
         }
         else
         {
