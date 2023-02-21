@@ -18,7 +18,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         hitting = false;
         canAttack = true;
-        player = GameObject.FindWithTag("Player");
+        player = PersistentManager.Instance.PlayerGlobal;
     }
     public int Health
     {
@@ -75,6 +75,7 @@ public class EnemyBehaviour : MonoBehaviour
     }
     protected void Attack()
     {
+        if (hitting) print("collision");
         if (hitting && canAttack)
         {
             PlayerController objective = player.GetComponent<PlayerController>();
