@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     List<RaycastHit2D> cColl = new List<RaycastHit2D>();
     bool canMove = true;
+    public int health;
     // Start is called before the first frame update
     void Start()
     {
