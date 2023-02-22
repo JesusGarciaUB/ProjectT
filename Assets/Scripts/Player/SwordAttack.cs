@@ -48,9 +48,9 @@ public class SwordAttack : MonoBehaviour
 
     public void StopAttack()
     {
-        transform.position = new Vector3(transform.parent.position.x, transform.parent.position.y);
-        attackOffset = transform.position;
         swordCollider.enabled = false;
+        transform.position = new Vector3(transform.parent.position.x, transform.parent.position.y);
+        attackOffset = transform.position;        
     }
 
     private Vector2 Knockback(Collider2D collision)
@@ -67,17 +67,22 @@ public class SwordAttack : MonoBehaviour
         {
             EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
             Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
+            IsHitEnemy h = collision.GetComponent<IsHitEnemy>();
             if (enemy != null)
             {
-                rb.AddForce(Knockback(collision));
-                if (enemy.Armor <= 0)
+                if (!h.HitEnemy)
                 {
-                    enemy.Health -= damage;
-                }
-                else
-                {
-                    print(enemy.Armor);
-                    enemy.Armor -= damage / 2;
+                    h.Hitted();
+                    rb.AddForce(Knockback(collision));
+                    if (enemy.Armor <= 0)
+                    {
+                        enemy.Health -= damage;
+                    }
+                    else
+                    {
+                        print(enemy.Armor);
+                        enemy.Armor -= damage / 2;
+                    }
                 }
             }
         }

@@ -5,12 +5,15 @@ using UnityEngine;
 public class IsHit : MonoBehaviour
 {
     public bool isHit;
-    private int HitCooldown;
+    public float HitCooldown;
+    public int Multiplier;
+    public float ticks;
+    private Color OriginalColor;
     // Start is called before the first frame update
     void Start()
     {
         isHit = false;
-        HitCooldown = 2;
+        OriginalColor = GetComponentInParent<SpriteRenderer>().color;
     }
 
     // Update is called once per frame
@@ -28,14 +31,14 @@ public class IsHit : MonoBehaviour
     private IEnumerator colorChange()
     {
         SpriteRenderer pl = GetComponentInParent<SpriteRenderer>();
-        for (int x = 0; x < HitCooldown * 5; x++)
+        for (int x = 0; x < HitCooldown * Multiplier; x++)
         {
-            pl.color = Color.red;
-            yield return new WaitForSeconds(0.1f);
-            pl.color = Color.white;
-            yield return new WaitForSeconds(0.1f);
+            pl.color = Color.magenta;
+            yield return new WaitForSeconds(ticks);
+            pl.color = OriginalColor;
+            yield return new WaitForSeconds(ticks);
         }
-        pl.color = Color.white;
+        pl.color = OriginalColor;
         print("over");
     }
     public void Hitted()
