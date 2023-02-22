@@ -97,36 +97,37 @@ public class PlayerController : MonoBehaviour
 
     void SetLastPosition()
     {
-        //Facing up
-        if (playerMovement.y > 0)
+        if (canMove)
         {
-            dir = Direction.UP;
-            animator.SetFloat("positionY", 1);
-            animator.SetFloat("positionX", 0);
+            //Facing up
+            if (playerMovement.y > 0)
+            {
+                dir = Direction.UP;
+                animator.SetFloat("positionY", 1);
+                animator.SetFloat("positionX", 0);
+            }
+            //Facing right
+            if (playerMovement.x > 0)
+            {
+                dir = Direction.RIGHT;
+                animator.SetFloat("positionX", 1);
+                animator.SetFloat("positionY", 0);
+            }
+            //Facing left
+            if (playerMovement.x < 0)
+            {
+                dir = Direction.LEFT;
+                animator.SetFloat("positionX", -1);
+                animator.SetFloat("positionY", 0);
+            }
+            //Facing down
+            if (playerMovement.y < 0)
+            {
+                dir = Direction.DOWN;
+                animator.SetFloat("positionY", -1);
+                animator.SetFloat("positionX", 0);
+            }
         }
-        //Facing right
-        if (playerMovement.x > 0)
-        {
-            dir = Direction.RIGHT;
-            animator.SetFloat("positionX", 1);
-            animator.SetFloat("positionY", 0);
-        }
-        //Facing left
-        if (playerMovement.x < 0)
-        {
-            dir = Direction.LEFT;
-            animator.SetFloat("positionX", -1);
-            animator.SetFloat("positionY", 0);
-        }
-        //Facing down
-        if (playerMovement.y < 0)
-        {
-            dir = Direction.DOWN;
-            animator.SetFloat("positionY", -1);
-            animator.SetFloat("positionX", 0);
-        }
-
-
     }
 
     void OnSword()
