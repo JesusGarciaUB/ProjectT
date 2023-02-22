@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 931856923}
   - component: {fileID: 931856924}
+  - component: {fileID: 357769688559613249}
   m_Layer: 6
   m_Name: EnemyHitspot
   m_TagString: EnemyHitspot
@@ -58,6 +59,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16038918, y: 0.08392388}
   m_EdgeRadius: 0
+--- !u!114 &357769688559613249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931856922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5107aaa7a88983e49989cff12b27bf7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHit: 0
 --- !u!1 &1295474575012009076
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
+  knockbackForce: 500
 --- !u!212 &2321946375562638375
 SpriteRenderer:
   m_ObjectHideFlags: 0
