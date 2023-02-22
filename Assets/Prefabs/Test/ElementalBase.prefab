@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3575444161490244765}
   - component: {fileID: 2430532731898490036}
   - component: {fileID: 1468552802}
+  - component: {fileID: 361918078244431207}
   m_Layer: 9
   m_Name: ElementalBase
   m_TagString: Enemy
@@ -155,3 +156,15 @@ MonoBehaviour:
   MinDistance: 0.7
   speed: 0.3
   loot: {fileID: 2103183152607103511, guid: 014dd1bffd5b9ba4db676ed4e4db7062, type: 3}
+--- !u!114 &361918078244431207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983229987186262259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97164c321466ca46aedd3c5e55d03e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

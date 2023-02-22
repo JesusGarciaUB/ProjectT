@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &297918968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4192035136894752240, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+  m_PrefabInstance: {fileID: 353753586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &353753586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12408,6 +12413,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
+--- !u!1 &1140228546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 931856922, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+  m_PrefabInstance: {fileID: 353753586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1140228549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140228546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5107aaa7a88983e49989cff12b27bf7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHit: 0
 --- !u!1001 &1155250674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13611,7 +13634,7 @@ PrefabInstance:
     - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
       propertyPath: PlayerGlobal
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 297918968}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
 --- !u!1001 &1750197326
@@ -13770,7 +13793,7 @@ PrefabInstance:
     - target: {fileID: 4300938875442086937, guid: b9cb7bf9bc779d646aff059942417462, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 297918968}
     - target: {fileID: 4300938875442086942, guid: b9cb7bf9bc779d646aff059942417462, type: 3}
       propertyPath: m_RootOrder
       value: 11

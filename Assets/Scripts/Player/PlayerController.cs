@@ -128,6 +128,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetFloat("positionX", 0);
             }
         }
+
     }
 
     void OnSword()

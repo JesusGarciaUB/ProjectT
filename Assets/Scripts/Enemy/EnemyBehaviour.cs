@@ -75,9 +75,11 @@ public class EnemyBehaviour : MonoBehaviour
     }
     public void Attack()
     {
-        if (hitting && canAttack)
+        if (hitting && canAttack && !player.GetComponentInChildren<IsHit>().Hit)
         {
+            IsHit obj = player.GetComponentInChildren<IsHit>();
             PlayerController objective = player.GetComponent<PlayerController>();
+            obj.Hitted();
             objective.Health -= damage;
             print("Attacked: " + damage);
             StartCoroutine(StartCooldown());
