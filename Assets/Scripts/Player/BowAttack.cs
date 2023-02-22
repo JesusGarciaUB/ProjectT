@@ -62,10 +62,12 @@ public class BowAttack : MonoBehaviour
             case PlayerController.Direction.LEFT:
                 trans = PersistentManager.Instance.PlayerGlobal.transform.right * -1;
                 rotation = Quaternion.Euler(0, 0, 180);
+                position.x = position.x + 0.04f;
                 break;
             case PlayerController.Direction.RIGHT:
                 trans = PersistentManager.Instance.PlayerGlobal.transform.right;
                 rotation = Quaternion.Euler(0, 0, 0);
+                position.x = position.x + 0.04f;
                 break;
 
         }
