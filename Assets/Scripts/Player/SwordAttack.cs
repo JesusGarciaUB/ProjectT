@@ -8,7 +8,7 @@ public class SwordAttack : MonoBehaviour
     Vector2 attackOffset;
     Collider2D swordCollider;
     public int damage = 3;
-    public float knockbackForce = 5000f;
+    public float knockbackForce = 500f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,30 +19,30 @@ public class SwordAttack : MonoBehaviour
 
     public void AttackRight()
     {
-        swordCollider.enabled = true;
         transform.position = new Vector3(transform.parent.position.x + 0.11f, transform.parent.position.y - 0.06f);
+        swordCollider.enabled = true;
         attackOffset = transform.position;
 
     }
 
     public void AttackLeft()
     {
-        swordCollider.enabled = true;
         transform.position = new Vector3(transform.parent.position.x - 0.11f, transform.parent.position.y - 0.06f);
+        swordCollider.enabled = true;
         attackOffset = transform.position;
     }
 
     public void AttackUp()
     {
-        swordCollider.enabled = true;
         transform.position = new Vector3(transform.parent.position.x, transform.parent.position.y + 0.03f);
+        swordCollider.enabled = true;
         attackOffset = transform.position;
     }
 
     public void AttackDown()
     {
-        swordCollider.enabled = true;
         transform.position = new Vector3(transform.parent.position.x, transform.parent.position.y - 0.2f);
+        swordCollider.enabled = true;
         attackOffset = transform.position;
     }
 
@@ -55,10 +55,9 @@ public class SwordAttack : MonoBehaviour
 
     private Vector2 Knockback(Collider2D collision)
     {
-        Vector3 parentPos = gameObject.GetComponentInParent<Transform>().position;
+        Vector3 parentPos = transform.parent.position;
         Vector2 direction = (Vector2)(collision.gameObject.transform.position - parentPos).normalized;
         Vector2 knockBack = direction * knockbackForce;
-        print("Collision" + knockBack);
         return knockBack;
     }
 
@@ -75,7 +74,11 @@ public class SwordAttack : MonoBehaviour
                 {
                     enemy.Health -= damage;
                 }
-                else enemy.Armor -= damage / 2;
+                else
+                {
+                    print(enemy.Armor);
+                    enemy.Armor -= damage / 2;
+                }
             }
         }
     }
