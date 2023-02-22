@@ -72,6 +72,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isHit: 0
+  HitCooldown: 2
+  Multiplier: 5
+  ticks: 0.1
 --- !u!1 &1295474575012009076
 GameObject:
   m_ObjectHideFlags: 0
