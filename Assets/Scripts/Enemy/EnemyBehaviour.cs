@@ -73,9 +73,8 @@ public class EnemyBehaviour : MonoBehaviour
         set { hitting = value; }
         get { return hitting; }
     }
-    protected void Attack()
+    public void Attack()
     {
-        if (hitting) print("collision");
         if (hitting && canAttack)
         {
             PlayerController objective = player.GetComponent<PlayerController>();
@@ -89,5 +88,21 @@ public class EnemyBehaviour : MonoBehaviour
         canAttack = false;
         yield return new WaitForSeconds(AttackCooldown);
         canAttack = true;
+    }
+
+    protected void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "EnemyHitspot")
+        {
+            Hitting = true;
+        }
+    }
+
+    protected void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "EnemyHitspot")
+        {
+            Hitting = false;
+        }
     }
 }
