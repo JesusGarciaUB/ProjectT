@@ -11,6 +11,9 @@ public class ElementalBase : EnemyBehaviour
     public float MinDistance;
     public float speed;
     public GameObject loot;
+    //shooting
+    public GameObject projectile;
+    public Transform projectilePos;
     new void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -21,12 +24,10 @@ public class ElementalBase : EnemyBehaviour
         setColor();
         base.Start();
     }
-
-    // Update is called once per frame
     private void FixedUpdate()
     {
         if (Vector3.Distance(player.transform.position, transform.position) > MinDistance) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-        Attack();
+        else Attack();
     }
 
     public override void Defeated()
@@ -65,6 +66,17 @@ public class ElementalBase : EnemyBehaviour
             case ETYPE.PLANT:
                 sr.color = Color.green;
                 break;
+        }
+    }
+
+    new private void Attack()
+    {
+        if (canAttack)
+        {
+            GameObject p = Instantiate(projectile, projectilePos.position, Quaternion.identity);
+            SpriteRenderer sr2 = p.GetComponent<SpriteRenderer>();
+            sr2.color = sr.color;
+            StartCoroutine(StartCooldown());
         }
     }
 }

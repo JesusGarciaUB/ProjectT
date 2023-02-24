@@ -57,7 +57,7 @@ public class EnemyBehaviour : MonoBehaviour
         transform.gameObject.SetActive(false);
     }
 
-    float getAngle()
+    public float getAngle()
     {
         direction = transform.position - player.transform.position;
         direction.Normalize();
