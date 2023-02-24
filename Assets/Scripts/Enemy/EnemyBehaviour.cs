@@ -66,7 +66,7 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    int health = 5;
+    int health = 4;
     int armor = 0;
     public bool isAlive = true;
 
