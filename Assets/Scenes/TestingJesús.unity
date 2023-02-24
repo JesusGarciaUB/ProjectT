@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &197647566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197647567}
+  m_Layer: 9
+  m_Name: ProjectilePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &197647567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197647566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1468552806}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &297918968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4192035136894752240, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
@@ -13635,8 +13666,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1468552802, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: es
+      value: 
+      objectReference: {fileID: -3011386861896972882, guid: 00d0c0a9e61c77345ad44f41872f2b51, type: 3}
+    - target: {fileID: 1468552802, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
       propertyPath: type
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468552802, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 5621689950981799462, guid: 00d0c0a9e61c77345ad44f41872f2b51, type: 3}
+    - target: {fileID: 1468552802, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: projectilePos
+      value: 
+      objectReference: {fileID: 197647567}
+    - target: {fileID: 1468552802, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: AttackCooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2430532731898490036, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3575444161490244765, guid: c511f7c8a18d127479b7734250a6ff63, type: 3}
       propertyPath: m_Size.x
@@ -13899,25 +13950,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GridController
       objectReference: {fileID: 0}
-    - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
-      propertyPath: elementals.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
-      propertyPath: elementals.Array.data[0]
-      value: 
-      objectReference: {fileID: 1468552806}
     - target: {fileID: 5427926934776098649, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5427926934776098649, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.009
       objectReference: {fileID: 0}
     - target: {fileID: 5427926934776098649, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: 5427926934776098649, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: m_LocalPosition.z
