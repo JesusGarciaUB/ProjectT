@@ -150,12 +150,15 @@ MonoBehaviour:
   AttackCooldown: 2
   damage: 5
   canAttack: 0
+  healthText: {fileID: 5449005750421041224, guid: d7e9f8ace7c9a9a4e8d8a24a749e6d1e, type: 3}
   isAlive: 1
   hitting: 0
   type: 2
   MinDistance: 0.7
   speed: 0.3
   loot: {fileID: 2103183152607103511, guid: 014dd1bffd5b9ba4db676ed4e4db7062, type: 3}
+  projectile: {fileID: 0}
+  projectilePos: {fileID: 0}
 --- !u!114 &361918078244431207
 MonoBehaviour:
   m_ObjectHideFlags: 0

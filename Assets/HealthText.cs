@@ -24,7 +24,7 @@ public class HealthText : MonoBehaviour
     void Update()
     {
         timeElapsed += Time.deltaTime;
-        rectTransform.position += floatDirection * floatSpeed * Time.fixedDeltaTime;
+        rectTransform.position += floatDirection * floatSpeed * Time.fixedDeltaTime; //Change text position 
         textMesh.color = new Color(startingColor.r, startingColor.g, startingColor.b, 1 - (timeElapsed / timeToLive));//Change alpha channel to add banish text effect
 
         if (timeElapsed > timeToLive)

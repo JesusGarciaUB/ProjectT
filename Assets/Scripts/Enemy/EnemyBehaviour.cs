@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
@@ -13,6 +14,7 @@ public class EnemyBehaviour : MonoBehaviour
     public float AttackCooldown;
     public int damage;
     public bool canAttack;
+    public GameObject healthText;
 
     protected void Start()
     {
@@ -22,12 +24,29 @@ public class EnemyBehaviour : MonoBehaviour
     }
     public int Health
     {
-        set{ 
-            health = value;
-            if (health <= 0)
+        set{
+            if (value < health)
             {
-                Defeated();
+                //Set health loss text position on top of the enemy
+                GameObject gm = Instantiate(healthText);
+                RectTransform textTransform = gm.GetComponent<RectTransform>();
+                Vector3 v3 = transform.position;
+                v3.y += 0.16f;
+                textTransform.transform.position = v3;
+
+                //Add damage dealet
+                TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
+                int damage = health - value;
+                print("Enemy current healt:" + health + " Damage: " + damage);
+                textMesh.SetText(damage.ToString());
+
+                //Set health loss text inside the canvas
+                Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+                textTransform.SetParent(canvas.transform);
             }
+
+            health = value;
+            if (health <= 0) Defeated();
         }
         get
         {
@@ -47,7 +66,7 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    int health = 1;
+    int health = 5;
     int armor = 0;
     public bool isAlive = true;
 

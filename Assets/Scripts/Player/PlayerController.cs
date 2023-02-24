@@ -41,13 +41,20 @@ public class PlayerController : MonoBehaviour
         {
             if (value < health)
             {
-                //Set health loss text position on top of the player
-                RectTransform textTransform = Instantiate(healthText).GetComponent<RectTransform>();
+                //Set health loss text position on top of the enemy
+                GameObject gm = Instantiate(healthText);
+                RectTransform textTransform = gm.GetComponent<RectTransform>();
                 Vector3 v3 = transform.position;
                 v3.y += 0.16f;
                 textTransform.transform.position = v3;
 
-                //Set heslth loss text inside the canvas
+                //Add damage dealet
+                TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
+                int damage = health - value;
+                print("Enemy current healt:" + health + " Damage: " + damage);
+                textMesh.SetText(damage.ToString());
+
+                //Set health loss text inside the canvas
                 Canvas canvas = GameObject.FindObjectOfType<Canvas>();
                 textTransform.SetParent(canvas.transform);
             }
