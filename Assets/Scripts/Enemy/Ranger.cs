@@ -11,15 +11,22 @@ public class Ranger : EnemyBehaviour
     public GameObject projectile;
     public Transform projectilePos;
     private bool started;
-    private float timeToStart = 0;
+    private float timeToStart;
     private float randTime;
-    // Update is called once per frame
 
-    new private void Start()
+    public bool StartedP
     {
+        set { started = value; }
+    }
+    public float TimeTo
+    {
+        set { timeToStart = value; }
+    }
+    private void Awake()
+    {
+        timeToStart = 0;
         started = false;
-        randTime = Range(1, 3);
-        base.Start();
+        randTime = Range(1f, 3f);
     }
 
     private void Update()

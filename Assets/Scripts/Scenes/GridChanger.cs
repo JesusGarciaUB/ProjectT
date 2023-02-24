@@ -42,7 +42,17 @@ public class GridChanger : MonoBehaviour
             for (int x = 0; x < enemies.Count; x++)
             {
                 if (enemies[x].GetComponent<EnemyBehaviour>().isAlive)
+                {
                     enemies[x].gameObject.SetActive(true);
+                    enemies[x].GetComponent<EnemyBehaviour>().canAttack = true;
+                    Ranger r = enemies[x].GetComponent<Ranger>();
+
+                    if (r != null)
+                    {
+                        r.StartedP = false;
+                        r.TimeTo = 0;
+                    }
+                }
             }
 
             if (elementals.Count != 0)
