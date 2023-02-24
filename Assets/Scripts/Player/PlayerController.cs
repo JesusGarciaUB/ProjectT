@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
     bool canMove = true;
+    public GameObject healthText;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +38,19 @@ public class PlayerController : MonoBehaviour
     {
         get { return health; }
         set 
-        { 
+        {
+            if (value < health)
+            {
+                RectTransform textTransform = Instantiate(healthText).GetComponent<RectTransform>();
+                Vector3 v3 = transform.position;
+                v3.y += 0.16f;
+                textTransform.transform.position = v3;
+
+
+                Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+                textTransform.SetParent(canvas.transform);
+            }
+
             health = value; 
             if (health <= 0) Defeated();
         } 

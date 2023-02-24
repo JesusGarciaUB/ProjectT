@@ -402,6 +402,7 @@ MonoBehaviour:
     maxNormalAngle: 0
   swordAttack: {fileID: 8871122201067800097}
   bowAttack: {fileID: -275051273564516277, guid: d831da5243ad29f4281ba620674c46dd, type: 3}
+  healthText: {fileID: 5449005750421041224, guid: d7e9f8ace7c9a9a4e8d8a24a749e6d1e, type: 3}
 --- !u!95 &6686875965164495011
 Animator:
   serializedVersion: 4
