@@ -41,12 +41,13 @@ public class PlayerController : MonoBehaviour
         {
             if (value < health)
             {
+                //Set health loss text position on top of the player
                 RectTransform textTransform = Instantiate(healthText).GetComponent<RectTransform>();
                 Vector3 v3 = transform.position;
                 v3.y += 0.16f;
                 textTransform.transform.position = v3;
 
-
+                //Set heslth loss text inside the canvas
                 Canvas canvas = GameObject.FindObjectOfType<Canvas>();
                 textTransform.SetParent(canvas.transform);
             }
@@ -109,6 +110,7 @@ public class PlayerController : MonoBehaviour
         playerMovement = movement.Get<Vector2>();
     }
 
+    //Save player facing last position
     void SetLastPosition()
     {
         if (canMove)

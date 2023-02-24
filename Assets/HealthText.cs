@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class HealthText : MonoBehaviour
 {
-    public float timeToLive = 1f;
-    public float floatSpeed = 0.01f;
+    public float timeToLive = 1f; //Time on screen
+    public float floatSpeed = 0.01f; //Floating text speed
     public Vector3 floatDirection = new Vector3(0, 1, 0);
     public TextMeshProUGUI textMesh;
-    float timeElapsed = 0.0f;
+    float timeElapsed = 0.0f; //Start timer
     RectTransform rectTransform;
     Color startingColor;
 
@@ -25,7 +25,7 @@ public class HealthText : MonoBehaviour
     {
         timeElapsed += Time.deltaTime;
         rectTransform.position += floatDirection * floatSpeed * Time.fixedDeltaTime;
-        textMesh.color = new Color(startingColor.r, startingColor.g, startingColor.b, 1 - (timeElapsed / timeToLive));//Canviar el canal alpha per que es difumini el numero
+        textMesh.color = new Color(startingColor.r, startingColor.g, startingColor.b, 1 - (timeElapsed / timeToLive));//Change alpha channel to add banish text effect
 
         if (timeElapsed > timeToLive)
         {
