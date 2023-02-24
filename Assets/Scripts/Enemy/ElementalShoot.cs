@@ -8,6 +8,7 @@ public class ElementalShoot : MonoBehaviour
     public int damage;
     private Rigidbody2D rb;
     public float speed;
+    public float extraRotation;
     private void Start()
     {
         Vector3 playerPos = PersistentManager.Instance.PlayerGlobal.transform.position;     //get player position
@@ -17,7 +18,7 @@ public class ElementalShoot : MonoBehaviour
         rb.velocity = new Vector2(dir.x, dir.y).normalized * speed;
 
         float rotation = Mathf.Atan2(-dir.y, -dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rotation);
+        transform.rotation = Quaternion.Euler(0, 0, rotation + extraRotation);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
