@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3575444161490244765}
   - component: {fileID: 2430532731898490036}
   - component: {fileID: 7906605960558020054}
+  - component: {fileID: 5982152773587485929}
   m_Layer: 9
   m_Name: EnemyShield
   m_TagString: Enemy
@@ -125,8 +126,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000000
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -148,5 +149,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttackCooldown: 2
   damage: 1
+  canAttack: 0
+  healthText: {fileID: 5449005750421041224, guid: d7e9f8ace7c9a9a4e8d8a24a749e6d1e, type: 3}
+  health: 2
+  armor: 2
   isAlive: 1
+  hitting: 0
   speed: 0.3
+--- !u!114 &5982152773587485929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983229987186262259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97164c321466ca46aedd3c5e55d03e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

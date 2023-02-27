@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
@@ -13,21 +14,38 @@ public class EnemyBehaviour : MonoBehaviour
     public float AttackCooldown;
     public int damage;
     public bool canAttack;
+    public GameObject healthText;
 
     protected void Start()
     {
         hitting = false;
         canAttack = true;
-        player = GameObject.FindWithTag("Player");
+        player = PersistentManager.Instance.PlayerGlobal;
     }
     public int Health
     {
-        set{ 
-            health = value;
-            if (health <= 0)
+        set{
+            if (value < health)
             {
-                Defeated();
+                //Set health loss text position on top of the enemy
+                GameObject gm = Instantiate(healthText);
+                RectTransform textTransform = gm.GetComponent<RectTransform>();
+                Vector3 v3 = transform.position;
+                v3.y += 0.16f;
+                textTransform.transform.position = v3;
+
+                //Add damage dealet
+                TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
+                int damage = health - value;
+                textMesh.SetText(damage.ToString());
+
+                //Set health loss text inside the canvas
+                Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+                textTransform.SetParent(canvas.transform);
             }
+
+            health = value;
+            if (health <= 0) Defeated();
         }
         get
         {
@@ -39,6 +57,26 @@ public class EnemyBehaviour : MonoBehaviour
     {
         set
         {
+            if (value < armor)
+            {
+                //Set health loss text position on top of the enemy
+                GameObject gm = Instantiate(healthText);
+                RectTransform textTransform = gm.GetComponent<RectTransform>();
+                Vector3 v3 = transform.position;
+                v3.y += 0.16f;
+                textTransform.transform.position = v3;
+
+                //Add damage dealet
+                TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
+                int damage = armor - value;
+                textMesh.SetText(damage.ToString());
+                textMesh.color = Color.yellow;
+
+                //Set health loss text inside the canvas
+                Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+                textTransform.SetParent(canvas.transform);
+            }
+
             armor = value;
         }
         get
@@ -47,8 +85,8 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    int health = 1;
-    int armor = 0;
+    public int health;
+    public int armor;
     public bool isAlive = true;
 
     virtual public void Defeated()
@@ -57,7 +95,7 @@ public class EnemyBehaviour : MonoBehaviour
         transform.gameObject.SetActive(false);
     }
 
-    float getAngle()
+    public float getAngle()
     {
         direction = transform.position - player.transform.position;
         direction.Normalize();
@@ -73,11 +111,13 @@ public class EnemyBehaviour : MonoBehaviour
         set { hitting = value; }
         get { return hitting; }
     }
-    protected void Attack()
+    public void Attack()
     {
-        if (hitting && canAttack)
+        if (hitting && canAttack && !player.GetComponentInChildren<IsHit>().Hit)
         {
+            IsHit obj = player.GetComponentInChildren<IsHit>();
             PlayerController objective = player.GetComponent<PlayerController>();
+            obj.Hitted();
             objective.Health -= damage;
             print("Attacked: " + damage);
             StartCoroutine(StartCooldown());
@@ -88,5 +128,21 @@ public class EnemyBehaviour : MonoBehaviour
         canAttack = false;
         yield return new WaitForSeconds(AttackCooldown);
         canAttack = true;
+    }
+
+    protected void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "EnemyHitspot")
+        {
+            Hitting = true;
+        }
+    }
+
+    protected void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "EnemyHitspot")
+        {
+            Hitting = false;
+        }
     }
 }

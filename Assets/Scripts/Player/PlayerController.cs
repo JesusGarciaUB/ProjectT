@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
     bool canMove = true;
+    public GameObject healthText;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +38,26 @@ public class PlayerController : MonoBehaviour
     {
         get { return health; }
         set 
-        { 
+        {
+            if (value < health)
+            {
+                //Set health loss text position on top of the enemy
+                GameObject gm = Instantiate(healthText);
+                RectTransform textTransform = gm.GetComponent<RectTransform>();
+                Vector3 v3 = transform.position;
+                v3.y += 0.16f;
+                textTransform.transform.position = v3;
+
+                //Add damage dealet
+                TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
+                int damage = health - value;
+                textMesh.SetText(damage.ToString());
+
+                //Set health loss text inside the canvas
+                Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+                textTransform.SetParent(canvas.transform);
+            }
+
             health = value; 
             if (health <= 0) Defeated();
         } 
@@ -95,37 +116,40 @@ public class PlayerController : MonoBehaviour
         playerMovement = movement.Get<Vector2>();
     }
 
+    //Save player facing last position
     void SetLastPosition()
     {
-        //Facing up
-        if (playerMovement.y > 0)
+        if (canMove)
         {
-            dir = Direction.UP;
-            animator.SetFloat("positionY", 1);
-            animator.SetFloat("positionX", 0);
+            //Facing up
+            if (playerMovement.y > 0)
+            {
+                dir = Direction.UP;
+                animator.SetFloat("positionY", 1);
+                animator.SetFloat("positionX", 0);
+            }
+            //Facing right
+            if (playerMovement.x > 0)
+            {
+                dir = Direction.RIGHT;
+                animator.SetFloat("positionX", 1);
+                animator.SetFloat("positionY", 0);
+            }
+            //Facing left
+            if (playerMovement.x < 0)
+            {
+                dir = Direction.LEFT;
+                animator.SetFloat("positionX", -1);
+                animator.SetFloat("positionY", 0);
+            }
+            //Facing down
+            if (playerMovement.y < 0)
+            {
+                dir = Direction.DOWN;
+                animator.SetFloat("positionY", -1);
+                animator.SetFloat("positionX", 0);
+            }
         }
-        //Facing right
-        if (playerMovement.x > 0)
-        {
-            dir = Direction.RIGHT;
-            animator.SetFloat("positionX", 1);
-            animator.SetFloat("positionY", 0);
-        }
-        //Facing left
-        if (playerMovement.x < 0)
-        {
-            dir = Direction.LEFT;
-            animator.SetFloat("positionX", -1);
-            animator.SetFloat("positionY", 0);
-        }
-        //Facing down
-        if (playerMovement.y < 0)
-        {
-            dir = Direction.DOWN;
-            animator.SetFloat("positionY", -1);
-            animator.SetFloat("positionX", 0);
-        }
-
 
     }
 
