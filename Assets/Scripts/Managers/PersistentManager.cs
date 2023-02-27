@@ -8,6 +8,7 @@ public class PersistentManager : MonoBehaviour
     public static PersistentManager Instance { get; private set; }
     public GameObject PlayerGlobal;
     public int EnemiesRemaining;
+    public Healthbar hp;
 
     //Global variables
     public string spawnPoint;
