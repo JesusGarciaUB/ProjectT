@@ -5,23 +5,24 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    //to get angle
-    private Vector3 direction;
-    float angle;
-    protected enum Facing {NOONE, UP, DOWN, LEFT, RIGHT };
-    protected Facing dir = Facing.NOONE;
-    protected GameObject player;
-    public float AttackCooldown;
-    public int damage;
-    public bool canAttack;
-    public GameObject healthText;
+    protected enum Facing {NOONE, UP, DOWN, LEFT, RIGHT }; //possible direction of facing
+    protected Facing dir = Facing.NOONE;                    //current direction of facing
+    protected GameObject player;                            
+    public float AttackCooldown;                            //cooldown of attack
+    public int damage;                                      //own damage, doesn't work if ranged
+    public bool canAttack;                                  //auxiliary to know if can attack
+    public GameObject healthText;                           //floating damage UI
 
     protected void Start()
     {
         hitting = false;
         canAttack = true;
-        player = PersistentManager.Instance.PlayerGlobal;
+        player = PersistentManager.Instance.PlayerGlobal;   //get player from global variables
     }
+
+    /// <summary>
+    /// set health based on value received, includes logic for floating damage 
+    /// </summary>
     public int Health
     {
         set{
@@ -45,7 +46,7 @@ public class EnemyBehaviour : MonoBehaviour
             }
 
             health = value;
-            if (health <= 0) Defeated();
+            if (health <= 0) Defeated();                                        //calling defeated void if health value <= 0
         }
         get
         {
@@ -53,6 +54,9 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// set armor based on value received, includes logic for floating damage
+    /// </summary>
     public int Armor
     {
         set
@@ -98,15 +102,6 @@ public class EnemyBehaviour : MonoBehaviour
         {
             PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().Win();
         }
-    }
-
-    public float getAngle()
-    {
-        direction = transform.position - player.transform.position;
-        direction.Normalize();
-        direction = player.transform.InverseTransformDirection(direction);
-        angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        return angle;
     }
 
     public bool hitting;
