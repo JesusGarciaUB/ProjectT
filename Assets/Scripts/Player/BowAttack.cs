@@ -15,8 +15,8 @@ public class BowAttack : MonoBehaviour
     // Update is called once per frame
     public void Attack()
     {
-        ArrowDir();//Check player rotation
-        GameObject arrow = Instantiate(arrowPrefab, position, rotation);
+        ArrowDir();                                                                 //Check player rotation and position
+        GameObject arrow = Instantiate(arrowPrefab, position, rotation);            //Instance arrow
         Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
         rb.AddForce( trans * speed, ForceMode2D.Impulse);
     }
@@ -44,13 +44,13 @@ public class BowAttack : MonoBehaviour
         }
     }
 
-    private void ArrowDir()
+    private void ArrowDir() //Set arrow direction and position
     {
         position = PersistentManager.Instance.PlayerGlobal.transform.position;
-        switch (PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().dir)
+        switch (PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().dir) //Check player facing direction to set arrow direction and position
         {
             case PlayerController.Direction.UP:
-                rotation = Quaternion.Euler(0, 0, 90);
+                rotation = Quaternion.Euler(0, 0, 90);                                        //Set arrow facing up
                 trans = PersistentManager.Instance.PlayerGlobal.transform.up;
                 position.y = position.y + 0.11f;
                 break;
