@@ -7,6 +7,7 @@ public class PersistentManager : MonoBehaviour
    
     public static PersistentManager Instance { get; private set; }
     public GameObject PlayerGlobal;
+    public int EnemiesRemaining;
 
     //Global variables
     public string spawnPoint;
