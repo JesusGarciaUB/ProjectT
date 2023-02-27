@@ -27,12 +27,14 @@ public class PlayerController : MonoBehaviour
     bool canMove = true;
     public GameObject healthText;
     public GameObject _win_loseScreen;
+    int health = 10;
     // Start is called before the first frame update
     void Start()
     {
         dir = Direction.DOWN;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        PersistentManager.Instance.hp.SetMaxHealth(health);
     }
 
     public int Health
@@ -57,14 +59,14 @@ public class PlayerController : MonoBehaviour
                 //Set health loss text inside the canvas
                 Canvas canvas = GameObject.FindObjectOfType<Canvas>();
                 textTransform.SetParent(canvas.transform);
+
+                PersistentManager.Instance.hp.SetHealth(damage);
             }
 
             health = value; 
             if (health <= 0) Defeated();
         } 
     }
-
-    int health = 10;
     private void Defeated()
     {
         //Set health loss text position on top of the enemy
