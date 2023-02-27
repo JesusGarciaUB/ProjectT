@@ -9,6 +9,7 @@ public class PersistentManager : MonoBehaviour
     public GameObject PlayerGlobal;
     public int EnemiesRemaining;
     public Healthbar hp;
+    public GameObject winlose;
 
     //Global variables
     public string spawnPoint;
