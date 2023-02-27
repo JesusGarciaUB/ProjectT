@@ -8,8 +8,9 @@ public class Menu : MonoBehaviour
 
     [SerializeField] GameObject pauseMenu;
 
-    void ResumeGame()
+    public void ResumeGame()
     {
+        print("Hola");
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
@@ -18,13 +19,21 @@ public class Menu : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-        isGamePaused = false;
+        isGamePaused = true;
     }
     
     void OnMenu()
     {
-        print("Pause");
-        PauseGame();
-        ResumeGame();
+        if (!isGamePaused)
+        {
+            print("Pause");
+            PauseGame();
+        }
+        else
+        {
+            print("Resume");
+            ResumeGame();
+        }
+              
     }
 }

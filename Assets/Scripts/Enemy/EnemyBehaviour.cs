@@ -5,23 +5,24 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    //to get angle
-    private Vector3 direction;
-    float angle;
-    protected enum Facing {NOONE, UP, DOWN, LEFT, RIGHT };
-    protected Facing dir = Facing.NOONE;
-    protected GameObject player;
-    public float AttackCooldown;
-    public int damage;
-    public bool canAttack;
-    public GameObject healthText;
+    protected enum Facing {NOONE, UP, DOWN, LEFT, RIGHT }; //possible direction of facing
+    protected Facing dir = Facing.NOONE;                    //current direction of facing
+    protected GameObject player;                            
+    public float AttackCooldown;                            //cooldown of attack
+    public int damage;                                      //own damage, doesn't work if ranged
+    public bool canAttack;                                  //auxiliary to know if can attack
+    public GameObject healthText;                           //floating damage UI
 
     protected void Start()
     {
         hitting = false;
         canAttack = true;
-        player = PersistentManager.Instance.PlayerGlobal;
+        player = PersistentManager.Instance.PlayerGlobal;   //get player from global variables
     }
+
+    /// <summary>
+    /// set health based on value received, includes logic for floating damage 
+    /// </summary>
     public int Health
     {
         set{
@@ -37,7 +38,6 @@ public class EnemyBehaviour : MonoBehaviour
                 //Add damage dealet
                 TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
                 int damage = health - value;
-                print("Enemy current healt:" + health + " Damage: " + damage);
                 textMesh.SetText(damage.ToString());
 
                 //Set health loss text inside the canvas
@@ -46,7 +46,7 @@ public class EnemyBehaviour : MonoBehaviour
             }
 
             health = value;
-            if (health <= 0) Defeated();
+            if (health <= 0) Defeated();                                        //calling defeated void if health value <= 0
         }
         get
         {
@@ -54,10 +54,33 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// set armor based on value received, includes logic for floating damage
+    /// </summary>
     public int Armor
     {
         set
         {
+            if (value < armor)
+            {
+                //Set health loss text position on top of the enemy
+                GameObject gm = Instantiate(healthText);
+                RectTransform textTransform = gm.GetComponent<RectTransform>();
+                Vector3 v3 = transform.position;
+                v3.y += 0.16f;
+                textTransform.transform.position = v3;
+
+                //Add damage dealet
+                TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
+                int damage = armor - value;
+                textMesh.SetText(damage.ToString());
+                textMesh.color = Color.yellow;
+
+                //Set health loss text inside the canvas
+                Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+                textTransform.SetParent(canvas.transform);
+            }
+
             armor = value;
         }
         get
@@ -66,23 +89,19 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    int health = 4;
-    int armor = 0;
+    public int health;
+    public int armor;
     public bool isAlive = true;
 
     virtual public void Defeated()
     {
         isAlive = false;
         transform.gameObject.SetActive(false);
-    }
-
-    public float getAngle()
-    {
-        direction = transform.position - player.transform.position;
-        direction.Normalize();
-        direction = player.transform.InverseTransformDirection(direction);
-        angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        return angle;
+        PersistentManager.Instance.EnemiesRemaining--;
+        if (PersistentManager.Instance.EnemiesRemaining == 0)
+        {
+            PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().Win();
+        }
     }
 
     public bool hitting;

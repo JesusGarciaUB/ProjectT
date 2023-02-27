@@ -24,6 +24,7 @@ public class GridChanger : MonoBehaviour
             enemies.Add(Instantiate(enemyPrefab[Range(0, 3)], new Vector3(position.x + randomPosX, position.y + randomPosY, 0), Quaternion.identity).transform);
             originalPosition.Add(enemies[x].transform.position);
             enemies[x].gameObject.SetActive(false);
+            PersistentManager.Instance.EnemiesRemaining++;
         }
         if (elementals.Count != 0)
         {
@@ -31,6 +32,7 @@ public class GridChanger : MonoBehaviour
             {
                 originalPositionElementals.Add(elementals[i].transform.position);
                 elementals[i].gameObject.SetActive(false);
+                PersistentManager.Instance.EnemiesRemaining++;
             }
         }
     }
@@ -60,7 +62,10 @@ public class GridChanger : MonoBehaviour
                 for (int i = 0; i < elementals.Count; i++)
                 {
                     if (elementals[i].GetComponent<EnemyBehaviour>().isAlive)
+                    {
                         elementals[i].gameObject.SetActive(true);
+                        elementals[i].GetComponent<EnemyBehaviour>().canAttack = true;
+                    }
                 }
             }
         }

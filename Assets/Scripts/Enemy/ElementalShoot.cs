@@ -4,32 +4,32 @@ using UnityEngine;
 
 public class ElementalShoot : MonoBehaviour
 {
-    public float timeOnScreen;
-    public int damage;
-    private Rigidbody2D rb;
-    public float speed;
-    public float extraRotation;
+    public float timeOnScreen;                                                              //time alive
+    public int damage;                                                                      //damage of projectile
+    private Rigidbody2D rb;                                                                 
+    public float speed;                                                                     //speed of projectile
+    public float extraRotation;                                                             //extra rotation for sprite accuracity (usually 90)
     private void Start()
     {
         Vector3 playerPos = PersistentManager.Instance.PlayerGlobal.transform.position;     //get player position
         playerPos.y -= 0.07f;                                                               //lower vertical position to compensate player hitbox
         rb = GetComponent<Rigidbody2D>();
-        Vector3 dir = playerPos - transform.position;
-        rb.velocity = new Vector2(dir.x, dir.y).normalized * speed;
+        Vector3 dir = playerPos - transform.position;                                       //set direction of target
+        rb.velocity = new Vector2(dir.x, dir.y).normalized * speed;                         //set velocity of projectile
 
-        float rotation = Mathf.Atan2(-dir.y, -dir.x) * Mathf.Rad2Deg;
+        float rotation = Mathf.Atan2(-dir.y, -dir.x) * Mathf.Rad2Deg;                       //calculate angle of shooting
         transform.rotation = Quaternion.Euler(0, 0, rotation + extraRotation);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "EnemyHitspot")
         {
-            GameObject p = PersistentManager.Instance.PlayerGlobal;
-            IsHit obj = p.GetComponentInChildren<IsHit>();
+            GameObject p = PersistentManager.Instance.PlayerGlobal;                         //get player
+            IsHit obj = p.GetComponentInChildren<IsHit>();                                  //get player hit controller
 
             if (!obj.Hit)
             {
-                PlayerController objective = p.GetComponent<PlayerController>();
+                PlayerController objective = p.GetComponent<PlayerController>();            //logic to damage player
                 obj.Hitted();
                 objective.Health -= damage;
                 print("Attacked: " + damage);
@@ -38,7 +38,7 @@ public class ElementalShoot : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject, timeOnScreen);
+            Destroy(gameObject, timeOnScreen);                                              //timer to destroy projectile on set time
         }
     }
 }

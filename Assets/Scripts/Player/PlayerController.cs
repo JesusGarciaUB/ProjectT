@@ -6,16 +6,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public enum Direction { 
-        NONE, UP, DOWN, LEFT, RIGHT
-    };
-    public enum WEAPON
-    {
-        SWORD, BOW
-    };
-    public Direction dir = Direction.NONE;
-    public WEAPON weapon;
-    public float speed = 1f;
+    public enum Direction { NONE, UP, DOWN, LEFT, RIGHT }; 
+    public enum WEAPON{ SWORD, BOW };                      
+    public Direction dir = Direction.NONE;                  //Used to save player last direction in dir
+    public WEAPON weapon;                                   //Last weapon used
+    public float speed = 1f;                                //Player speed
     public float collOffset = 0.02f;
     public ContactFilter2D cF;
     public SwordAttack swordAttack;
@@ -24,14 +19,16 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
     public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
-    bool canMove = true;
-    public GameObject healthText;
+    bool canMove = true;                                    //On true player can move
+    public GameObject healthText;                           //Displays damage on player
+    int health = 10;
     // Start is called before the first frame update
     void Start()
     {
-        dir = Direction.DOWN;
+        dir = Direction.DOWN;                               //By default player face down
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        PersistentManager.Instance.hp.SetMaxHealth(health);
     }
 
     public int Health
@@ -51,23 +48,30 @@ public class PlayerController : MonoBehaviour
                 //Add damage dealet
                 TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
                 int damage = health - value;
-                print("Enemy current healt:" + health + " Damage: " + damage);
                 textMesh.SetText(damage.ToString());
 
                 //Set health loss text inside the canvas
                 Canvas canvas = GameObject.FindObjectOfType<Canvas>();
                 textTransform.SetParent(canvas.transform);
+
+                PersistentManager.Instance.hp.SetHealth(damage);
             }
 
             health = value; 
             if (health <= 0) Defeated();
         } 
     }
-
-    int health = 10;
     private void Defeated()
     {
-        transform.gameObject.SetActive(false);
+        PersistentManager.Instance.winlose.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Win()
+    {
+        PersistentManager.Instance.winlose.GetComponent<TMP_InputField>().text = "YOU WIN!!";
+        PersistentManager.Instance.winlose.SetActive(true);
+        Time.timeScale = 0f;
     }
     private void FixedUpdate()
     {
