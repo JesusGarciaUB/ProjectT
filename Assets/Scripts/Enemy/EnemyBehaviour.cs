@@ -94,6 +94,7 @@ public class EnemyBehaviour : MonoBehaviour
         isAlive = false;
         transform.gameObject.SetActive(false);
         PersistentManager.Instance.EnemiesRemaining--;
+        if (PersistentManager.Instance.EnemiesRemaining == 0) ;
     }
 
     public float getAngle()
