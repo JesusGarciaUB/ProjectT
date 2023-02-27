@@ -6,16 +6,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public enum Direction { 
-        NONE, UP, DOWN, LEFT, RIGHT
-    };
-    public enum WEAPON
-    {
-        SWORD, BOW
-    };
-    public Direction dir = Direction.NONE;
-    public WEAPON weapon;
-    public float speed = 1f;
+    public enum Direction { NONE, UP, DOWN, LEFT, RIGHT }; 
+    public enum WEAPON{ SWORD, BOW };                      
+    public Direction dir = Direction.NONE;                  //Used to save player last direction in dir
+    public WEAPON weapon;                                   //Last weapon used
+    public float speed = 1f;                                //Player speed
     public float collOffset = 0.02f;
     public ContactFilter2D cF;
     public SwordAttack swordAttack;
@@ -24,17 +19,16 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
     public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
-    bool canMove = true;
-    public GameObject healthText;
+    bool canMove = true;                                    //On true player can move
+    public GameObject healthText;                           //Displays damage on player
     int health = 10;
     // Start is called before the first frame update
     void Start()
     {
-        dir = Direction.DOWN;
+        dir = Direction.DOWN;                               //By default player face down
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         PersistentManager.Instance.hp.SetMaxHealth(health);
-        PersistentManager.Instance.winlose.SetActive(false);
     }
 
     public int Health
