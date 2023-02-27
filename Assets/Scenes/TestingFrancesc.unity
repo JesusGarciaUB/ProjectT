@@ -13038,6 +13038,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4677179248141756841, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: _winScreen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677179248141756841, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: _loseScreen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677179248141756841, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: _win_loseScreen
+      value: 
+      objectReference: {fileID: 2254823625596617757, guid: 1f752492c96baf848bde50fcb906a7d9, type: 3}
+    - target: {fileID: 8871122201067800097, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: damage
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
 --- !u!1 &648974025 stripped
