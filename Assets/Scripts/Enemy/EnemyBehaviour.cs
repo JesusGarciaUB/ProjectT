@@ -37,7 +37,6 @@ public class EnemyBehaviour : MonoBehaviour
                 //Add damage dealet
                 TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
                 int damage = health - value;
-                print("Enemy current healt:" + health + " Damage: " + damage);
                 textMesh.SetText(damage.ToString());
 
                 //Set health loss text inside the canvas
@@ -58,6 +57,26 @@ public class EnemyBehaviour : MonoBehaviour
     {
         set
         {
+            if (value < armor)
+            {
+                //Set health loss text position on top of the enemy
+                GameObject gm = Instantiate(healthText);
+                RectTransform textTransform = gm.GetComponent<RectTransform>();
+                Vector3 v3 = transform.position;
+                v3.y += 0.16f;
+                textTransform.transform.position = v3;
+
+                //Add damage dealet
+                TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
+                int damage = armor - value;
+                textMesh.SetText(damage.ToString());
+                textMesh.color = Color.yellow;
+
+                //Set health loss text inside the canvas
+                Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+                textTransform.SetParent(canvas.transform);
+            }
+
             armor = value;
         }
         get
