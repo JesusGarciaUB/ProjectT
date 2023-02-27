@@ -51,7 +51,6 @@ public class PlayerController : MonoBehaviour
                 //Add damage dealet
                 TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
                 int damage = health - value;
-                print("Enemy current healt:" + health + " Damage: " + damage);
                 textMesh.SetText(damage.ToString());
 
                 //Set health loss text inside the canvas
