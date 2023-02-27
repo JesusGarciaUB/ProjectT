@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour
     public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
     bool canMove = true;
     public GameObject healthText;
-    public GameObject _win_loseScreen;
     int health = 10;
     // Start is called before the first frame update
     void Start()
@@ -35,6 +34,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         PersistentManager.Instance.hp.SetMaxHealth(health);
+        PersistentManager.Instance.winlose.SetActive(false);
     }
 
     public int Health
@@ -69,20 +69,14 @@ public class PlayerController : MonoBehaviour
     }
     private void Defeated()
     {
-        //Set health loss text position on top of the enemy
-        GameObject gm = Instantiate(_win_loseScreen);
-
-        //Add damage dealet
-        TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
-        textMesh.SetText("You Lose!!");
-
-        _win_loseScreen.SetActive(true);
+        PersistentManager.Instance.winlose.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void Win()
     {
-        _win_loseScreen.SetActive(true);
+        PersistentManager.Instance.winlose.GetComponent<TMP_InputField>().text = "YOU WIN!!";
+        PersistentManager.Instance.winlose.SetActive(true);
         Time.timeScale = 0f;
     }
     private void FixedUpdate()
