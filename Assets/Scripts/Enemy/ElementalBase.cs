@@ -26,9 +26,12 @@ public class ElementalBase : EnemyBehaviour
     }
     private void FixedUpdate()
     {
-        //follow target if not in min distance
-        if (Vector3.Distance(player.transform.position, transform.position) > MinDistance) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-        else Attack();      //attacks if in range
+        if (canMove)
+        {
+            //follow target if not in min distance
+            if (Vector3.Distance(player.transform.position, transform.position) > MinDistance) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            else Attack();  //attacks if in range
+        }
     }
 
     /// <summary>
@@ -91,7 +94,7 @@ public class ElementalBase : EnemyBehaviour
             GameObject p = Instantiate(projectile, projectilePos.position, Quaternion.identity);    //instance of projectile
             SpriteRenderer sr2 = p.GetComponent<SpriteRenderer>();                                  //set color of projectile to own
             sr2.color = sr.color;           
-            StartCoroutine(StartCooldown());                                                        //start cooldown of own attack
+            StartCoroutine(StartCooldown());                                                      //start cooldown of own attack
         }
     }
 }

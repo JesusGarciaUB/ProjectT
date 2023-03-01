@@ -12,9 +12,11 @@ public class EnemyBehaviour : MonoBehaviour
     public int damage;                                      //own damage, doesn't work if ranged
     public bool canAttack;                                  //auxiliary to know if can attack
     public GameObject healthText;                           //floating damage UI
+    public bool canMove;
 
     protected void Start()
     {
+        canMove = true;
         hitting = false;
         canAttack = true;
         player = PersistentManager.Instance.PlayerGlobal;   //get player from global variables
@@ -144,5 +146,55 @@ public class EnemyBehaviour : MonoBehaviour
         {
             Hitting = false;
         }
+    }
+
+    public void Burn(int damage, int ticks)
+    {
+            StartCoroutine(VisualEffect(new Color(1.0f, 0.64f, 0.0f), 0.1f, ticks, 0.5f));
+            StartCoroutine(WaitForBurn(0.5f, damage, ticks));
+    }
+
+    private IEnumerator VisualEffect(Color color, float duration, int loop, float ticktime)
+    {
+        for (int x = 0; x < loop; x++)
+        {
+            Color og = gameObject.GetComponent<SpriteRenderer>().color;
+            SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+
+            sr.color = color;
+            yield return new WaitForSeconds(duration);
+            sr.color = og;
+            yield return new WaitForSeconds(ticktime - duration);
+        }
+    }
+    private IEnumerator VisualEffect(Color color, float duration)
+    {
+        Color og = gameObject.GetComponent<SpriteRenderer>().color;
+        SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+
+        sr.color = color;
+        yield return new WaitForSeconds(duration);
+        sr.color = og;
+    }
+
+    private IEnumerator WaitForBurn(float duration, int damage, int ticks)
+    {
+        for (int i = 0; i < ticks; i ++)
+        {
+            Health -= damage;
+            yield return new WaitForSeconds(duration);
+        }
+    }
+    private IEnumerator WaitForFreeze(float duration)
+    {
+        canMove = false;
+        yield return new WaitForSeconds(duration);
+        canMove = true;
+    }
+
+    public void Freeze(int duration)
+    {
+        StartCoroutine(VisualEffect(Color.blue, duration));
+        StartCoroutine(WaitForFreeze(duration));
     }
 }

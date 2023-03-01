@@ -7,7 +7,9 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public enum Direction { NONE, UP, DOWN, LEFT, RIGHT }; 
-    public enum WEAPON{ SWORD, BOW };                      
+    public enum WEAPON{ SWORD, BOW };
+    public enum MAGICe { NOONE, FIRE, ICE, PLANT};
+    public MAGICe currentMagic = MAGICe.NOONE;
     public Direction dir = Direction.NONE;                  //Used to save player last direction in dir
     public WEAPON weapon;                                   //Last weapon used
     public float speed = 1f;                                //Player speed
@@ -22,6 +24,8 @@ public class PlayerController : MonoBehaviour
     bool canMove = true;                                    //On true player can move
     public GameObject healthText;                           //Displays damage on player
     int health = 10;
+    public GameObject spells;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -212,5 +216,15 @@ public class PlayerController : MonoBehaviour
     public void UnlockMovement()
     {
         canMove = true;
+    }
+
+    public void PlantAttack()
+    {
+
+    }
+
+    public void OnMagicAttack()
+    {
+        Instantiate(spells, transform.position, Quaternion.identity);
     }
 }

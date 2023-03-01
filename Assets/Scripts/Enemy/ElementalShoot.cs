@@ -6,7 +6,7 @@ public class ElementalShoot : MonoBehaviour
 {
     public float timeOnScreen;                                                              //time alive
     public int damage;                                                                      //damage of projectile
-    private Rigidbody2D rb;                                                                 
+    private Rigidbody2D rb;                                                               
     public float speed;                                                                     //speed of projectile
     public float extraRotation;                                                             //extra rotation for sprite accuracity (usually 90)
     private void Start()

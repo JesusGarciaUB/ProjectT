@@ -28,8 +28,11 @@ public class Shield : EnemyBehaviour
     }
     protected void FixedUpdate()
     {
-        if (!hitting) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-        Attack();
+        if (canMove)
+        {
+            if (!hitting) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            Attack();
+        }
     }
     public override void Defeated()
     {

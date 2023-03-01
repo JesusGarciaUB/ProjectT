@@ -258,6 +258,14 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4677179248141756841, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: spells
+      value: 
+      objectReference: {fileID: 4645666583652742336, guid: 9931e354e84a8b741bf641f57797ad6d, type: 3}
+    - target: {fileID: 4677179248141756841, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: currentMagic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677179248141756841, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: _win_loseScreen
       value: 
       objectReference: {fileID: 2254823625596617757, guid: 1f752492c96baf848bde50fcb906a7d9, type: 3}
