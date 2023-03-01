@@ -5,7 +5,7 @@ using UnityEngine;
 public class Follower : EnemyBehaviour
 {
     public float speed;
-    public GameObject loot;
+    //public GameObject loot;
     void FixedUpdate()
     {
         if (canMove)
@@ -17,7 +17,7 @@ public class Follower : EnemyBehaviour
 
     public override void Defeated()
     {
-        Instantiate(loot, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        //Instantiate(loot, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
         base.Defeated();
     }
 }

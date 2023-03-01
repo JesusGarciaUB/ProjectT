@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public enum Direction { NONE, UP, DOWN, LEFT, RIGHT }; 
     public enum WEAPON{ SWORD, BOW };
     public enum MAGICe { NOONE, FIRE, ICE, PLANT};
-    public MAGICe currentMagic = MAGICe.NOONE;
+    private MAGICe currentMagic = MAGICe.NOONE;
     public Direction dir = Direction.NONE;                  //Used to save player last direction in dir
     public WEAPON weapon;                                   //Last weapon used
     public float speed = 1f;                                //Player speed
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
     bool canMove = true;                                    //On true player can move
     public GameObject healthText;                           //Displays damage on player
-    int health = 10;
+    int health = 100;
     private int maxHealth;
     public GameObject spells;
     private bool healed = false;
@@ -39,6 +39,12 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         PersistentManager.Instance.hp.SetMaxHealth(health);
+    }
+
+    public MAGICe MagicSetter
+    {
+        get { return currentMagic; }
+        set { currentMagic = value; }
     }
 
     public int Health
@@ -235,10 +241,14 @@ public class PlayerController : MonoBehaviour
 
     public void OnMagicAttack()
     {
-        if (CanMagic) { 
-            Instantiate(spells, transform.position, Quaternion.identity);
-            PersistentManager.Instance.ability.usedAbility(MagicCooldown);
-            StartCoroutine(MagicCD());     
+        if (currentMagic != MAGICe.NOONE)
+        {
+            if (CanMagic)
+            {
+                Instantiate(spells, transform.position, Quaternion.identity);
+                PersistentManager.Instance.ability.usedAbility(MagicCooldown);
+                StartCoroutine(MagicCD());
+            }
         }
     }
 

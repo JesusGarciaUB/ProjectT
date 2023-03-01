@@ -49,7 +49,7 @@ public class Magic : ElementalShoot
         {
             EnemyBehaviour eb = collision.GetComponent<EnemyBehaviour>();
 
-            switch(player.currentMagic)
+            switch(player.MagicSetter)
             {
                 case PlayerController.MAGICe.FIRE:
                     eb.Burn(damage, DurationOfSpell);
