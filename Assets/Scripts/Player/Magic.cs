@@ -58,7 +58,8 @@ public class Magic : ElementalShoot
                     eb.Freeze(DurationOfSpell);
                     break;
                 case PlayerController.MAGICe.PLANT:
-                    player.PlantAttack();           //set as coroutine
+                    player.PlantAttack(damage);
+                    eb.Stolen(damage);
                     break;
             }
             Destroy(gameObject);

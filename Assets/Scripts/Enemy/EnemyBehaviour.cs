@@ -192,6 +192,10 @@ public class EnemyBehaviour : MonoBehaviour
         canMove = true;
     }
 
+    public void Stolen(int damage)
+    {
+        Health -= damage;
+    }
     public void Freeze(int duration)
     {
         StartCoroutine(VisualEffect(Color.blue, duration));
