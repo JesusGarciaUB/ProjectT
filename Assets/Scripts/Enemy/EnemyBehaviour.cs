@@ -187,9 +187,11 @@ public class EnemyBehaviour : MonoBehaviour
     }
     private IEnumerator WaitForFreeze(float duration)
     {
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         canMove = false;
         yield return new WaitForSeconds(duration);
         canMove = true;
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
     }
 
     public void Stolen(int damage)
