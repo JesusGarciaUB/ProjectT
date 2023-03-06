@@ -6,16 +6,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public enum Direction { 
-        NONE, UP, DOWN, LEFT, RIGHT
-    };
-    public enum WEAPON
-    {
-        SWORD, BOW
-    };
-    public Direction dir = Direction.NONE;
-    public WEAPON weapon;
-    public float speed = 1f;
+    public enum Direction { NONE, UP, DOWN, LEFT, RIGHT }; 
+    public enum WEAPON{ SWORD, BOW };
+    public enum MAGICe { NOONE, FIRE, ICE, PLANT};
+    private MAGICe currentMagic = MAGICe.NOONE;
+    public Direction dir = Direction.NONE;                  //Used to save player last direction in dir
+    public WEAPON weapon;                                   //Last weapon used
+    public float speed = 1f;                                //Player speed
     public float collOffset = 0.02f;
     public ContactFilter2D cF;
     public SwordAttack swordAttack;
@@ -24,14 +21,30 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
     public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
-    bool canMove = true;
-    public GameObject healthText;
+    bool canMove = true;                                    //On true player can move
+    public GameObject healthText;                           //Displays damage on player
+    int health = 100;
+    private int maxHealth;
+    public GameObject spells;
+    private bool healed = false;
+    public int MagicCooldown;
+    private bool CanMagic;
+
     // Start is called before the first frame update
     void Start()
     {
-        dir = Direction.DOWN;
+        CanMagic = true;
+        maxHealth = health;
+        dir = Direction.DOWN;                               //By default player face down
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        PersistentManager.Instance.hp.SetMaxHealth(health);
+    }
+
+    public MAGICe MagicSetter
+    {
+        get { return currentMagic; }
+        set { currentMagic = value; }
     }
 
     public int Health
@@ -39,7 +52,7 @@ public class PlayerController : MonoBehaviour
         get { return health; }
         set 
         {
-            if (value < health)
+            if (value < health || healed)
             {
                 //Set health loss text position on top of the enemy
                 GameObject gm = Instantiate(healthText);
@@ -51,22 +64,32 @@ public class PlayerController : MonoBehaviour
                 //Add damage dealet
                 TextMeshProUGUI textMesh = gm.GetComponent<TextMeshProUGUI>();
                 int damage = health - value;
-                textMesh.SetText(damage.ToString());
+                if (!healed) textMesh.SetText(damage.ToString());
+                else textMesh.SetText(damage.ToString()[1].ToString());
+                if (healed) textMesh.color = Color.green;
 
                 //Set health loss text inside the canvas
                 Canvas canvas = GameObject.FindObjectOfType<Canvas>();
                 textTransform.SetParent(canvas.transform);
+
+                PersistentManager.Instance.hp.SetHealth(damage);
             }
 
             health = value; 
             if (health <= 0) Defeated();
         } 
     }
-
-    int health = 10;
     private void Defeated()
     {
-        transform.gameObject.SetActive(false);
+        PersistentManager.Instance.winlose.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Win()
+    {
+        PersistentManager.Instance.winlose.GetComponent<TMP_InputField>().text = "YOU WIN!!";
+        PersistentManager.Instance.winlose.SetActive(true);
+        Time.timeScale = 0f;
     }
     private void FixedUpdate()
     {
@@ -207,5 +230,32 @@ public class PlayerController : MonoBehaviour
     public void UnlockMovement()
     {
         canMove = true;
+    }
+
+    public void PlantAttack(int damage)
+    {
+        healed = true;
+        if (Health < maxHealth) Health += damage;
+        healed = false;
+    }
+
+    public void OnMagicAttack()
+    {
+        if (currentMagic != MAGICe.NOONE)
+        {
+            if (CanMagic)
+            {
+                Instantiate(spells, transform.position, Quaternion.identity);
+                PersistentManager.Instance.ability.usedAbility(MagicCooldown);
+                StartCoroutine(MagicCD());
+            }
+        }
+    }
+
+    private IEnumerator MagicCD()
+    {
+        CanMagic = false;
+        yield return new WaitForSeconds(MagicCooldown);
+        CanMagic = true;
     }
 }

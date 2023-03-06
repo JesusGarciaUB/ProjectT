@@ -6,7 +6,7 @@ using static UnityEngine.Random;
 public class GridChanger : MonoBehaviour
 {
 
-    public Vector3 position = new Vector3(0,0,-10);
+    private Vector3 position = new Vector3(0,0,-10);
     private List<Transform> enemies = new List<Transform>();
     private List<Vector3> originalPosition = new List<Vector3>();
     public List<Transform> elementals = new List<Transform>();
@@ -14,16 +14,24 @@ public class GridChanger : MonoBehaviour
     private int randEnemies;
     public List<GameObject> enemyPrefab;
     private float randomPosX, randomPosY;
+    public int maxEnemies;
+    public int minRange;
     private void Start()
     {
-        randEnemies = Range(1, 5);
-        for (int x = 0; x < randEnemies; x++)
+        position.x = transform.position.x;
+        position.y = transform.position.y;
+        if (minRange != 0)
         {
-            randomPosX = Range(-0.5f, 0.5f);
-            randomPosY = Range(-0.5f, 0.5f);
-            enemies.Add(Instantiate(enemyPrefab[Range(0, 3)], new Vector3(position.x + randomPosX, position.y + randomPosY, 0), Quaternion.identity).transform);
-            originalPosition.Add(enemies[x].transform.position);
-            enemies[x].gameObject.SetActive(false);
+            randEnemies = Range(minRange, maxEnemies + 1);
+            for (int x = 0; x < randEnemies; x++)
+            {
+                randomPosX = Range(-0.7f, 0.7f);
+                randomPosY = Range(-0.3f, 0.3f);
+                enemies.Add(Instantiate(enemyPrefab[Range(0, enemyPrefab.Count)], new Vector3(position.x + randomPosX, position.y + randomPosY, 0), Quaternion.identity).transform);
+                originalPosition.Add(enemies[x].transform.position);
+                enemies[x].gameObject.SetActive(false);
+                PersistentManager.Instance.EnemiesRemaining++;
+            }
         }
         if (elementals.Count != 0)
         {
@@ -31,6 +39,7 @@ public class GridChanger : MonoBehaviour
             {
                 originalPositionElementals.Add(elementals[i].transform.position);
                 elementals[i].gameObject.SetActive(false);
+                PersistentManager.Instance.EnemiesRemaining++;
             }
         }
     }
@@ -60,7 +69,10 @@ public class GridChanger : MonoBehaviour
                 for (int i = 0; i < elementals.Count; i++)
                 {
                     if (elementals[i].GetComponent<EnemyBehaviour>().isAlive)
+                    {
                         elementals[i].gameObject.SetActive(true);
+                        elementals[i].GetComponent<EnemyBehaviour>().canAttack = true;
+                    }
                 }
             }
         }

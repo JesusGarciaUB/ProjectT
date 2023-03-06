@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c58ebe8c2c1cc44b8f9dfe7d084e4d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 30
   knockbackForce: 500
 --- !u!212 &2321946375562638375
 SpriteRenderer:
@@ -191,7 +191,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.764151, g: 0.28475437, b: 0.28475437, a: 0.45490196}
+  m_Color: {r: 0.764151, g: 0.28475437, b: 0.28475437, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 4677179248141756841}
   - component: {fileID: 6686875965164495011}
   - component: {fileID: 648974026}
+  - component: {fileID: 297918969}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -403,6 +404,8 @@ MonoBehaviour:
   swordAttack: {fileID: 8871122201067800097}
   bowAttack: {fileID: -275051273564516277, guid: d831da5243ad29f4281ba620674c46dd, type: 3}
   healthText: {fileID: 5449005750421041224, guid: d7e9f8ace7c9a9a4e8d8a24a749e6d1e, type: 3}
+  spells: {fileID: 4645666583652742336, guid: 9931e354e84a8b741bf641f57797ad6d, type: 3}
+  MagicCooldown: 3
 --- !u!95 &6686875965164495011
 Animator:
   serializedVersion: 4
@@ -435,3 +438,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a44d32c57cb0fb409dbdcd0fb3d0e2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &297918969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4192035136894752240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07731a15b8df114eb004f5b2bea7b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}

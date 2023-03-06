@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Menu : MonoBehaviour
+public class menu : MonoBehaviour
 {
     public static bool isGamePaused = false;
 
@@ -10,7 +10,6 @@ public class Menu : MonoBehaviour
 
     public void ResumeGame()
     {
-        print("Hola");
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
@@ -26,12 +25,10 @@ public class Menu : MonoBehaviour
     {
         if (!isGamePaused)
         {
-            print("Pause");
             PauseGame();
         }
         else
         {
-            print("Resume");
             ResumeGame();
         }
               

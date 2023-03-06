@@ -39,10 +39,13 @@ public class Ranger : EnemyBehaviour
     }
     void FixedUpdate()
     {
-        rDirection = transform.position - player.transform.position;
-        rDirection.Normalize();
-        transform.position = Vector3.Lerp(transform.position, player.transform.position + rDirection * distanceToPlayer, speed * Time.deltaTime);
-        Attack();
+        if (canMove)
+        {
+            rDirection = transform.position - player.transform.position;
+            rDirection.Normalize();
+            transform.position = Vector3.Lerp(transform.position, player.transform.position + rDirection * distanceToPlayer, speed * Time.deltaTime);
+            Attack();
+        }
     }
 
     public override void Defeated()

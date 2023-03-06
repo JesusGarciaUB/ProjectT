@@ -80,7 +80,6 @@ public class SwordAttack : MonoBehaviour
                     }
                     else
                     {
-                        print(enemy.Armor);
                         enemy.Armor -= damage / 2;
                     }
                 }
