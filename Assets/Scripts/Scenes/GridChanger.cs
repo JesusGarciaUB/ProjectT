@@ -53,7 +53,7 @@ public class GridChanger : MonoBehaviour
                 if (enemies[x].GetComponent<EnemyBehaviour>().isAlive)
                 {
                     enemies[x].gameObject.SetActive(true);
-                    enemies[x].GetComponent<EnemyBehaviour>().canAttack = true;
+                    enemies[x].GetComponent<EnemyBehaviour>().SetUp();
                     Ranger r = enemies[x].GetComponent<Ranger>();
 
                     if (r != null)
@@ -71,7 +71,7 @@ public class GridChanger : MonoBehaviour
                     if (elementals[i].GetComponent<EnemyBehaviour>().isAlive)
                     {
                         elementals[i].gameObject.SetActive(true);
-                        elementals[i].GetComponent<EnemyBehaviour>().canAttack = true;
+                        elementals[i].GetComponent<EnemyBehaviour>().SetUp();
                     }
                 }
             }

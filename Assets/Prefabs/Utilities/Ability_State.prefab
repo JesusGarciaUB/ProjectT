@@ -144,6 +144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4835611064855972582}
+  - component: {fileID: 1004087097}
   m_Layer: 5
   m_Name: Ability_State
   m_TagString: Untagged
@@ -174,6 +175,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.0000076293945}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1004087097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443321029366806277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0fad0674ee6d1d49a57bcd8853918a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greyImage: {fileID: 8281934542536672260}
+  text: {fileID: 1176043056445351635}
 --- !u!1 &5973667721364172834
 GameObject:
   m_ObjectHideFlags: 0

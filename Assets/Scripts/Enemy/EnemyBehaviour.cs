@@ -13,15 +13,25 @@ public class EnemyBehaviour : MonoBehaviour
     public bool canAttack;                                  //auxiliary to know if can attack
     public GameObject healthText;                           //floating damage UI
     public bool canMove;
+    private bool isAffected;
+    protected Color og;
 
     protected void Start()
     {
-        canMove = true;
-        hitting = false;
-        canAttack = true;
+        og = gameObject.GetComponent<SpriteRenderer>().color;
+        SetUp();
         player = PersistentManager.Instance.PlayerGlobal;   //get player from global variables
     }
 
+    public void SetUp()
+    {
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        gameObject.GetComponent<SpriteRenderer>().color = og;
+        isAffected = false;
+        canMove = true;
+        hitting = false;
+        canAttack = true;
+    }
     /// <summary>
     /// set health based on value received, includes logic for floating damage 
     /// </summary>
@@ -150,15 +160,17 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Burn(int damage, int ticks)
     {
+        if (!isAffected)
+        {
             StartCoroutine(VisualEffect(new Color(1.0f, 0.64f, 0.0f), 0.1f, ticks, 0.5f));
             StartCoroutine(WaitForBurn(0.5f, damage, ticks));
+        }
     }
 
     private IEnumerator VisualEffect(Color color, float duration, int loop, float ticktime)
     {
         for (int x = 0; x < loop; x++)
         {
-            Color og = gameObject.GetComponent<SpriteRenderer>().color;
             SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
 
             sr.color = color;
@@ -169,7 +181,6 @@ public class EnemyBehaviour : MonoBehaviour
     }
     private IEnumerator VisualEffect(Color color, float duration)
     {
-        Color og = gameObject.GetComponent<SpriteRenderer>().color;
         SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
 
         sr.color = color;
@@ -179,19 +190,23 @@ public class EnemyBehaviour : MonoBehaviour
 
     private IEnumerator WaitForBurn(float duration, int damage, int ticks)
     {
+        isAffected = true;
         for (int i = 0; i < ticks; i ++)
         {
             Health -= damage;
             yield return new WaitForSeconds(duration);
         }
+        isAffected = false;
     }
     private IEnumerator WaitForFreeze(float duration)
     {
+        isAffected = true;
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         canMove = false;
         yield return new WaitForSeconds(duration);
         canMove = true;
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        isAffected = false;
     }
 
     public void Stolen(int damage)
@@ -200,7 +215,10 @@ public class EnemyBehaviour : MonoBehaviour
     }
     public void Freeze(int duration)
     {
-        StartCoroutine(VisualEffect(Color.blue, duration));
-        StartCoroutine(WaitForFreeze(duration));
+        if (!isAffected)
+        {
+            StartCoroutine(VisualEffect(Color.blue, duration));
+            StartCoroutine(WaitForFreeze(duration));
+        }
     }
 }
