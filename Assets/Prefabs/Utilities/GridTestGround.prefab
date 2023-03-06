@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5427926934776098649}
   - component: {fileID: 8608644326099063396}
   - component: {fileID: 4296764866531310763}
-  - component: {fileID: 4023407609140897099}
+  - component: {fileID: 1380006088}
   m_Layer: 8
   m_Name: GridTestGround
   m_TagString: Untagged
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4023407609140897099
+--- !u!114 &1380006088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,10 +121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 671605033308442844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac6ae19cf0cdabf45857cceb49f9a1b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 700dfb5eadaf2cd47a5388bec71880b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: -10}
-  enemyPrefab:
-  - {fileID: 6036832529811767044, guid: eb3b94452678f354db7111ed2e7b8c84, type: 3}
-  - {fileID: 6036832529811767044, guid: daf11fb1e71d4da43a59002e091ede6b, type: 3}
+  position: {x: 3.36, y: 0, z: -10}

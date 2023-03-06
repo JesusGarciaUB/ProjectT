@@ -5,23 +5,26 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    //to get angle
-    private Vector3 direction;
-    float angle;
-    protected enum Facing {NOONE, UP, DOWN, LEFT, RIGHT };
-    protected Facing dir = Facing.NOONE;
-    protected GameObject player;
-    public float AttackCooldown;
-    public int damage;
-    public bool canAttack;
-    public GameObject healthText;
+    protected enum Facing {NOONE, UP, DOWN, LEFT, RIGHT }; //possible direction of facing
+    protected Facing dir = Facing.NOONE;                    //current direction of facing
+    protected GameObject player;                            
+    public float AttackCooldown;                            //cooldown of attack
+    public int damage;                                      //own damage, doesn't work if ranged
+    public bool canAttack;                                  //auxiliary to know if can attack
+    public GameObject healthText;                           //floating damage UI
+    public bool canMove;
 
     protected void Start()
     {
+        canMove = true;
         hitting = false;
         canAttack = true;
-        player = PersistentManager.Instance.PlayerGlobal;
+        player = PersistentManager.Instance.PlayerGlobal;   //get player from global variables
     }
+
+    /// <summary>
+    /// set health based on value received, includes logic for floating damage 
+    /// </summary>
     public int Health
     {
         set{
@@ -45,7 +48,7 @@ public class EnemyBehaviour : MonoBehaviour
             }
 
             health = value;
-            if (health <= 0) Defeated();
+            if (health <= 0) Defeated();                                        //calling defeated void if health value <= 0
         }
         get
         {
@@ -53,6 +56,9 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// set armor based on value received, includes logic for floating damage
+    /// </summary>
     public int Armor
     {
         set
@@ -100,15 +106,6 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    public float getAngle()
-    {
-        direction = transform.position - player.transform.position;
-        direction.Normalize();
-        direction = player.transform.InverseTransformDirection(direction);
-        angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        return angle;
-    }
-
     public bool hitting;
 
     public bool Hitting
@@ -149,5 +146,61 @@ public class EnemyBehaviour : MonoBehaviour
         {
             Hitting = false;
         }
+    }
+
+    public void Burn(int damage, int ticks)
+    {
+            StartCoroutine(VisualEffect(new Color(1.0f, 0.64f, 0.0f), 0.1f, ticks, 0.5f));
+            StartCoroutine(WaitForBurn(0.5f, damage, ticks));
+    }
+
+    private IEnumerator VisualEffect(Color color, float duration, int loop, float ticktime)
+    {
+        for (int x = 0; x < loop; x++)
+        {
+            Color og = gameObject.GetComponent<SpriteRenderer>().color;
+            SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+
+            sr.color = color;
+            yield return new WaitForSeconds(duration);
+            sr.color = og;
+            yield return new WaitForSeconds(ticktime - duration);
+        }
+    }
+    private IEnumerator VisualEffect(Color color, float duration)
+    {
+        Color og = gameObject.GetComponent<SpriteRenderer>().color;
+        SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+
+        sr.color = color;
+        yield return new WaitForSeconds(duration);
+        sr.color = og;
+    }
+
+    private IEnumerator WaitForBurn(float duration, int damage, int ticks)
+    {
+        for (int i = 0; i < ticks; i ++)
+        {
+            Health -= damage;
+            yield return new WaitForSeconds(duration);
+        }
+    }
+    private IEnumerator WaitForFreeze(float duration)
+    {
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        canMove = false;
+        yield return new WaitForSeconds(duration);
+        canMove = true;
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+    }
+
+    public void Stolen(int damage)
+    {
+        Health -= damage;
+    }
+    public void Freeze(int duration)
+    {
+        StartCoroutine(VisualEffect(Color.blue, duration));
+        StartCoroutine(WaitForFreeze(duration));
     }
 }
