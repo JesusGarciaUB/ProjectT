@@ -24,6 +24,7 @@ public class Ranger : EnemyBehaviour
     }
     private void Awake()
     {
+        og = gameObject.GetComponent<SpriteRenderer>().color;
         timeToStart = 0;
         started = false;
         randTime = Range(1f, 3f);
