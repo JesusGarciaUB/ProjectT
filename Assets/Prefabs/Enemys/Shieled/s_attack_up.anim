@@ -88,6 +88,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0
+    functionName: LockMovement
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.3
     functionName: Attack
     data: 
@@ -97,6 +104,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.5
     functionName: SetDinamic
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5
+    functionName: UnLockMovement
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
