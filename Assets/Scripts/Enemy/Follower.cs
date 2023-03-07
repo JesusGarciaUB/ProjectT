@@ -7,6 +7,11 @@ public class Follower : EnemyBehaviour
     public float speed;
     //public GameObject loot;
 
+    private void Awake()
+    {
+        og = gameObject.GetComponent<SpriteRenderer>().color;
+    }
+
     void FixedUpdate()
     {
         if (canMove)
