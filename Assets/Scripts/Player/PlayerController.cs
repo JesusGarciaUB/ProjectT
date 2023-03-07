@@ -29,10 +29,13 @@ public class PlayerController : MonoBehaviour
     private bool healed = false;
     public int MagicCooldown;
     private bool CanMagic;
+    public InteractionScreen Ins;
+    private bool Interacting;
 
     // Start is called before the first frame update
     void Start()
     {
+        Interacting = false;
         CanMagic = true;
         maxHealth = health;
         dir = Direction.DOWN;                               //By default player face down
@@ -41,6 +44,10 @@ public class PlayerController : MonoBehaviour
         PersistentManager.Instance.hp.SetMaxHealth(health);
     }
 
+    public bool InteractingSetter
+    {
+        set { Interacting = value; }
+    }
     public MAGICe MagicSetter
     {
         get { return currentMagic; }
@@ -257,5 +264,15 @@ public class PlayerController : MonoBehaviour
         CanMagic = false;
         yield return new WaitForSeconds(MagicCooldown);
         CanMagic = true;
+    }
+
+    public void OnInteract()
+    {
+        print("pressing e");
+        if (Interacting)
+        {
+            Ins.Interacted();
+            print("entered");
+        }
     }
 }
