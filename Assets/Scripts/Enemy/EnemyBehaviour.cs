@@ -245,4 +245,16 @@ public class EnemyBehaviour : MonoBehaviour
             animator.SetFloat("movementY", lastMoveDirection.y);
         }
     }
+    
+    public void SetDinamic()
+    {
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Dynamic;
+    }
+
+    public void SetKinetic()
+    {
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Kinematic;
+    }
 }
