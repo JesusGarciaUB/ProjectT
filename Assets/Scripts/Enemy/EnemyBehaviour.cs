@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    protected enum Facing {NOONE, UP, DOWN, LEFT, RIGHT }; //possible direction of facing
-    protected Facing dir = Facing.NOONE;                    //current direction of facing
     protected GameObject player;                            
     public float AttackCooldown;                            //cooldown of attack
     public int damage;                                      //own damage, doesn't work if ranged
@@ -15,12 +13,18 @@ public class EnemyBehaviour : MonoBehaviour
     public bool canMove;
     private bool isAffected;
     protected Color og;
+    Animator animator;
+    Vector3 previousPosition;
+    Vector3 lastMoveDirection;
 
     protected void Start()
     {
         og = gameObject.GetComponent<SpriteRenderer>().color;
         SetUp();
         player = PersistentManager.Instance.PlayerGlobal;   //get player from global variables
+        animator = GetComponent<Animator>();
+        previousPosition = transform.position;
+        lastMoveDirection = Vector3.zero;
     }
 
     public void SetUp()
@@ -123,16 +127,24 @@ public class EnemyBehaviour : MonoBehaviour
         set { hitting = value; }
         get { return hitting; }
     }
+
+    protected void SetAttack()
+    {
+        if (hitting && canAttack)
+        {
+            animator.SetTrigger("isAttack");
+            StartCoroutine(StartCooldown());
+        }
+    }
     public void Attack()
     {
-        if (hitting && canAttack && !player.GetComponentInChildren<IsHit>().Hit)
+        if (hitting && !player.GetComponentInChildren<IsHit>().Hit)
         {
             IsHit obj = player.GetComponentInChildren<IsHit>();
             PlayerController objective = player.GetComponent<PlayerController>();
             obj.Hitted();
             objective.Health -= damage;
             print("Attacked: " + damage);
-            StartCoroutine(StartCooldown());
         }
     }
     public IEnumerator StartCooldown()
@@ -219,6 +231,18 @@ public class EnemyBehaviour : MonoBehaviour
         {
             StartCoroutine(VisualEffect(Color.blue, duration));
             StartCoroutine(WaitForFreeze(duration));
+        }
+    }
+
+    protected void Movement()
+    {
+        if (transform.position != previousPosition)
+        {
+            lastMoveDirection = (transform.position - previousPosition).normalized;
+            previousPosition = transform.position;
+
+            animator.SetFloat("movementX", lastMoveDirection.x);
+            animator.SetFloat("movementY", lastMoveDirection.y);
         }
     }
 }

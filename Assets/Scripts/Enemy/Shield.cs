@@ -25,13 +25,15 @@ public class Shield : EnemyBehaviour
             sr.color = Color.red;
             changed = true;
         }
+
     }
     protected void FixedUpdate()
     {
         if (canMove)
         {
+            Movement();
             if (!hitting) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            Attack();
+            SetAttack();
         }
     }
     public override void Defeated()
