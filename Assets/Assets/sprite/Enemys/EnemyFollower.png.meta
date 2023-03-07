@@ -1,0 +1,1740 @@
+fileFormatVersion: 2
+guid: 690d33ab509cad94a946240188de87fd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnemyFollower_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e2f235c2719d64ebcda360d0129df9
+      internalID: -1783663180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd055c8aa4df2a744bdc82b14ecf8c8d
+      internalID: 2133438774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5833136b7b00474438604202f264afb1
+      internalID: 668927606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2754f7f09a86742981623702bb865d
+      internalID: 199430790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23acd24638751264a86ffd6cd761e52a
+      internalID: 1391496590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219fd582a2a0e0c48a1c4193e69c4e6b
+      internalID: -1219163610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_67
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66430753fd48594284544eadc56a3cb
+      internalID: -1952549888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_68
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b0555de76c5464db46bc3dede78215
+      internalID: -461551155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_69
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1534
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f69e57f95230a4fb377d40122648d5
+      internalID: 1705018837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f3fa6448e422c44b11328302f250e4
+      internalID: -930448597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e4d5a396f4629469ba0be7b647691d
+      internalID: -1576866555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd0b0672b4abab4bad0fa0fd2e72509
+      internalID: -1249671775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2c1cff744108d4896dbf7be653c33e
+      internalID: 340385235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c832015bb90bb9840870f6a24d614d68
+      internalID: -304654517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617f9a412f2d41348b7a2613d413c535
+      internalID: 727233849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d3b78b8e1a48447ae93755bdf902f1
+      internalID: 1444998541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_77
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f5b92425257fa499ccbc4b7d8f5229
+      internalID: -1565020808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_78
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee5fbd869a1a284f85b1fcc4906c8b0
+      internalID: 978316061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820d717fdb1e6494bad46e9d0c053bc9
+      internalID: -1869400430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_80
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276b59df37f790d46b565de3da14f031
+      internalID: 266651418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_81
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dee996b1354fb4e9c34ab094e6ed9d
+      internalID: 306441063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c090c7f436ea44283200aefb712545
+      internalID: -700467036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_83
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1e40e41bfab734f82c16c6692cfa38
+      internalID: 1687113021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_84
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba970c8efc95b745a06b5e98e7dadc3
+      internalID: -2104091957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_85
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e638b198d03634fbc5b9d219fa51e9
+      internalID: -2084553643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_86
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83cf7d92706a204b838dbd3ad170d07
+      internalID: 894274981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_87
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ece2fe3307732740ab85293570e9089
+      internalID: 760736753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73374efa3f209d3428fb9a78fca37b49
+      internalID: -228059939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_89
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caba26a748aff13408972f8a9f5d34f5
+      internalID: -723474047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_90
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04892f00af2239b4db66af06bf02cd0e
+      internalID: 1459448056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_91
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff1df42d7a9d1d489f32da0ab706bbf
+      internalID: -1477729917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fc18153c854e446a61d65e5da42887
+      internalID: -1207287280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_93
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5806ac64b2e7a4f47802312d96f654ce
+      internalID: 700844104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_94
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494f2a6b9ee8c6441ba818dd36f96669
+      internalID: 685313083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_95
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70135f5eca5c3d44286894e7e6c07d5d
+      internalID: 1366695323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_96
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a18e47cf928f074d9ac32357d4a86ec
+      internalID: 164474530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_179
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07def6ca0fb95e144a77c4b630d9b048
+      internalID: 417897879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_180
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260e27297e67695449dc95ef4dc70063
+      internalID: 499741149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_181
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0298eca36cb224484d9ed1ef2bc2ef
+      internalID: -950154676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_182
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d9f4175c2e540499a6942de8a29889
+      internalID: -186871776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_183
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5883f6d80551604aa567d49fe0350d6
+      internalID: 1666521353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_184
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 766
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69e1f005370fd342bb0e78599e756f5
+      internalID: 495597288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_189
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 638
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7b5d4fe41fa7447a89692f82c78542
+      internalID: 931099545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_190
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 638
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a40d1de7b7bd74da022ae07281be59
+      internalID: -1868226618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_191
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 638
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a13a215e224d44b8cc79919f4f10f6
+      internalID: 1806081512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_192
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 638
+        width: 127
+        height: 64
+      alignment: 9
+      pivot: {x: 0.7559055, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c57357587ba2e4496006fe073c8e62
+      internalID: 127588752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_194
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 638
+        width: 192
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b592d6bb6d9859c4dbfa44b2afbc9511
+      internalID: -296220014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_197
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 638
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.25, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6700eac51c8d8f04b994191f804a3396
+      internalID: -1490010112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_199
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 446
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b4b4f949a951346b35d502819c2b51
+      internalID: -1748967555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_201
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 446
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cb92065facca945a110198ae4c8e66
+      internalID: 1712828702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_202
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 446
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d0634c75836344fa0a0e23ed579ab2
+      internalID: -350599769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_203
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 446
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636d9514037f9b341aa83ac16990cbf6
+      internalID: -944651331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_204
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 446
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8103f4e27d00a42ac47592e51f5363
+      internalID: -1907238626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_206
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 446
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ba354f8cda0f94eba1a7ca6b3dd5a8
+      internalID: 1072475147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_208
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e572d50d50e024e42b98a7d7f28eac83
+      internalID: -1659076738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_209
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 254
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771d846b48029154f91662f17c6df276
+      internalID: 752680171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_211
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbee9255ef3ca2948b3ce3e6d364dc13
+      internalID: 714873847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_212
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 254
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0c76f490ab94e4397cb365908009d3
+      internalID: 863972334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_218
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 190
+        width: 192
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a256c2a495e9974e8f7e1502c5a0355
+      internalID: 655644000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_221
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 190
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.25, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37eed74333098b4caf05b00052c14e8
+      internalID: 1663906278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_223
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 62
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf3839307bbc2e45b946fafc587ff96
+      internalID: 1498333649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_225
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 62
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdc89702bb8eb24d9fed01bf482294f
+      internalID: -1891086438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_226
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 62
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8320ea5a8de96ef4ebd3ec619b5e548a
+      internalID: 291516447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_227
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 62
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4890682f65a3d45458b794757faa81d1
+      internalID: -628059260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_228
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 62
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed7778aa2d7044469916c24626f080b
+      internalID: -543891870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyFollower_230
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 62
+        width: 128
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed438de76611044c952a761103ce927
+      internalID: -1316498028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      EnemyFollower_46: 413939525
+      EnemyFollower_122: 293476421
+      EnemyFollower_146: -1766643867
+      EnemyFollower_69: 1705018837
+      EnemyFollower_169: -56795107
+      EnemyFollower_103: 1233276165
+      EnemyFollower_160: 1639572577
+      EnemyFollower_195: 982255036
+      EnemyFollower_22: -309337158
+      EnemyFollower_112: 1004441060
+      EnemyFollower_183: 1666521353
+      EnemyFollower_38: -791322817
+      EnemyFollower_208: -1659076738
+      EnemyFollower_73: 340385235
+      EnemyFollower_217: -47339643
+      EnemyFollower_145: 637797923
+      EnemyFollower_78: 978316061
+      EnemyFollower_26: -1543135738
+      EnemyFollower_55: 601195447
+      EnemyFollower_21: -1829130393
+      EnemyFollower_47: -231479617
+      EnemyFollower_13: 1871452420
+      EnemyFollower_88: -228059939
+      EnemyFollower_2: -749782373
+      EnemyFollower_43: 1399721174
+      EnemyFollower_188: -1821906166
+      EnemyFollower_179: 417897879
+      EnemyFollower_150: 940390601
+      EnemyFollower_10: -677207483
+      EnemyFollower_124: 1005046607
+      EnemyFollower_48: -1194985427
+      EnemyFollower_68: -461551155
+      EnemyFollower_102: -775254692
+      EnemyFollower_101: 496781059
+      EnemyFollower_133: -2138822815
+      EnemyFollower_45: -205351882
+      EnemyFollower_197: -1490010112
+      EnemyFollower_139: 1852640979
+      EnemyFollower_56: 769504781
+      EnemyFollower_12: 1056810276
+      EnemyFollower_66: -1219163610
+      EnemyFollower_220: 1050306036
+      EnemyFollower_130: -238497493
+      EnemyFollower_185: 1790033669
+      EnemyFollower_206: 1072475147
+      EnemyFollower_17: 2070716682
+      EnemyFollower_107: 1865186439
+      EnemyFollower_31: -2001441863
+      EnemyFollower_65: 1391496590
+      EnemyFollower_148: -762082771
+      EnemyFollower_4: -334418250
+      EnemyFollower_111: 1872076423
+      EnemyFollower_97: -2079160009
+      EnemyFollower_154: -685251105
+      EnemyFollower_60: 1080200348
+      EnemyFollower_216: 461253061
+      EnemyFollower_213: -2139923405
+      EnemyFollower_156: -1239880097
+      EnemyFollower_196: -1486410552
+      EnemyFollower_172: 1935050440
+      EnemyFollower_72: -1249671775
+      EnemyFollower_173: -1818819267
+      EnemyFollower_75: 727233849
+      EnemyFollower_157: -1640687056
+      EnemyFollower_219: -1710977341
+      EnemyFollower_193: -523978795
+      EnemyFollower_84: -2104091957
+      EnemyFollower_194: -296220014
+      EnemyFollower_114: 451584614
+      EnemyFollower_174: -364191114
+      EnemyFollower_190: -1868226618
+      EnemyFollower_151: -1104497728
+      EnemyFollower_23: 1440522294
+      EnemyFollower_131: 288201336
+      EnemyFollower_3: -2021974502
+      EnemyFollower_95: 1366695323
+      EnemyFollower_29: -1664205585
+      EnemyFollower_9: 1014204023
+      EnemyFollower_91: -1477729917
+      EnemyFollower_80: 266651418
+      EnemyFollower_142: -2044163873
+      EnemyFollower_58: 1037410318
+      EnemyFollower_82: -700467036
+      EnemyFollower_170: -1912333678
+      EnemyFollower_158: -286502914
+      EnemyFollower_32: 2049926077
+      EnemyFollower_20: 294997952
+      EnemyFollower_144: -1927865978
+      EnemyFollower_27: 96400605
+      EnemyFollower_137: -1966105252
+      EnemyFollower_106: 583728158
+      EnemyFollower_218: 655644000
+      EnemyFollower_229: 1992449181
+      EnemyFollower_8: -2005444135
+      EnemyFollower_113: -153602738
+      EnemyFollower_127: 344332028
+      EnemyFollower_132: -2096448086
+      EnemyFollower_221: 1663906278
+      EnemyFollower_42: -1013836339
+      EnemyFollower_93: 700844104
+      EnemyFollower_117: 676332298
+      EnemyFollower_41: 639853915
+      EnemyFollower_203: -944651331
+      EnemyFollower_186: 856014481
+      EnemyFollower_227: -628059260
+      EnemyFollower_200: 1010622349
+      EnemyFollower_231: -1991863860
+      EnemyFollower_83: 1687113021
+      EnemyFollower_24: -97711274
+      EnemyFollower_49: 1785145449
+      EnemyFollower_115: 1973291066
+      EnemyFollower_230: -1316498028
+      EnemyFollower_126: 1524108776
+      EnemyFollower_44: 1252499390
+      EnemyFollower_61: -1783663180
+      EnemyFollower_176: -2083420481
+      EnemyFollower_34: -498823938
+      EnemyFollower_136: -1652250553
+      EnemyFollower_6: -1036998215
+      EnemyFollower_125: 1402884818
+      EnemyFollower_165: -1573175845
+      EnemyFollower_199: -1748967555
+      EnemyFollower_175: 1821260303
+      EnemyFollower_54: -1914628911
+      EnemyFollower_90: 1459448056
+      EnemyFollower_40: 359186878
+      EnemyFollower_129: 1166908418
+      EnemyFollower_62: 2133438774
+      EnemyFollower_63: 668927606
+      EnemyFollower_14: 945584674
+      EnemyFollower_168: -1360417869
+      EnemyFollower_134: -282191232
+      EnemyFollower_25: -260506537
+      EnemyFollower_215: -760869134
+      EnemyFollower_118: -497651573
+      EnemyFollower_177: 2065444510
+      EnemyFollower_163: -1542813380
+      EnemyFollower_77: -1565020808
+      EnemyFollower_143: 1054022027
+      EnemyFollower_226: 291516447
+      EnemyFollower_210: 977394224
+      EnemyFollower_50: 734422516
+      EnemyFollower_51: 1491381952
+      EnemyFollower_100: 412099514
+      EnemyFollower_79: -1869400430
+      EnemyFollower_67: -1952549888
+      EnemyFollower_161: 2120174386
+      EnemyFollower_201: 1712828702
+      EnemyFollower_28: -1068969230
+      EnemyFollower_223: 1498333649
+      EnemyFollower_123: -774097920
+      EnemyFollower_121: -695386056
+      EnemyFollower_81: 306441063
+      EnemyFollower_16: -826193461
+      EnemyFollower_159: -1669572478
+      EnemyFollower_52: -1000471250
+      EnemyFollower_228: -543891870
+      EnemyFollower_224: 650710173
+      EnemyFollower_135: 1639969548
+      EnemyFollower_7: 33807924
+      EnemyFollower_128: -463590074
+      EnemyFollower_212: 863972334
+      EnemyFollower_108: 1770128460
+      EnemyFollower_152: 80817441
+      EnemyFollower_138: 412348913
+      EnemyFollower_39: 1358266551
+      EnemyFollower_204: -1907238626
+      EnemyFollower_155: 827352959
+      EnemyFollower_110: 1261783544
+      EnemyFollower_153: 1277144365
+      EnemyFollower_187: 1869752975
+      EnemyFollower_140: 313964545
+      EnemyFollower_71: -1576866555
+      EnemyFollower_192: 127588752
+      EnemyFollower_182: -186871776
+      EnemyFollower_109: 1045578171
+      EnemyFollower_105: 1630907417
+      EnemyFollower_184: 495597288
+      EnemyFollower_96: 164474530
+      EnemyFollower_167: 1749616156
+      EnemyFollower_37: -1371974109
+      EnemyFollower_205: -1088237014
+      EnemyFollower_171: 1073275487
+      EnemyFollower_76: 1444998541
+      EnemyFollower_59: -505682389
+      EnemyFollower_15: -187197291
+      EnemyFollower_53: 17046013
+      EnemyFollower_94: 685313083
+      EnemyFollower_33: -851887694
+      EnemyFollower_141: 1421133939
+      EnemyFollower_70: -930448597
+      EnemyFollower_19: 8965081
+      EnemyFollower_104: -1039735909
+      EnemyFollower_202: -350599769
+      EnemyFollower_209: 752680171
+      EnemyFollower_18: -1103441609
+      EnemyFollower_222: 1618266269
+      EnemyFollower_92: -1207287280
+      EnemyFollower_149: -1136063553
+      EnemyFollower_35: 1507343388
+      EnemyFollower_166: 117780528
+      EnemyFollower_5: -365801238
+      EnemyFollower_225: -1891086438
+      EnemyFollower_162: -1608890983
+      EnemyFollower_85: -2084553643
+      EnemyFollower_211: 714873847
+      EnemyFollower_0: 836518759
+      EnemyFollower_191: 1806081512
+      EnemyFollower_87: 760736753
+      EnemyFollower_57: -380506352
+      EnemyFollower_1: -1133482693
+      EnemyFollower_198: -158151772
+      EnemyFollower_116: 1531001207
+      EnemyFollower_86: 894274981
+      EnemyFollower_89: -723474047
+      EnemyFollower_147: -890515007
+      EnemyFollower_36: 285652485
+      EnemyFollower_119: -1869891708
+      EnemyFollower_178: 1006055822
+      EnemyFollower_207: 862078626
+      EnemyFollower_180: 499741149
+      EnemyFollower_98: -1612488067
+      EnemyFollower_189: 931099545
+      EnemyFollower_181: -950154676
+      EnemyFollower_30: -402846473
+      EnemyFollower_214: -1638958980
+      EnemyFollower_74: -304654517
+      EnemyFollower_99: 267617798
+      EnemyFollower_64: 199430790
+      EnemyFollower_120: 968639778
+      EnemyFollower_11: 416273843
+      EnemyFollower_164: 1787134661
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

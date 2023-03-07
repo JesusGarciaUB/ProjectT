@@ -10,8 +10,9 @@ public class Follower : EnemyBehaviour
     {
         if (canMove)
         {
+            Movement();
             if (!hitting) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            Attack();
+            SetAttack();
         }
     }
 
