@@ -14,6 +14,7 @@ public class Follower : EnemyBehaviour
 
     void FixedUpdate()
     {
+        SetLayer();
         if (canMove)
         {
             Movement();

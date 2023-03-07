@@ -40,6 +40,7 @@ public class Ranger : EnemyBehaviour
     }
     void FixedUpdate()
     {
+        SetLayer();
         if (canMove)
         {
             rDirection = transform.position - player.transform.position;

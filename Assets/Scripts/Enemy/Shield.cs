@@ -29,6 +29,7 @@ public class Shield : EnemyBehaviour
     }
     protected void FixedUpdate()
     {
+        SetLayer();
         if (canMove)
         {
             Movement();

@@ -267,4 +267,10 @@ public class EnemyBehaviour : MonoBehaviour
     {
         canMove = true;
     }
+
+    protected void SetLayer()
+    {
+        int layer = Mathf.FloorToInt(transform.position.y * 10);
+        GetComponent<SpriteRenderer>().sortingOrder = -layer;
+    }
 }

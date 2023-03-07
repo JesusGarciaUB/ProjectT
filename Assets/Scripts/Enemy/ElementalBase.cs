@@ -26,6 +26,7 @@ public class ElementalBase : EnemyBehaviour
     }
     private void FixedUpdate()
     {
+        SetLayer();
         if (canMove)
         {
             //follow target if not in min distance

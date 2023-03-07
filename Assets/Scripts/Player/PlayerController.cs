@@ -100,6 +100,7 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        SetLayer();
         SetLastPosition();
         if (canMove)
         {
@@ -274,5 +275,11 @@ public class PlayerController : MonoBehaviour
             Ins.Interacted();
             print("entered");
         }
+    }
+
+    protected void SetLayer()
+    {
+        int layer = Mathf.FloorToInt(transform.position.y * 10);
+        GetComponent<SpriteRenderer>().sortingOrder = -layer;
     }
 }
