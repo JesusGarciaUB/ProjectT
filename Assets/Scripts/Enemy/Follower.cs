@@ -6,12 +6,14 @@ public class Follower : EnemyBehaviour
 {
     public float speed;
     //public GameObject loot;
+
     void FixedUpdate()
     {
         if (canMove)
         {
+            Movement();
             if (!hitting) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            Attack();
+            SetAttack();
         }
     }
 

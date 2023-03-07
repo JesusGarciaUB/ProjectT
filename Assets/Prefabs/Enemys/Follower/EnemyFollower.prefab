@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1338894255772455747}
   - component: {fileID: 8636810516435615867}
   - component: {fileID: 2561556874149917536}
+  - component: {fileID: 1247365362537875795}
   m_Layer: 9
   m_Name: EnemyFollower
   m_TagString: Enemy
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6036832529811767044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5166, y: 0.0386, z: 0}
-  m_LocalScale: {x: 0.098068416, y: 0.0933397, z: 7.197115}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,8 +78,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -1869400430, guid: 690d33ab509cad94a946240188de87fd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,18 +102,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.016454056, y: -0.09947647}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32002604}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.18927953, y: 0.10705778}
   m_EdgeRadius: 0
 --- !u!50 &1338894255772455747
 Rigidbody2D:
@@ -151,12 +152,12 @@ MonoBehaviour:
   damage: 1
   canAttack: 0
   healthText: {fileID: 5449005750421041224, guid: d7e9f8ace7c9a9a4e8d8a24a749e6d1e, type: 3}
+  canMove: 0
   health: 3
   armor: 0
   isAlive: 1
   hitting: 0
   speed: 0.4
-  loot: {fileID: 2103183152607103511, guid: 014dd1bffd5b9ba4db676ed4e4db7062, type: 3}
 --- !u!114 &2561556874149917536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,3 +170,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e97164c321466ca46aedd3c5e55d03e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1247365362537875795
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6036832529811767044}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 37f2f0b2b1d0b3b4fbe2c3ba546ce77a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

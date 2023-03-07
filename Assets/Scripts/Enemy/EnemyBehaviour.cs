@@ -257,4 +257,14 @@ public class EnemyBehaviour : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
     }
+
+    public void LockMovement()
+    {
+        canMove = false;
+    }
+
+    public void UnLockMovement()
+    {
+        canMove = true;
+    }
 }
