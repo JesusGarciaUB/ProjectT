@@ -6,6 +6,7 @@ public class Follower : EnemyBehaviour
 {
     public float speed;
     //public GameObject loot;
+
     void FixedUpdate()
     {
         if (canMove)
