@@ -69,7 +69,7 @@ public class Ranger : EnemyBehaviour
 
     private void IsRunningAway()
     {
-        if (Vector3.Distance(player.transform.position, transform.position) > distanceToPlayer) RunningAway = false;
+        if (Vector3.Distance(PersistentManager.Instance.PlayerGlobal.transform.position, transform.position) > distanceToPlayer) RunningAway = false;
         else RunningAway = true;
     }
 }

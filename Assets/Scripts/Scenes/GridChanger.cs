@@ -6,7 +6,7 @@ using static UnityEngine.Random;
 public class GridChanger : MonoBehaviour
 {
 
-    private Vector3 position = new Vector3(0,0,-1000);
+    private Vector3 position = new Vector3(0,0,-10);
     private List<Transform> enemies = new List<Transform>();
     private List<Vector3> originalPosition = new List<Vector3>();
     public List<Transform> elementals = new List<Transform>();
