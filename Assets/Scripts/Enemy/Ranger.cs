@@ -25,6 +25,7 @@ public class Ranger : EnemyBehaviour
     }
     private void Awake()
     {
+        player = PersistentManager.Instance.PlayerGlobal;
         IsRunningAway();
         og = gameObject.GetComponent<SpriteRenderer>().color;
         timeToStart = 0;
@@ -50,7 +51,7 @@ public class Ranger : EnemyBehaviour
             rDirection = transform.position - player.transform.position;
             rDirection.Normalize();
             transform.position = Vector3.Lerp(transform.position, player.transform.position + rDirection * distanceToPlayer, speed * Time.deltaTime);
-            SetAttack();
+            SetAttackRange();
         }
     }
 
@@ -59,7 +60,7 @@ public class Ranger : EnemyBehaviour
         base.Defeated();
     }
 
-    new private void SetAttack()
+    private void SetAttackRange()
     {
         if (started && canAttack)
         {
