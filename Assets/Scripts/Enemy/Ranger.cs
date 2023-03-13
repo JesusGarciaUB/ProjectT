@@ -65,7 +65,8 @@ public class Ranger : EnemyBehaviour
         if (started && canAttack)
         {
             animator.SetTrigger("isAttack");
-            StartCoroutine(StartCooldown());
+            //StartCoroutine(StartCooldown());
+            canAttack = false;
         }
     }
 
@@ -73,6 +74,7 @@ public class Ranger : EnemyBehaviour
     {
         print("cosa");
         Instantiate(projectile, projectilePos.position, Quaternion.identity);
+        canAttack = true;
     }
 
     private void IsRunningAway()
