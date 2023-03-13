@@ -260,11 +260,13 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void LockMovement()
     {
+        print("Lock");
         canMove = false;
     }
 
     public void UnLockMovement()
     {
+        print("Unlock");
         canMove = true;
     }
 
