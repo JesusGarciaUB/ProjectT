@@ -258,6 +258,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         lastMoveDirection.x = x;
         lastMoveDirection.y = y;
+        lastMoveDirection = lastMoveDirection.normalized;
     }
     
     public void SetDinamic()
