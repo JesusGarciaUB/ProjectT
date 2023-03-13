@@ -13,6 +13,7 @@ public class Ranger : EnemyBehaviour
     private bool started;
     private float timeToStart;
     private float randTime;
+    private bool RunningAway;
 
     public bool StartedP
     {
@@ -24,6 +25,7 @@ public class Ranger : EnemyBehaviour
     }
     private void Awake()
     {
+        IsRunningAway();
         og = gameObject.GetComponent<SpriteRenderer>().color;
         timeToStart = 0;
         started = false;
@@ -43,6 +45,7 @@ public class Ranger : EnemyBehaviour
         SetLayer();
         if (canMove)
         {
+            IsRunningAway();
             rDirection = transform.position - player.transform.position;
             rDirection.Normalize();
             transform.position = Vector3.Lerp(transform.position, player.transform.position + rDirection * distanceToPlayer, speed * Time.deltaTime);
@@ -62,5 +65,11 @@ public class Ranger : EnemyBehaviour
             Instantiate(projectile, projectilePos.position, Quaternion.identity);
             StartCoroutine(StartCooldown());
         }
+    }
+
+    private void IsRunningAway()
+    {
+        if (Vector3.Distance(player.transform.position, transform.position) > distanceToPlayer) RunningAway = false;
+        else RunningAway = true;
     }
 }
