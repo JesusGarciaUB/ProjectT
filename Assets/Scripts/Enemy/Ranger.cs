@@ -45,11 +45,12 @@ public class Ranger : EnemyBehaviour
         SetLayer();
         if (canMove)
         {
+            Movement();
             IsRunningAway();
             rDirection = transform.position - player.transform.position;
             rDirection.Normalize();
             transform.position = Vector3.Lerp(transform.position, player.transform.position + rDirection * distanceToPlayer, speed * Time.deltaTime);
-            Attack();
+            SetAttack();
         }
     }
 
@@ -58,13 +59,19 @@ public class Ranger : EnemyBehaviour
         base.Defeated();
     }
 
-    new private void Attack()
+    new private void SetAttack()
     {
-        if (canAttack && started)
+        if (started && canAttack)
         {
-            Instantiate(projectile, projectilePos.position, Quaternion.identity);
+            animator.SetTrigger("isAttack");
             StartCoroutine(StartCooldown());
         }
+    }
+
+    private void AttackRange()
+    {
+        print("cosa");
+        Instantiate(projectile, projectilePos.position, Quaternion.identity);
     }
 
     private void IsRunningAway()

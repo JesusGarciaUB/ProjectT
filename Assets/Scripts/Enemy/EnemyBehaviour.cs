@@ -13,7 +13,7 @@ public class EnemyBehaviour : MonoBehaviour
     public bool canMove;
     private bool isAffected;
     protected Color og;
-    Animator animator;
+    protected Animator animator;
     Vector3 previousPosition;
     Vector3 lastMoveDirection;
 
