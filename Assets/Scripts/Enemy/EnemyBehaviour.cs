@@ -250,14 +250,25 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void SetMove()
     {
+        bool auxMoveX = false;
+        bool auxMoveY = false;
         float y = lastMoveDirection.y;
         float x = lastMoveDirection.x;
 
-        if (Mathf.Sign(x) == -1) x = -x;
+        if (Mathf.Sign(x) == -1) { 
+            x = -x; 
+            auxMoveX = true; 
+        }
+        if (Mathf.Sign(y) == -1)
+        {
+            y = -y;
+            auxMoveY = true;
+        }
         if (x >= y) y = 0;
+        else x = 0;
 
-        lastMoveDirection.x = x;
-        lastMoveDirection.y = y;
+        lastMoveDirection.x = auxMoveX? -x : x;
+        lastMoveDirection.y = auxMoveY ? -y : y; ;
         lastMoveDirection = lastMoveDirection.normalized;
     }
     
