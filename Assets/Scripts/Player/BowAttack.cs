@@ -23,9 +23,9 @@ public class BowAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (collision.tag == "PlayerHitspot")
         {
-            EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
+            EnemyBehaviour enemy = collision.GetComponentInParent<EnemyBehaviour>();
 
             if (enemy != null)
             {

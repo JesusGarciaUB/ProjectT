@@ -45,9 +45,9 @@ public class Magic : ElementalShoot
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (collision.tag == "PlayerHitspot")
         {
-            EnemyBehaviour eb = collision.GetComponent<EnemyBehaviour>();
+            EnemyBehaviour eb = collision.GetComponentInParent<EnemyBehaviour>();
 
             switch(player.MagicSetter)
             {

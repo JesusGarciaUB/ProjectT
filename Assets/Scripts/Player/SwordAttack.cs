@@ -63,10 +63,10 @@ public class SwordAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (collision.tag == "PlayerHitspot")
         {
-            EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
-            Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
+            EnemyBehaviour enemy = collision.GetComponentInParent<EnemyBehaviour>();
+            Rigidbody2D rb = collision.GetComponentInParent<Rigidbody2D>();
             IsHitEnemy h = collision.GetComponent<IsHitEnemy>();
             if (enemy != null)
             {
