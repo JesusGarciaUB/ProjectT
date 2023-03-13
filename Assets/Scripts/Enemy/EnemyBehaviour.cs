@@ -241,9 +241,23 @@ public class EnemyBehaviour : MonoBehaviour
             lastMoveDirection = (transform.position - previousPosition).normalized;
             previousPosition = transform.position;
 
+            SetMove();
+
             animator.SetFloat("movementX", lastMoveDirection.x);
             animator.SetFloat("movementY", lastMoveDirection.y);
         }
+    }
+
+    private void SetMove()
+    {
+        float y = lastMoveDirection.y;
+        float x = lastMoveDirection.x;
+
+        if (Mathf.Sign(x) == -1) x = -x;
+        if (x >= y) y = 0;
+
+        lastMoveDirection.x = x;
+        lastMoveDirection.y = y;
     }
     
     public void SetDinamic()
