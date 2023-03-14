@@ -9,6 +9,8 @@ public class Palanca : MonoBehaviour
 
     private void Start()
     {
+        int layer = Mathf.FloorToInt(transform.position.y * 10);
+        GetComponentInParent<SpriteRenderer>().sortingOrder = -layer;
         state = false;
         animator = GetComponentInParent<Animator>();
     }
