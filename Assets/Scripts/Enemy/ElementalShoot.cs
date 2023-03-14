@@ -9,6 +9,7 @@ public class ElementalShoot : MonoBehaviour
     private Rigidbody2D rb;                                                               
     public float speed;                                                                     //speed of projectile
     public float extraRotation;                                                             //extra rotation for sprite accuracity (usually 90)
+    private bool canDamage;
     private void Start()
     {
         Vector3 playerPos = PersistentManager.Instance.PlayerGlobal.transform.position;     //get player position
@@ -19,15 +20,20 @@ public class ElementalShoot : MonoBehaviour
 
         float rotation = Mathf.Atan2(-dir.y, -dir.x) * Mathf.Rad2Deg;                       //calculate angle of shooting
         transform.rotation = Quaternion.Euler(0, 0, rotation + extraRotation);
+        canDamage = true;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "ProjectileDeleter") { 
+            rb.velocity = new Vector2(0, 0).normalized;
+            canDamage = false;
+        }
         if (collision.tag == "EnemyHitspot")
         {
             GameObject p = PersistentManager.Instance.PlayerGlobal;                         //get player
             IsHit obj = p.GetComponentInChildren<IsHit>();                                  //get player hit controller
 
-            if (!obj.Hit)
+            if (!obj.Hit && canDamage)
             {
                 PlayerController objective = p.GetComponent<PlayerController>();            //logic to damage player
                 obj.Hitted();

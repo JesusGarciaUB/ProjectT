@@ -31,11 +31,14 @@ public class PlayerController : MonoBehaviour
     private bool CanMagic;
     public InteractionScreen Ins;
     private bool Interacting;
+    private bool InteractingPalanca;
+    private Palanca palanca;
 
     // Start is called before the first frame update
     void Start()
     {
         Interacting = false;
+        InteractingPalanca = false;
         CanMagic = true;
         maxHealth = health;
         dir = Direction.DOWN;                               //By default player face down
@@ -44,6 +47,8 @@ public class PlayerController : MonoBehaviour
         PersistentManager.Instance.hp.SetMaxHealth(health);
     }
 
+    public Palanca SetP { set { palanca = value; } }
+    public bool PalancaSetter { set { InteractingPalanca = value; } }
     public bool InteractingSetter
     {
         set { Interacting = value; }
@@ -271,11 +276,13 @@ public class PlayerController : MonoBehaviour
 
     public void OnInteract()
     {
-        print("pressing e");
         if (Interacting)
         {
             Ins.Interacted();
-            print("entered");
+        }
+        if (InteractingPalanca)
+        {
+            palanca.Interact();
         }
     }
 

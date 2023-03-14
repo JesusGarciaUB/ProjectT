@@ -44,4 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c13051f88da8741a342deb2768d070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerGlobal: {fileID: 0}
+  EnemiesRemaining: 0
+  hp: {fileID: 0}
+  winlose: {fileID: 0}
+  ability: {fileID: 0}
   spawnPoint: 
