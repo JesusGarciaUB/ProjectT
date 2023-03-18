@@ -61,6 +61,7 @@ public class Ranger : EnemyBehaviour
 
     private void SetAttackRange()
     {
+        SetShootDirection();
         if (started && canAttack)
         {
             animator.SetTrigger("isAttack");
@@ -103,5 +104,8 @@ public class Ranger : EnemyBehaviour
         shootDir.x = auxMoveX ? -x : x;
         shootDir.y = auxMoveY ? -y : y;
         shootDir = shootDir.normalized;
+
+        animator.SetFloat("shootX", shootDir.x);
+        animator.SetFloat("shootY", shootDir.y);
     }
 }
