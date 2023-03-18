@@ -12,6 +12,11 @@ public class Follower : EnemyBehaviour
         og = gameObject.GetComponent<SpriteRenderer>().color;
     }
 
+    private void Update()
+    {
+        SetLayer();
+    }
+
     void FixedUpdate()
     {
         SetLayer();

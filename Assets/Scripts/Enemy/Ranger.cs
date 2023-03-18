@@ -34,6 +34,7 @@ public class Ranger : EnemyBehaviour
 
     private void Update()
     {
+        SetLayer();
         if (!started) timeToStart += Time.deltaTime;
         if (timeToStart > randTime && !started)
         {
@@ -42,7 +43,6 @@ public class Ranger : EnemyBehaviour
     }
     void FixedUpdate()
     {
-        SetLayer();
         if (canMove)
         {
             Movement();

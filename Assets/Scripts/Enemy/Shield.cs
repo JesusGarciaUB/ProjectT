@@ -20,6 +20,7 @@ public class Shield : EnemyBehaviour
 
     private void Update()
     {
+        SetLayer();
         if (Armor <= 0 && !changed)
         {
             sr.color = Color.red;
@@ -29,7 +30,6 @@ public class Shield : EnemyBehaviour
     }
     protected void FixedUpdate()
     {
-        SetLayer();
         if (canMove)
         {
             Movement();

@@ -22,9 +22,13 @@ public class ElementalBase : EnemyBehaviour
         }
         base.Start();
     }
-    private void FixedUpdate()
+
+    private void Update()
     {
         SetLayer();
+    }
+    private void FixedUpdate()
+    {
         if (canMove)
         {
             //follow target if not in min distance
