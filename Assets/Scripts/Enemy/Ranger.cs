@@ -13,6 +13,7 @@ public class Ranger : EnemyBehaviour
     private bool started;
     private float timeToStart;
     private float randTime;
+    private Vector3 shootDir;
 
     public bool StartedP
     {
@@ -76,5 +77,31 @@ public class Ranger : EnemyBehaviour
     {
         if (Vector3.Distance(PersistentManager.Instance.PlayerGlobal.transform.position, transform.position) > distanceToPlayer) animator.SetBool("isRunningAway", false);
         else animator.SetBool("isRunningAway", true);
+    }
+
+    private void SetShootDirection()
+    {
+        bool auxMoveX = false;
+        bool auxMoveY = false;
+        Vector3 dirP = (transform.position - player.transform.position).normalized;
+        float y = dirP.y;
+        float x = dirP.x;
+
+        if (Mathf.Sign(x) == -1)
+        {
+            x = -x;
+            auxMoveX = true;
+        }
+        if (Mathf.Sign(y) == -1)
+        {
+            y = -y;
+            auxMoveY = true;
+        }
+        if (x >= y) y = 0;
+        else x = 0;
+
+        shootDir.x = auxMoveX ? -x : x;
+        shootDir.y = auxMoveY ? -y : y;
+        shootDir = shootDir.normalized;
     }
 }
