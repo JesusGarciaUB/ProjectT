@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SetLayer();
         Interacting = false;
         InteractingPalanca = false;
         CanMagic = true;
