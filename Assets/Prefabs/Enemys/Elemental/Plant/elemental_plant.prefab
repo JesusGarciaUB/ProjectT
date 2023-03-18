@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8119961526532233683}
   - component: {fileID: 8119961526532233682}
   - component: {fileID: 8119961526532233676}
+  - component: {fileID: 3151268800406289039}
   m_Layer: 0
   m_Name: elemental_plant
   m_TagString: Enemy
@@ -163,6 +164,26 @@ MonoBehaviour:
   loot: {fileID: 2103183152607103511, guid: 014dd1bffd5b9ba4db676ed4e4db7062, type: 3}
   projectile: {fileID: 5621689950981799462, guid: 00d0c0a9e61c77345ad44f41872f2b51, type: 3}
   projectilePos: {fileID: 8119961527452338285}
+--- !u!95 &3151268800406289039
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8119961526532233687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1df8ef6b9c6a0e04a8a1cfe48149d035, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8119961527452338284
 GameObject:
   m_ObjectHideFlags: 0

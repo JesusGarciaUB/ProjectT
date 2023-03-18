@@ -261,6 +261,7 @@ public class PlayerController : MonoBehaviour
             if (CanMagic)
             {
                 animator.SetTrigger("magicAttack");
+                StartCoroutine(MagicCD());
             }
         }
     }
@@ -269,7 +270,6 @@ public class PlayerController : MonoBehaviour
     {
         Instantiate(spells, transform.position, Quaternion.identity);
         PersistentManager.Instance.ability.usedAbility(MagicCooldown);
-        StartCoroutine(MagicCD());
     }
 
     private IEnumerator MagicCD()
@@ -293,7 +293,7 @@ public class PlayerController : MonoBehaviour
 
     protected void SetLayer()
     {
-        int layer = Mathf.FloorToInt(transform.position.y * 10);
+        int layer = Mathf.FloorToInt(transform.position.y * 100);
         GetComponent<SpriteRenderer>().sortingOrder = -layer;
     }
 }

@@ -10,7 +10,7 @@ public class DoorBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int layer = Mathf.FloorToInt(transform.position.y * 10);
+        int layer = Mathf.FloorToInt(transform.position.y * 100);
         GetComponent<SpriteRenderer>().sortingOrder = -layer;
         state = false;
         animator = GetComponent<Animator>();

@@ -12,7 +12,8 @@ public class ElementalBase : EnemyBehaviour
     public GameObject loot;                                         //loot drop
     //shooting  
     public GameObject projectile;                                   //type of projectile, prefab
-    public Transform projectilePos;                                 //center of elemental, from where projectiles spawn
+    public Transform projectilePos;
+    private Vector3 shootDir;
     new void Start()
     {
         if (type == ETYPE.RANDOM)                                   //random type if set to do so
@@ -27,8 +28,18 @@ public class ElementalBase : EnemyBehaviour
         if (canMove)
         {
             //follow target if not in min distance
-            if (Vector3.Distance(player.transform.position, transform.position) > MinDistance) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            else Attack();  //attacks if in range
+            if (Vector3.Distance(player.transform.position, transform.position) > MinDistance)
+            {
+                Movement();
+                transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+                animator.SetBool("moving", true);
+                animator.SetBool("shooting", false);
+            }
+            else {
+                SetMoveIdle();
+                animator.SetBool("moving", false);
+                SetterAttack();
+            }  
         }
     }
 
@@ -67,11 +78,48 @@ public class ElementalBase : EnemyBehaviour
     /// </summary>
     new private void Attack()
     {
+        Instantiate(projectile, projectilePos.position, Quaternion.identity);    //instance of projectile     
+    }
+    
+    private void EndAttackAnimation()
+    {
+        animator.SetTrigger("shooting");
+        canMove = true;
+    }
+    private void SetterAttack()
+    {
         if (canAttack)
         {
-            GameObject p = Instantiate(projectile, projectilePos.position, Quaternion.identity);    //instance of projectile
-            SpriteRenderer sr2 = p.GetComponent<SpriteRenderer>();                                  //set color of projectile to own         
-            StartCoroutine(StartCooldown());                                                      //start cooldown of own attack
+            animator.SetTrigger("shooting");
+            StartCoroutine(StartCooldown());
         }
+    }
+    private void SetMoveIdle()
+    {
+        bool auxMoveX = false;
+        bool auxMoveY = false;
+        Vector3 dirP = (transform.position - player.transform.position).normalized;
+        float y = dirP.y;
+        float x = dirP.x;
+
+        if (Mathf.Sign(x) == -1)
+        {
+            x = -x;
+            auxMoveX = true;
+        }
+        if (Mathf.Sign(y) == -1)
+        {
+            y = -y;
+            auxMoveY = true;
+        }
+        if (x >= y) y = 0;
+        else x = 0;
+
+        shootDir.x = auxMoveX ? -x : x;
+        shootDir.y = auxMoveY ? -y : y;
+        shootDir = shootDir.normalized;
+
+        animator.SetFloat("movementX", shootDir.x);
+        animator.SetFloat("movementY", shootDir.y);
     }
 }

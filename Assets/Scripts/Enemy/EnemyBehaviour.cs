@@ -14,8 +14,8 @@ public class EnemyBehaviour : MonoBehaviour
     private bool isAffected;
     protected Color og;
     protected Animator animator;
-    Vector3 previousPosition;
-    Vector3 lastMoveDirection;
+    protected Vector3 previousPosition;
+    protected Vector3 lastMoveDirection;
 
     protected void Start()
     {
@@ -296,7 +296,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     protected void SetLayer()
     {
-        int layer = Mathf.FloorToInt(transform.position.y * 10);
+        int layer = Mathf.FloorToInt(transform.position.y * 100);
         GetComponent<SpriteRenderer>().sortingOrder = -layer;
     }
 }
