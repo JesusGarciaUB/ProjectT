@@ -13,7 +13,6 @@ public class Ranger : EnemyBehaviour
     private bool started;
     private float timeToStart;
     private float randTime;
-    private bool RunningAway;
 
     public bool StartedP
     {
@@ -26,7 +25,6 @@ public class Ranger : EnemyBehaviour
     private void Awake()
     {
         player = PersistentManager.Instance.PlayerGlobal;
-        IsRunningAway();
         og = gameObject.GetComponent<SpriteRenderer>().color;
         timeToStart = 0;
         started = false;
@@ -71,13 +69,12 @@ public class Ranger : EnemyBehaviour
 
     private void AttackRange()
     {
-        print("cosa");
         Instantiate(projectile, projectilePos.position, Quaternion.identity);
     }
 
     private void IsRunningAway()
     {
-        if (Vector3.Distance(PersistentManager.Instance.PlayerGlobal.transform.position, transform.position) > distanceToPlayer) RunningAway = false;
-        else RunningAway = true;
+        if (Vector3.Distance(PersistentManager.Instance.PlayerGlobal.transform.position, transform.position) > distanceToPlayer) animator.SetBool("isRunningAway", false);
+        else animator.SetBool("isRunningAway", true);
     }
 }
