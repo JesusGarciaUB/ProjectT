@@ -22,6 +22,11 @@ public class ElementalShoot : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, rotation + extraRotation);
         canDamage = true;
     }
+
+    void Update()
+    {
+        SetLayer();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "ProjectileDeleter") { 
@@ -46,5 +51,10 @@ public class ElementalShoot : MonoBehaviour
         {
             Destroy(gameObject, timeOnScreen);                                              //timer to destroy projectile on set time
         }
+    }
+    protected void SetLayer()
+    {
+        int layer = Mathf.FloorToInt((transform.position.y + 0.11f) * 10);
+        GetComponent<SpriteRenderer>().sortingOrder = -layer;
     }
 }

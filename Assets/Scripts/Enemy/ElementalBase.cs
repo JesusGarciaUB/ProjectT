@@ -7,7 +7,6 @@ public class ElementalBase : EnemyBehaviour
 {
     public enum ETYPE { FIRE, WATER, PLANT, RANDOM}                 //possible types of elemental
     public ETYPE type;                                              //type of current elemental
-    SpriteRenderer sr;
     public float MinDistance;                                       //minimum distance to target to shoot
     public float speed;                                             //movespeed of elemental
     public GameObject loot;                                         //loot drop
@@ -16,12 +15,10 @@ public class ElementalBase : EnemyBehaviour
     public Transform projectilePos;                                 //center of elemental, from where projectiles spawn
     new void Start()
     {
-        sr = GetComponent<SpriteRenderer>();                        //change color based on type
         if (type == ETYPE.RANDOM)                                   //random type if set to do so
         {
             type = (ETYPE)Range(0, 3);
         }
-        setColor();
         base.Start();
     }
     private void FixedUpdate()
@@ -60,27 +57,7 @@ public class ElementalBase : EnemyBehaviour
                 loot.GetComponent <SpriteRenderer>().color = Color.cyan;
                 break;
             case ETYPE.PLANT:
-                sr.color = Color.green;
                 loot.GetComponent<SpriteRenderer>().color = Color.green;
-                break;
-        }
-    }
-
-    /// <summary>
-    /// set own color based on type
-    /// </summary>
-    void setColor()
-    {
-        switch (type)
-        {
-            case ETYPE.FIRE:
-                sr.color = Color.red;
-                break;
-            case ETYPE.WATER:
-                sr.color = Color.cyan;
-                break;
-            case ETYPE.PLANT:
-                sr.color = Color.green;
                 break;
         }
     }
@@ -93,8 +70,7 @@ public class ElementalBase : EnemyBehaviour
         if (canAttack)
         {
             GameObject p = Instantiate(projectile, projectilePos.position, Quaternion.identity);    //instance of projectile
-            SpriteRenderer sr2 = p.GetComponent<SpriteRenderer>();                                  //set color of projectile to own
-            sr2.color = sr.color;           
+            SpriteRenderer sr2 = p.GetComponent<SpriteRenderer>();                                  //set color of projectile to own         
             StartCoroutine(StartCooldown());                                                      //start cooldown of own attack
         }
     }
