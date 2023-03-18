@@ -6,6 +6,7 @@ public class Palanca : MonoBehaviour
 {
     private bool state;
     private Animator animator;
+    public DoorBehaviour db;
 
     private void Start()
     {
@@ -15,7 +16,7 @@ public class Palanca : MonoBehaviour
         animator = GetComponentInParent<Animator>();
     }
 
-    public void Interact() { state = !state; animator.SetBool("state", state); }
+    public void Interact() { state = !state; animator.SetBool("state", state); db.Interact(); }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
