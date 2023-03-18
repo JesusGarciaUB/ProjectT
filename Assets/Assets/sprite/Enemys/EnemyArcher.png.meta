@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -2128,11 +2128,11 @@ TextureImporter:
       EnemyArcher_4: 199324608
       EnemyArcher_302: 268343398
       EnemyArcher_114: -340014511
-      EnemyArcher_91: 357482400
       EnemyArcher_303: 337990372
-      EnemyArcher_250: 1009833934
+      EnemyArcher_91: 357482400
       EnemyArcher_228: 672697783
       EnemyArcher_30: 155266649
+      EnemyArcher_250: 1009833934
       EnemyArcher_6: -2051652014
       EnemyArcher_75: -1363018878
       EnemyArcher_178: 1509315263
@@ -2240,10 +2240,11 @@ TextureImporter:
       EnemyArcher_48: -1613076794
       EnemyArcher_227: -418722528
       EnemyArcher_299: 1061331588
-      EnemyArcher_152: 390702104
-      EnemyArcher_208: -869965307
+      EnemyArcher_177: 1330144688
       EnemyArcher_110: -397514259
+      EnemyArcher_152: 390702104
       EnemyArcher_43: -1653636208
+      EnemyArcher_208: -869965307
       EnemyArcher_111: -1416935920
       EnemyArcher_298: -905067717
       EnemyArcher_141: -1547840174
@@ -2257,7 +2258,6 @@ TextureImporter:
       EnemyArcher_106: -1841466210
       EnemyArcher_214: 1445109821
       EnemyArcher_81: 1946389270
-      EnemyArcher_177: 1330144688
       EnemyArcher_63: 93496854
       EnemyArcher_150: 1642130592
       EnemyArcher_144: 1256406482
