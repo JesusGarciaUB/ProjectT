@@ -260,11 +260,16 @@ public class PlayerController : MonoBehaviour
         {
             if (CanMagic)
             {
-                Instantiate(spells, transform.position, Quaternion.identity);
-                PersistentManager.Instance.ability.usedAbility(MagicCooldown);
-                StartCoroutine(MagicCD());
+                animator.SetTrigger("magicAttack");
             }
         }
+    }
+
+    public void MagicAttack()
+    {
+        Instantiate(spells, transform.position, Quaternion.identity);
+        PersistentManager.Instance.ability.usedAbility(MagicCooldown);
+        StartCoroutine(MagicCD());
     }
 
     private IEnumerator MagicCD()
