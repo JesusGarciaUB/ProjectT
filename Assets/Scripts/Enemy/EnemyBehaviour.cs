@@ -18,6 +18,7 @@ public class EnemyBehaviour : MonoBehaviour
     Vector3 lastMoveDirection;
     //public GameObject PathChecker;
     //public bool canMoveChecker;
+    public GameObject soundAttack;
 
     protected void Start()
     {
@@ -141,6 +142,9 @@ public class EnemyBehaviour : MonoBehaviour
     }
     public void Attack()
     {
+        GameObject sound = Instantiate(soundAttack);
+        Destroy(sound, 2f);
+
         if (hitting && !player.GetComponentInChildren<IsHit>().Hit)
         {
             IsHit obj = player.GetComponentInChildren<IsHit>();

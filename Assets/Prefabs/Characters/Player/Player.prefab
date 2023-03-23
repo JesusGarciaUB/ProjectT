@@ -381,6 +381,7 @@ MonoBehaviour:
   spells: {fileID: 4645666583652742336, guid: 9931e354e84a8b741bf641f57797ad6d, type: 3}
   MagicCooldown: 3
   Ins: {fileID: 0}
+  swordSound: {fileID: 2260607133514380705, guid: b42adc7f0790bfb4698f50df2d15c180, type: 3}
 --- !u!95 &6686875965164495011
 Animator:
   serializedVersion: 4
