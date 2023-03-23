@@ -26,25 +26,24 @@ public class ElementalBase : EnemyBehaviour
     private void Update()
     {
         SetLayer();
-    }
-    private void FixedUpdate()
-    {
+
         if (canMove)
         {
             //follow target if not in min distance
             if (Vector3.Distance(player.transform.position, transform.position) > MinDistance)
             {
+                animator.SetBool("moving", true);
                 Movement();
                 transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-                animator.SetBool("moving", true);
-                animator.SetBool("shooting", false);
             }
-            else {
-                SetMoveIdle();
+            else
+            {
                 animator.SetBool("moving", false);
+                SetMoveIdle();
                 SetterAttack();
-            }  
+            }
         }
+
     }
 
     /// <summary>
