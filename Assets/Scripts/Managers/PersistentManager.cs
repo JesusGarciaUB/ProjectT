@@ -26,4 +26,9 @@ public class PersistentManager : MonoBehaviour
 
         PlayerGlobal = GameObject.FindGameObjectWithTag("Player");
     }
+
+    public Color GetOgColor
+    {
+        get { return new Color(255, 255, 255, 255); }
+    }
 }

@@ -353,6 +353,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4192035136894752240, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
   m_PrefabInstance: {fileID: 353753586}
   m_PrefabAsset: {fileID: 0}
+--- !u!70 &297918978
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297918968}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0039379816, y: -0.119099215}
+  m_Size: {x: 0.15595724, y: 0.055248655}
+  m_Direction: 1
 --- !u!1001 &353753586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -360,6 +376,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8718137416123307638, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8718137416123307638, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 297918969, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: pauseMenu
       value: 
@@ -416,7 +440,8 @@ PrefabInstance:
       propertyPath: Ins
       value: 
       objectReference: {fileID: 5965017908786508994}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5871577910450829142, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
 --- !u!1 &371648165
 GameObject:
