@@ -19,7 +19,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     protected void Start()
     {
-        og = gameObject.GetComponent<SpriteRenderer>().color;
+        og = PersistentManager.Instance.GetOgColor;
         SetUp();
         player = PersistentManager.Instance.PlayerGlobal;   //get player from global variables
         animator = GetComponent<Animator>();
@@ -274,14 +274,14 @@ public class EnemyBehaviour : MonoBehaviour
     
     public void SetDinamic()
     {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.bodyType = RigidbodyType2D.Dynamic;
+      //  Rigidbody2D rb = GetComponent<Rigidbody2D>();
+       // rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     public void SetKinetic()
     {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.bodyType = RigidbodyType2D.Kinematic;
+        //Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        //rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     public void LockMovement()
