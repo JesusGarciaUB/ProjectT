@@ -16,6 +16,8 @@ public class EnemyBehaviour : MonoBehaviour
     protected Animator animator;
     Vector3 previousPosition;
     Vector3 lastMoveDirection;
+    //public GameObject PathChecker;
+    //public bool canMoveChecker;
 
     protected void Start()
     {
@@ -35,6 +37,7 @@ public class EnemyBehaviour : MonoBehaviour
         canMove = true;
         hitting = false;
         canAttack = true;
+        //canMoveChecker = true;
     }
     /// <summary>
     /// set health based on value received, includes logic for floating damage 
@@ -271,17 +274,36 @@ public class EnemyBehaviour : MonoBehaviour
         lastMoveDirection.y = auxMoveY ? -y : y; ;
         lastMoveDirection = lastMoveDirection.normalized;
     }
-    
+    /*
+    protected void checkForEnemies()
+    {
+        float offset = 0.1f; 
+        Vector3 pos = new Vector3();
+        if (lastMoveDirection.x != 0)
+        {
+            pos.y = transform.position.y - 0.09f;
+            pos.x = lastMoveDirection.x > 0 ? transform.position.x + offset : transform.position.x - offset;
+            PathChecker.transform.position = pos;
+        }
+
+        if (lastMoveDirection.y != 0)
+        {
+            pos.x = transform.position.x;
+            pos.y = lastMoveDirection.y > 0 ? (transform.position.y - 0.09f) + offset : (transform.position.y - 0.09f) - offset;
+            PathChecker.transform.position = pos;
+        }
+    }
+    */
     public void SetDinamic()
     {
-      //  Rigidbody2D rb = GetComponent<Rigidbody2D>();
-       // rb.bodyType = RigidbodyType2D.Dynamic;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     public void SetKinetic()
     {
-        //Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        //rb.bodyType = RigidbodyType2D.Kinematic;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     public void LockMovement()

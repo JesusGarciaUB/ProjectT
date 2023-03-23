@@ -16,11 +16,10 @@ public class Follower : EnemyBehaviour
     {
         SetLayer();
     }
-
     void FixedUpdate()
     {
-        SetLayer();
-        if (canMove)
+        //checkForEnemies();
+        if (canMove /*&& canMoveChecker*/)
         {
             Movement();
             if (!hitting) transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
