@@ -377,12 +377,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8718137416123307638, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8718137416123307638, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8718137416123307638, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8718137416123307638, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_UseFullKinematicContacts
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 297918969, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: pauseMenu
@@ -394,11 +402,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413121269931867456, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.15556349
+      value: -0.407
       objectReference: {fileID: 0}
     - target: {fileID: 413121269931867456, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.04
+      value: -0.057
       objectReference: {fileID: 0}
     - target: {fileID: 413121269931867456, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_LocalPosition.z
