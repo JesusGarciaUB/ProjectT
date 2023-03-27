@@ -212,7 +212,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &-509499343411553863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -276,6 +276,7 @@ MonoBehaviour:
   canAttack: 1
   healthText: {fileID: 5449005750421041224, guid: d7e9f8ace7c9a9a4e8d8a24a749e6d1e, type: 3}
   canMove: 1
+  soundAttack: {fileID: 0}
   health: 60
   armor: 0
   isAlive: 1
