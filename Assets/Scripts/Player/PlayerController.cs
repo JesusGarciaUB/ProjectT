@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     private bool InteractingPalanca;
     private Palanca palanca;
     public GameObject swordSound;
+    public GameObject _bowSound;
 
     // Start is called before the first frame update
     void Start()
@@ -243,7 +244,11 @@ public class PlayerController : MonoBehaviour
         bowAttack.Attack();
     }
 
-
+    public void SetSoundBow()
+    {
+        GameObject sound = Instantiate(_bowSound);
+        Destroy(sound, 2f);
+    }
 
     public void EndSwordAttack()
     {
