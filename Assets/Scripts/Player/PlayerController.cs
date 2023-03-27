@@ -117,7 +117,7 @@ public class PlayerController : MonoBehaviour
         PersistentManager.Instance.winlose.SetActive(true);
         Time.timeScale = 0f;
     }
-    private void FixedUpdate()
+    private void Update()
     {
         SetLayer();
         SetLastPosition();

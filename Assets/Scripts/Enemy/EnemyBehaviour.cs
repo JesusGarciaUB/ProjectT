@@ -147,7 +147,6 @@ public class EnemyBehaviour : MonoBehaviour
             PlayerController objective = player.GetComponent<PlayerController>();
             obj.Hitted();
             objective.Health -= damage;
-            print("Attacked: " + damage);
         }
     }
     public IEnumerator StartCooldown()

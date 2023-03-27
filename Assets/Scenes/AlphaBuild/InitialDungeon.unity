@@ -435,6 +435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8871122201067800097, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
 --- !u!1 &954494793
@@ -50971,7 +50975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -358973395161003756, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
       propertyPath: sceneBuildIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4254790430412730880, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
       propertyPath: m_RootOrder
@@ -51264,7 +51268,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3641781726447021335, guid: 22991e71e9e44cc4d9b07f0edd00c54d, type: 3}
       propertyPath: health
-      value: 20
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3641781726447021335, guid: 22991e71e9e44cc4d9b07f0edd00c54d, type: 3}
+      propertyPath: isLast
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6795224071891758339, guid: 22991e71e9e44cc4d9b07f0edd00c54d, type: 3}
       propertyPath: m_Name
@@ -51335,7 +51343,7 @@ GameObject:
   - component: {fileID: 1679569643}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: ProjectileDeleter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
