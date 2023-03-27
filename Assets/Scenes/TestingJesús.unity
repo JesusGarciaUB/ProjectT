@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 4677179248141756841, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: Ins
       value: 
-      objectReference: {fileID: 5965017908786508994}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
 --- !u!1 &371648165
@@ -16607,6 +16607,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1411430384}
     - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
+      propertyPath: ins
+      value: 
+      objectReference: {fileID: 5965017908786508994}
+    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
       propertyPath: ability
       value: 
       objectReference: {fileID: 1004087097}
@@ -16614,6 +16618,10 @@ PrefabInstance:
       propertyPath: winlose
       value: 
       objectReference: {fileID: 985091907}
+    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
       propertyPath: PlayerGlobal
       value: 
