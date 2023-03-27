@@ -74,6 +74,12 @@ public class Ranger : EnemyBehaviour
         Instantiate(projectile, projectilePos.position, Quaternion.identity);
     }
 
+    private void SetSoundAttack()
+    {
+        GameObject sound = Instantiate(soundAttack);
+        Destroy(sound, 2f);
+    }
+
     private void IsRunningAway()
     {
         if (Vector3.Distance(PersistentManager.Instance.PlayerGlobal.transform.position, transform.position) > distanceToPlayer) animator.SetBool("isRunningAway", false);

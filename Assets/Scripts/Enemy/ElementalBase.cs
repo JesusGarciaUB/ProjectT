@@ -82,6 +82,8 @@ public class ElementalBase : EnemyBehaviour
     new private void Attack()
     {
         Instantiate(projectile, projectilePos.position, Quaternion.identity);    //instance of projectile     
+        GameObject sound = Instantiate(soundAttack);
+        Destroy(sound, 2f);
     }
     
     private void EndAttackAnimation()
