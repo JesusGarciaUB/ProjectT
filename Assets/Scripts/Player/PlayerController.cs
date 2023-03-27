@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
     bool canMove = true;                                    //On true player can move
     public GameObject healthText;                           //Displays damage on player
-    int health = 100;
+    int health;
     private int maxHealth;
     public GameObject spells;
     private bool healed = false;
@@ -42,11 +42,13 @@ public class PlayerController : MonoBehaviour
         Interacting = false;
         InteractingPalanca = false;
         CanMagic = true;
-        maxHealth = health;
+        PersistentManager.Instance.PlayerGlobal = gameObject;
+        maxHealth = PersistentManager.Instance.MaxHealth;
+        health = PersistentManager.Instance.CurrentHealth;
         dir = Direction.DOWN;                               //By default player face down
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        PersistentManager.Instance.hp.SetMaxHealth(health);
+        Ins = PersistentManager.Instance.ins;
     }
 
     public Palanca SetP { set { palanca = value; } }
@@ -61,6 +63,7 @@ public class PlayerController : MonoBehaviour
         set { currentMagic = value; }
     }
 
+    public int FirstHealth { set { health = value; } }
     public int Health
     {
         get { return health; }
@@ -93,6 +96,7 @@ public class PlayerController : MonoBehaviour
 
             health = value; 
             if (health <= 0) Defeated();
+            PersistentManager.Instance.CurrentHealth = health;
         } 
     }
     private void Defeated()
