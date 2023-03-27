@@ -7,7 +7,6 @@ public class PersistentManager : MonoBehaviour
    
     public static PersistentManager Instance { get; private set; }
     public GameObject PlayerGlobal;
-    public int EnemiesRemaining;
     public Healthbar hp;
     public GameObject winlose;
     public AbilityUI ability;

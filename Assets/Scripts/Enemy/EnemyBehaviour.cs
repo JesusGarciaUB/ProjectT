@@ -117,11 +117,6 @@ public class EnemyBehaviour : MonoBehaviour
     {
         isAlive = false;
         transform.gameObject.SetActive(false);
-        PersistentManager.Instance.EnemiesRemaining--;
-        if (PersistentManager.Instance.EnemiesRemaining == 0)
-        {
-            PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().Win();
-        }
     }
 
     public bool hitting;
