@@ -13,7 +13,7 @@ public class IsHit : MonoBehaviour
     void Start()
     {
         isHit = false;
-        OriginalColor = GetComponentInParent<SpriteRenderer>().color;
+        OriginalColor = PersistentManager.Instance.GetOgColor;
     }
 
     // Update is called once per frame

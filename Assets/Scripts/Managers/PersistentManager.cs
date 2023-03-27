@@ -10,6 +10,12 @@ public class PersistentManager : MonoBehaviour
     public Healthbar hp;
     public GameObject winlose;
     public AbilityUI ability;
+    [SerializeField] private int maxHealth;
+    [SerializeField] private int currentHealth;
+    public InteractionScreen ins;
+
+    public int MaxHealth { get { return maxHealth; } }
+    public int CurrentHealth { get { return currentHealth; } set { currentHealth = value; } }
 
     //Global variables
     public string spawnPoint;
@@ -19,11 +25,12 @@ public class PersistentManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            currentHealth = maxHealth;
             DontDestroyOnLoad(gameObject);
         }
         else Destroy(gameObject);
 
-        PlayerGlobal = GameObject.FindGameObjectWithTag("Player");
+        hp.SetMaxHealth(maxHealth);
     }
 
     public Color GetOgColor
