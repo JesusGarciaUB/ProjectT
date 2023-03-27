@@ -20,7 +20,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SVX
+  m_Name: SFX
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: acab6a717f2353d4e83ff88878cb87ba
   m_Children: []
@@ -81,7 +81,11 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 319cfcb3451539b4c94d5dbf25f0dd9c
+    name: Music
+  - guid: dd92f02b63a47a145a58869a18fae839
+    name: SFX
   m_AudioMixerGroupViews:
   - guids:
     - 46b17008a854f4a4ea99d3737d40250a
