@@ -34,6 +34,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         gameObject.GetComponent<SpriteRenderer>().color = og;
+        player = PersistentManager.Instance.PlayerGlobal;
         isAffected = false;
         canMove = true;
         hitting = false;

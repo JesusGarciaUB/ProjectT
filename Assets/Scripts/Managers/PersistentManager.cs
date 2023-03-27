@@ -13,6 +13,8 @@ public class PersistentManager : MonoBehaviour
     [SerializeField] private int maxHealth;
     [SerializeField] private int currentHealth;
     public InteractionScreen ins;
+    public PlayerController.MAGICe magic = PlayerController.MAGICe.NOONE;
+    public Vector3 nextSpawn;
 
     public int MaxHealth { get { return maxHealth; } }
     public int CurrentHealth { get { return currentHealth; } set { currentHealth = value; } }
@@ -22,6 +24,7 @@ public class PersistentManager : MonoBehaviour
 
     private void Awake()
     {
+        nextSpawn = new Vector3(0, 0, 0);
         if (Instance == null)
         {
             Instance = this;

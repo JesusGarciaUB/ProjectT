@@ -49,6 +49,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         Ins = PersistentManager.Instance.ins;
+        currentMagic = PersistentManager.Instance.magic;
+        transform.position = PersistentManager.Instance.nextSpawn;
     }
 
     public Palanca SetP { set { palanca = value; } }
@@ -60,7 +62,10 @@ public class PlayerController : MonoBehaviour
     public MAGICe MagicSetter
     {
         get { return currentMagic; }
-        set { currentMagic = value; }
+        set { 
+            currentMagic = value;
+            PersistentManager.Instance.magic = currentMagic;
+        }
     }
 
     public int FirstHealth { set { health = value; } }
