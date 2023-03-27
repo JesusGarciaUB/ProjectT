@@ -300,4 +300,9 @@ public class PlayerController : MonoBehaviour
         int layer = Mathf.FloorToInt((transform.position.y - 0.11f) * 100);
         GetComponent<SpriteRenderer>().sortingOrder = -layer;
     }
+    private void OnDash()
+    {
+        GetComponent<DashAttack>().DashMovement();
+        animator.SetTrigger("dashAttack");
+    }
 }
