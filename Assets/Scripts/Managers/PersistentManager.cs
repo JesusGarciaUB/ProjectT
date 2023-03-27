@@ -24,7 +24,6 @@ public class PersistentManager : MonoBehaviour
 
     private void Awake()
     {
-        nextSpawn = new Vector3(0, 0, 0);
         if (Instance == null)
         {
             Instance = this;
