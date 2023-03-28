@@ -9,17 +9,13 @@ public class IsHit : MonoBehaviour
     public int Multiplier;
     public float ticks;
     private Color OriginalColor;
+    private SpriteRenderer pl;
     // Start is called before the first frame update
     void Start()
     {
+        pl = GetComponentInParent<SpriteRenderer>();
         isHit = false;
-        OriginalColor = GetComponentInParent<SpriteRenderer>().color;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        OriginalColor = PersistentManager.Instance.GetOgColor;
     }
 
     public bool Hit
@@ -30,21 +26,21 @@ public class IsHit : MonoBehaviour
 
     private IEnumerator colorChange()
     {
-        SpriteRenderer pl = GetComponentInParent<SpriteRenderer>();
+        Color oga = new Color(255, 255, 255, 50);
         for (int x = 0; x < HitCooldown * Multiplier; x++)
         {
-            pl.color = Color.magenta;
+            pl.color = oga;
             yield return new WaitForSeconds(ticks);
             pl.color = OriginalColor;
             yield return new WaitForSeconds(ticks);
+            print("holi");
         }
-        pl.color = OriginalColor;
-        print("over");
+        //pl.color = OriginalColor;
     }
     public void Hitted()
     {
-        StartCoroutine(HitCooldownV());
         StartCoroutine(colorChange());
+        StartCoroutine(HitCooldownV());
     }
 
     public IEnumerator HitCooldownV()

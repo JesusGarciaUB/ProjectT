@@ -90,23 +90,20 @@ public class DashAttack: MonoBehaviour
         {
             case PlayerController.Direction.UP:
                 Debug.Log("dir dash up");
-                rotation = Quaternion.Euler(0, 0, 90);                                        //Set arrow facing up
+                //Set arrow facing up
                 trans = PersistentManager.Instance.PlayerGlobal.transform.up;
                 position.y = position.y + 0.11f;
                 break;
-            case PlayerController.Direction.DOWN:
-                rotation = Quaternion.Euler(0, 0, -90);
+            case PlayerController.Direction.DOWN:            
                 trans = PersistentManager.Instance.PlayerGlobal.transform.up * -1;
                 position.y = position.y - 0.20f;
                 break;
             case PlayerController.Direction.LEFT:
-                trans = PersistentManager.Instance.PlayerGlobal.transform.right * -1;
-                rotation = Quaternion.Euler(0, 0, 180);
+                trans = PersistentManager.Instance.PlayerGlobal.transform.right * -1;              
                 position.x = position.x + 0.04f;
                 break;
             case PlayerController.Direction.RIGHT:
                 trans = PersistentManager.Instance.PlayerGlobal.transform.right;
-                rotation = Quaternion.Euler(0, 0, 0);
                 position.x = position.x + 0.04f;
                 break;
 

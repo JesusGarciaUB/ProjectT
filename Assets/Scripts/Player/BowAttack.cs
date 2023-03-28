@@ -11,8 +11,6 @@ public class BowAttack : MonoBehaviour
     private Quaternion rotation;
     private Vector3 trans;
     private Vector3 position;
-
-    // Update is called once per frame
     public void Attack()
     {
         ArrowDir();                                                                 //Check player rotation and position

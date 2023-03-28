@@ -34,6 +34,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         gameObject.GetComponent<SpriteRenderer>().color = og;
+        player = PersistentManager.Instance.PlayerGlobal;
         isAffected = false;
         canMove = true;
         hitting = false;
@@ -117,11 +118,6 @@ public class EnemyBehaviour : MonoBehaviour
     {
         isAlive = false;
         transform.gameObject.SetActive(false);
-        PersistentManager.Instance.EnemiesRemaining--;
-        if (PersistentManager.Instance.EnemiesRemaining == 0)
-        {
-            PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().Win();
-        }
     }
 
     public bool hitting;
@@ -151,7 +147,6 @@ public class EnemyBehaviour : MonoBehaviour
             PlayerController objective = player.GetComponent<PlayerController>();
             obj.Hitted();
             objective.Health -= damage;
-            print("Attacked: " + damage);
         }
     }
     public IEnumerator StartCooldown()
