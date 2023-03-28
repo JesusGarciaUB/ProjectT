@@ -14,6 +14,7 @@ public class ElementalBase : EnemyBehaviour
     public GameObject projectile;                                   //type of projectile, prefab
     public Transform projectilePos;
     private Vector3 shootDir;
+    [SerializeField] private bool isLast;
     new void Start()
     {
         if (type == ETYPE.RANDOM)                                   //random type if set to do so
@@ -54,6 +55,7 @@ public class ElementalBase : EnemyBehaviour
         GameObject droppedLoot = Instantiate(loot, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);    //instance of loot dropped
         setLootColor(droppedLoot);                                                                                                      //set color of loot to own color
         base.Defeated();
+        if (isLast) PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().Win();
     }
 
     /// <summary>
@@ -82,6 +84,8 @@ public class ElementalBase : EnemyBehaviour
     new private void Attack()
     {
         Instantiate(projectile, projectilePos.position, Quaternion.identity);    //instance of projectile     
+        GameObject sound = Instantiate(soundAttack);
+        Destroy(sound, 2f);
     }
     
     private void EndAttackAnimation()

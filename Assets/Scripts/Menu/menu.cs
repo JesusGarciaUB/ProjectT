@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class menu : MonoBehaviour
 {
     public static bool isGamePaused = false;
 
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject _soundOptions;
+
+    [SerializeField] AudioMixer _audioMixer;
 
     public void ResumeGame()
     {
@@ -20,7 +26,27 @@ public class menu : MonoBehaviour
         Time.timeScale = 0f;
         isGamePaused = true;
     }
-    
+
+    public void SoundOptions()
+    {
+        _soundOptions.SetActive(true);
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        _audioMixer.SetFloat("Music", volume);
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        _audioMixer.SetFloat("SFX", volume);
+    }
+
+    public void ReturnToMenu()
+    {
+        _soundOptions.SetActive(false);
+    }
+
     void OnMenu()
     {
         if (!isGamePaused)
