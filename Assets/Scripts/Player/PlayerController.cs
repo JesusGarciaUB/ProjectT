@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public List<RaycastHit2D> cColl = new List<RaycastHit2D>();
     bool canMove = true;                                    //On true player can move
     public GameObject healthText;                           //Displays damage on player
-    int health = 100;
+    int health;
     private int maxHealth;
     public GameObject spells;
     private bool healed = false;
@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     private bool InteractingPalanca;
     private Palanca palanca;
     public GameObject swordSound;
+    public GameObject _bowSound;
 
     // Start is called before the first frame update
     void Start()
@@ -42,11 +43,15 @@ public class PlayerController : MonoBehaviour
         Interacting = false;
         InteractingPalanca = false;
         CanMagic = true;
-        maxHealth = health;
+        PersistentManager.Instance.PlayerGlobal = gameObject;
+        maxHealth = PersistentManager.Instance.MaxHealth;
+        health = PersistentManager.Instance.CurrentHealth;
         dir = Direction.DOWN;                               //By default player face down
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        PersistentManager.Instance.hp.SetMaxHealth(health);
+        Ins = PersistentManager.Instance.ins;
+        currentMagic = PersistentManager.Instance.magic;
+        transform.position = PersistentManager.Instance.nextSpawn;
     }
 
     public Palanca SetP { set { palanca = value; } }
@@ -58,9 +63,13 @@ public class PlayerController : MonoBehaviour
     public MAGICe MagicSetter
     {
         get { return currentMagic; }
-        set { currentMagic = value; }
+        set { 
+            currentMagic = value;
+            PersistentManager.Instance.magic = currentMagic;
+        }
     }
 
+    public int FirstHealth { set { health = value; } }
     public int Health
     {
         get { return health; }
@@ -93,6 +102,7 @@ public class PlayerController : MonoBehaviour
 
             health = value; 
             if (health <= 0) Defeated();
+            PersistentManager.Instance.CurrentHealth = health;
         } 
     }
     private void Defeated()
@@ -107,7 +117,7 @@ public class PlayerController : MonoBehaviour
         PersistentManager.Instance.winlose.SetActive(true);
         Time.timeScale = 0f;
     }
-    private void FixedUpdate()
+    private void Update()
     {
         SetLayer();
         SetLastPosition();
@@ -234,7 +244,11 @@ public class PlayerController : MonoBehaviour
         bowAttack.Attack();
     }
 
-
+    public void SetSoundBow()
+    {
+        GameObject sound = Instantiate(_bowSound);
+        Destroy(sound, 2f);
+    }
 
     public void EndSwordAttack()
     {

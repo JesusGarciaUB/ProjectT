@@ -31,7 +31,6 @@ public class GridChanger : MonoBehaviour
                 originalPosition.Add(enemies[x].transform.position);
                 enemies[x].GetComponent<EnemyBehaviour>().SetUp();
                 enemies[x].gameObject.SetActive(false);
-                PersistentManager.Instance.EnemiesRemaining++;
             }
         }
         if (elementals.Count != 0)
@@ -41,7 +40,6 @@ public class GridChanger : MonoBehaviour
                 originalPositionElementals.Add(elementals[i].transform.position);
                 elementals[i].GetComponent<EnemyBehaviour>().SetUp();
                 elementals[i].gameObject.SetActive(false);
-                PersistentManager.Instance.EnemiesRemaining++;
             }
         }
     }

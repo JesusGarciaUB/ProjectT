@@ -43,7 +43,6 @@ public class ElementalShoot : MonoBehaviour
                 PlayerController objective = p.GetComponent<PlayerController>();            //logic to damage player
                 obj.Hitted();
                 objective.Health -= damage;
-                print("Attacked: " + damage);
                 Destroy(gameObject);
             }
         }
