@@ -23,7 +23,8 @@ public class Shield : EnemyBehaviour
         SetLayer();
         if (Armor <= 0 && !changed)
         {
-            sr.color = Color.red;
+            animator.SetTrigger("noShield");
+            //sr.color = Color.red;
             changed = true;
         }
     }

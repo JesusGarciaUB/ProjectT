@@ -19,6 +19,7 @@ public class EnemyBehaviour : MonoBehaviour
     //public GameObject PathChecker;
     //public bool canMoveChecker;
     public GameObject soundAttack;
+    private Vector3 deathPos;
 
     protected void Start()
     {
@@ -116,8 +117,14 @@ public class EnemyBehaviour : MonoBehaviour
 
     virtual public void Defeated()
     {
+        deathPos = transform.position;
         isAlive = false;
-        transform.gameObject.SetActive(false);
+        canMove = false;
+        Destroy(GetComponent<Rigidbody2D>());
+        Destroy(GetComponent<BoxCollider2D>());
+        animator.SetTrigger("isDeath");
+
+        //transform.gameObject.SetActive(false);
     }
 
     public bool hitting;
@@ -319,5 +326,10 @@ public class EnemyBehaviour : MonoBehaviour
     {
         int layer = Mathf.FloorToInt((transform.position.y - 0.11f) * 100);
         GetComponent<SpriteRenderer>().sortingOrder = -layer;
+
+        if (!isAlive)
+        {
+            GetComponent<SpriteRenderer>().sortingOrder = -1009;
+        }
     }
 }
