@@ -15,6 +15,8 @@ public class PersistentManager : MonoBehaviour
     public InteractionScreen ins;
     public PlayerController.MAGICe magic = PlayerController.MAGICe.NOONE;
     public Vector3 nextSpawn;
+    public List<GameObject> bloodType = new List<GameObject>();
+    public GameObject bloodElemental;
 
     public int MaxHealth { get { return maxHealth; } }
     public int CurrentHealth { get { return currentHealth; } set { currentHealth = value; } }

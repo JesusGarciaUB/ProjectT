@@ -16,6 +16,7 @@ public class GridChanger : MonoBehaviour
     private float randomPosX, randomPosY;
     public int maxEnemies;
     public int minRange;
+
     private void Start()
     {
         position.x = transform.position.x;
