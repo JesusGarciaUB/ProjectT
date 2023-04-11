@@ -19,6 +19,7 @@ public class EnemyBehaviour : MonoBehaviour
     //public GameObject PathChecker;
     //public bool canMoveChecker;
     public GameObject soundAttack;
+    private Vector3 deathPos;
 
     protected void Start()
     {
@@ -116,6 +117,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     virtual public void Defeated()
     {
+        deathPos = transform.position;
         isAlive = false;
         canMove = false;
         Destroy(GetComponent<Rigidbody2D>());
