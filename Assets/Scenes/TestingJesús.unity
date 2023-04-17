@@ -303,6 +303,10 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1970566179}
+    - target: {fileID: 357769688559613249, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: ticks
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 413121269931867456, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_RootOrder
       value: 3

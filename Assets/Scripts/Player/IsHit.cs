@@ -13,7 +13,7 @@ public class IsHit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pl = GetComponentInParent<SpriteRenderer>();
+        pl = gameObject.GetComponentInParent<SpriteRenderer>();
         isHit = false;
         OriginalColor = PersistentManager.Instance.GetOgColor;
     }
@@ -31,9 +31,10 @@ public class IsHit : MonoBehaviour
         {
             pl.color = oga;
             yield return new WaitForSeconds(ticks);
+            print("change");
             pl.color = OriginalColor;
             yield return new WaitForSeconds(ticks);
-            print("holi");
+            print("og");
         }
         //pl.color = OriginalColor;
     }
