@@ -10,7 +10,6 @@ public class Shield : EnemyBehaviour
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        Armor = 2;
 
         base.Start();
 
