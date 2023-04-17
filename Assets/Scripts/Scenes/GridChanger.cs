@@ -16,6 +16,8 @@ public class GridChanger : MonoBehaviour
     private float randomPosX, randomPosY;
     public int maxEnemies;
     public int minRange;
+    private List<bool> spawnedBloods = new List<bool>();
+    private List<bool> spawnedBloodsElemental = new List<bool>();
 
     private void Start()
     {
@@ -32,6 +34,7 @@ public class GridChanger : MonoBehaviour
                 originalPosition.Add(enemies[x].transform.position);
                 enemies[x].GetComponent<EnemyBehaviour>().SetUp();
                 enemies[x].gameObject.SetActive(false);
+                spawnedBloods.Add(false);
             }
         }
         if (elementals.Count != 0)
@@ -41,6 +44,7 @@ public class GridChanger : MonoBehaviour
                 originalPositionElementals.Add(elementals[i].transform.position);
                 elementals[i].GetComponent<EnemyBehaviour>().SetUp();
                 elementals[i].gameObject.SetActive(false);
+                spawnedBloodsElemental.Add(false);
             }
         }
     }
@@ -62,6 +66,13 @@ public class GridChanger : MonoBehaviour
                         r.StartedP = false;
                         r.TimeTo = 0;
                     }
+                } else
+                {
+                    if (!spawnedBloods[x])
+                    {
+                        Instantiate(PersistentManager.Instance.bloodType[Range(0, PersistentManager.Instance.bloodType.Count)], enemies[x].GetComponent<EnemyBehaviour>().deathPos, Quaternion.identity);
+                        spawnedBloods[x] = true;
+                    }
                 }
             }
 
@@ -73,6 +84,13 @@ public class GridChanger : MonoBehaviour
                     {
                         elementals[i].gameObject.SetActive(true);
                         elementals[i].GetComponent<EnemyBehaviour>().SetUp();
+                    } else
+                    {
+                        if (!spawnedBloodsElemental[i])
+                        {
+                            Instantiate(PersistentManager.Instance.bloodElemental, elementals[i].GetComponent<EnemyBehaviour>().deathPos, Quaternion.identity);
+                            spawnedBloodsElemental[i] = true;
+                        }
                     }
                 }
             }

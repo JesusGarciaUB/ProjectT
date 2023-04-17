@@ -355,6 +355,10 @@ PrefabInstance:
       propertyPath: Ins
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6511775424269026629, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
 --- !u!1 &371648165
@@ -16626,6 +16630,26 @@ PrefabInstance:
       propertyPath: PlayerGlobal
       value: 
       objectReference: {fileID: 297918968}
+    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
+      propertyPath: bloodElemental
+      value: 
+      objectReference: {fileID: 4084170079160832925, guid: 0a5b24b7e1985394e86c7b7524ea02be, type: 3}
+    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
+      propertyPath: bloodType.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
+      propertyPath: bloodType.Array.data[0]
+      value: 
+      objectReference: {fileID: 5657071602619222145, guid: e02853a51a4821747816f2452b12e098, type: 3}
+    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
+      propertyPath: bloodType.Array.data[1]
+      value: 
+      objectReference: {fileID: 5798263000820852266, guid: a4e54b411988a674297eedc06a873637, type: 3}
+    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
+      propertyPath: bloodType.Array.data[2]
+      value: 
+      objectReference: {fileID: 2585697431499237925, guid: ad9b709554789c04f912944720c0bfcf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
 --- !u!1001 &1777067335
