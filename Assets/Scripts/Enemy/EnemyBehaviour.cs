@@ -19,7 +19,7 @@ public class EnemyBehaviour : MonoBehaviour
     //public GameObject PathChecker;
     //public bool canMoveChecker;
     public GameObject soundAttack;
-    private Vector3 deathPos;
+    public Vector3 deathPos;
 
     protected void Start()
     {
