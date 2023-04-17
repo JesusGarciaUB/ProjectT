@@ -299,14 +299,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 297918969, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: pauseMenu
-      value: 
-      objectReference: {fileID: 1970566179}
-    - target: {fileID: 357769688559613249, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: ticks
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 413121269931867456, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -354,14 +346,6 @@ PrefabInstance:
     - target: {fileID: 4192035136894752240, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4677179248141756841, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: Ins
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511775424269026629, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_Color.a
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
@@ -16748,11 +16732,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
---- !u!1 &1970566179 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7359272193852477520, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
-  m_PrefabInstance: {fileID: 8936798218051327621}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2063847599
 PrefabInstance:
   m_ObjectHideFlags: 0
