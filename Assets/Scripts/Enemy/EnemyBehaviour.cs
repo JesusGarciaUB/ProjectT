@@ -323,7 +323,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void UnLockMovement()
     {
-        canMove = true;
+        if(isAlive) canMove = true;
     }
 
     protected void SetLayer()
