@@ -20,6 +20,7 @@ public class EnemyBehaviour : MonoBehaviour
     //public bool canMoveChecker;
     public GameObject soundAttack;
     public Vector3 deathPos;
+    //public GameObject checkHorizontal, checkVertical; DEPRECATED
 
     protected void Start()
     {
@@ -280,23 +281,26 @@ public class EnemyBehaviour : MonoBehaviour
         lastMoveDirection.y = auxMoveY ? -y : y; ;
         lastMoveDirection = lastMoveDirection.normalized;
     }
-    /*
+    /* DEPRECATED
     protected void checkForEnemies()
     {
-        float offset = 0.1f; 
+        float offset = 0.08f;
+        float offsetVert = 0.12f;
         Vector3 pos = new Vector3();
         if (lastMoveDirection.x != 0)
         {
-            pos.y = transform.position.y - 0.09f;
+            pos.y = transform.position.y;
             pos.x = lastMoveDirection.x > 0 ? transform.position.x + offset : transform.position.x - offset;
-            PathChecker.transform.position = pos;
+            checkVertical.transform.position = transform.position;
+            checkHorizontal.transform.position = pos;
         }
 
         if (lastMoveDirection.y != 0)
         {
             pos.x = transform.position.x;
-            pos.y = lastMoveDirection.y > 0 ? (transform.position.y - 0.09f) + offset : (transform.position.y - 0.09f) - offset;
-            PathChecker.transform.position = pos;
+            pos.y = lastMoveDirection.y > 0 ? (transform.position.y) + offsetVert : (transform.position.y) - offsetVert;
+            checkHorizontal.transform.position = transform.position;
+            checkVertical.transform.position = pos;
         }
     }
     */
