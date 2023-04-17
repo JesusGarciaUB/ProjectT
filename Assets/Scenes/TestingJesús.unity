@@ -305,7 +305,7 @@ PrefabInstance:
       objectReference: {fileID: 1970566179}
     - target: {fileID: 357769688559613249, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: ticks
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 413121269931867456, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
       propertyPath: m_RootOrder
@@ -12355,6 +12355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79a8a6dd85e3692449d0841e1d5846ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
   timeShake: 0
 --- !u!1 &1259499130
 GameObject:

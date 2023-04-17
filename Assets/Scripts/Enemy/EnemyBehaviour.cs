@@ -86,6 +86,7 @@ public class EnemyBehaviour : MonoBehaviour
         {
             if (value < armor)
             {
+                print(value);
                 //Set health loss text position on top of the enemy
                 GameObject gm = Instantiate(healthText);
                 RectTransform textTransform = gm.GetComponent<RectTransform>();
