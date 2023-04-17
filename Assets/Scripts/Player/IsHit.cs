@@ -13,7 +13,7 @@ public class IsHit : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        pl = GetComponentInParent<SpriteRenderer>();
+        pl = PersistentManager.Instance.PlayerGlobal.GetComponent<SpriteRenderer>();
         isHit = false;
         OriginalColor = PersistentManager.Instance.GetOgColor;
     }
