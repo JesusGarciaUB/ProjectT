@@ -10,6 +10,7 @@ public class ElementalShoot : MonoBehaviour
     public float speed;                                                                     //speed of projectile
     public float extraRotation;                                                             //extra rotation for sprite accuracity (usually 90)
     private bool canDamage;
+    public bool isElemental;
     private void Start()
     {
         Vector3 playerPos = PersistentManager.Instance.PlayerGlobal.transform.position;     //get player position
@@ -29,10 +30,16 @@ public class ElementalShoot : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "ProjectileDeleter") { 
+        if (collision.tag == "ProjectileDeleter" && !isElemental) { 
             rb.velocity = new Vector2(0, 0).normalized;
             canDamage = false;
         }
+        else if(collision.tag == "ProjectileDeleter" && isElemental)
+        {
+            Destroy(gameObject);
+        }
+
+
         if (collision.tag == "EnemyHitspot")
         {
             GameObject p = PersistentManager.Instance.PlayerGlobal;                         //get player

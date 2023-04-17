@@ -18,7 +18,6 @@ public class Follower : EnemyBehaviour
     }
     void FixedUpdate()
     {
-        //checkForEnemies();
         if (canMove /*&& canMoveChecker*/)
         {
             Movement();

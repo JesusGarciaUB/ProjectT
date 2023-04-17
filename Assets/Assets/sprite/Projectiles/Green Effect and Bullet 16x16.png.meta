@@ -1,0 +1,828 @@
+fileFormatVersion: 2
+guid: f25af15c24e1241469c5d4b86a8eb8f0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_24
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c74adf421278543bbab761f8f11391
+      internalID: -934726584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_25
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51ac75314cbe3d40a0b72e5926a32eb
+      internalID: 2012578326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99f9da4c7ab14c4fa39c2ede6813a79
+      internalID: 832958743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2dce2b49d9767148b1992d2bb78a5a6
+      internalID: -434354823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_28
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb719164210348479fd84ed37593d7b
+      internalID: -489486391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_29
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592351d75dd6e8142aaa44d39393a20b
+      internalID: 316652391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_54
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709ee3d694b10a44db63503cb6adb3d1
+      internalID: 17168128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_55
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2ebfc41654fc64cbbda1d687f33e36
+      internalID: 1210418701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b04dc2084b288045aecf10a7265b004
+      internalID: -1929650092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_57
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d1974a1a8bd5e489bc8ed90af567ca
+      internalID: 683522960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_58
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc8a917d810034409cd25d0ea330a8f
+      internalID: 1891318794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_59
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88daa400677b7aa4eac4545afd1912a4
+      internalID: 394710103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_352
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f53669775ed9444fa95ac26b12dc0e6
+      internalID: 362131523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_353
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700b637a7735f9d4c87fa181f249ea91
+      internalID: -1314879905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_354
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3bcfa18bba99d4cb1ac5156b12ec7d
+      internalID: -1768316767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Effect and Bullet 16x16_355
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb7b3905f977624fbb78c05c0925703
+      internalID: 1409346368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Green Effect and Bullet 16x16_108: -2104256173
+      Green Effect and Bullet 16x16_248: -1726330424
+      Green Effect and Bullet 16x16_89: 1793130516
+      Green Effect and Bullet 16x16_94: 967237193
+      Green Effect and Bullet 16x16_207: 885604144
+      Green Effect and Bullet 16x16_44: -1443495899
+      Green Effect and Bullet 16x16_181: -260322595
+      Green Effect and Bullet 16x16_253: 90410785
+      Green Effect and Bullet 16x16_147: -732838313
+      Green Effect and Bullet 16x16_136: 21484887
+      Green Effect and Bullet 16x16_154: -731350738
+      Green Effect and Bullet 16x16_297: 1159854874
+      Green Effect and Bullet 16x16_329: -1855439242
+      Green Effect and Bullet 16x16_230: 267262962
+      Green Effect and Bullet 16x16_2: -1390435200
+      Green Effect and Bullet 16x16_102: -1955377530
+      Green Effect and Bullet 16x16_145: -283552911
+      Green Effect and Bullet 16x16_342: -207299076
+      Green Effect and Bullet 16x16_92: 1852031392
+      Green Effect and Bullet 16x16_110: -1419248704
+      Green Effect and Bullet 16x16_19: -2100222561
+      Green Effect and Bullet 16x16_77: -171794632
+      Green Effect and Bullet 16x16_12: 1588457484
+      Green Effect and Bullet 16x16_130: -1299028698
+      Green Effect and Bullet 16x16_242: -1999975265
+      Green Effect and Bullet 16x16_60: -592160038
+      Green Effect and Bullet 16x16_40: -1150629968
+      Green Effect and Bullet 16x16_244: 662414225
+      Green Effect and Bullet 16x16_39: -1266948357
+      Green Effect and Bullet 16x16_52: 1569246704
+      Green Effect and Bullet 16x16_224: 1482011537
+      Green Effect and Bullet 16x16_257: -799232640
+      Green Effect and Bullet 16x16_75: 1171398047
+      Green Effect and Bullet 16x16_206: 1170409607
+      Green Effect and Bullet 16x16_22: 1510551852
+      Green Effect and Bullet 16x16_218: -708885273
+      Green Effect and Bullet 16x16_192: -271589913
+      Green Effect and Bullet 16x16_306: -328136333
+      Green Effect and Bullet 16x16_15: -332417511
+      Green Effect and Bullet 16x16_143: -1099251490
+      Green Effect and Bullet 16x16_200: -970825946
+      Green Effect and Bullet 16x16_67: -447721907
+      Green Effect and Bullet 16x16_179: -1683990297
+      Green Effect and Bullet 16x16_131: 1882429188
+      Green Effect and Bullet 16x16_159: 1151744870
+      Green Effect and Bullet 16x16_65: 333390625
+      Green Effect and Bullet 16x16_328: -2082300816
+      Green Effect and Bullet 16x16_362: -1206078361
+      Green Effect and Bullet 16x16_105: 640047944
+      Green Effect and Bullet 16x16_255: -974663897
+      Green Effect and Bullet 16x16_24: -934726584
+      Green Effect and Bullet 16x16_364: -680144029
+      Green Effect and Bullet 16x16_168: 1040129424
+      Green Effect and Bullet 16x16_28: -489486391
+      Green Effect and Bullet 16x16_95: -1137153285
+      Green Effect and Bullet 16x16_140: -1354862021
+      Green Effect and Bullet 16x16_289: -329171616
+      Green Effect and Bullet 16x16_7: -2053073897
+      Green Effect and Bullet 16x16_346: 703251106
+      Green Effect and Bullet 16x16_223: -1252493398
+      Green Effect and Bullet 16x16_90: 156906485
+      Green Effect and Bullet 16x16_318: 1805834411
+      Green Effect and Bullet 16x16_112: -1818838284
+      Green Effect and Bullet 16x16_235: 824819702
+      Green Effect and Bullet 16x16_291: 1929862997
+      Green Effect and Bullet 16x16_295: -1917299332
+      Green Effect and Bullet 16x16_158: 737218387
+      Green Effect and Bullet 16x16_111: -1060188037
+      Green Effect and Bullet 16x16_23: -880327072
+      Green Effect and Bullet 16x16_227: -1658381583
+      Green Effect and Bullet 16x16_187: 1867674163
+      Green Effect and Bullet 16x16_286: 1838999396
+      Green Effect and Bullet 16x16_80: -1879475393
+      Green Effect and Bullet 16x16_348: -2127518096
+      Green Effect and Bullet 16x16_349: -1453151500
+      Green Effect and Bullet 16x16_234: -595911282
+      Green Effect and Bullet 16x16_132: 282830274
+      Green Effect and Bullet 16x16_144: 915379536
+      Green Effect and Bullet 16x16_345: 1809332452
+      Green Effect and Bullet 16x16_68: 661376872
+      Green Effect and Bullet 16x16_267: 2050828558
+      Green Effect and Bullet 16x16_13: 1561388443
+      Green Effect and Bullet 16x16_103: -408522891
+      Green Effect and Bullet 16x16_284: -295617055
+      Green Effect and Bullet 16x16_301: -20653142
+      Green Effect and Bullet 16x16_11: 222054273
+      Green Effect and Bullet 16x16_138: 2146249996
+      Green Effect and Bullet 16x16_61: 224722345
+      Green Effect and Bullet 16x16_293: 35005185
+      Green Effect and Bullet 16x16_153: 701336111
+      Green Effect and Bullet 16x16_180: 1558776000
+      Green Effect and Bullet 16x16_269: -1149353438
+      Green Effect and Bullet 16x16_259: -1672196925
+      Green Effect and Bullet 16x16_250: -1321397236
+      Green Effect and Bullet 16x16_18: 2080709249
+      Green Effect and Bullet 16x16_323: -1824329428
+      Green Effect and Bullet 16x16_101: 2116752269
+      Green Effect and Bullet 16x16_58: 1891318794
+      Green Effect and Bullet 16x16_249: 382162181
+      Green Effect and Bullet 16x16_123: 346392644
+      Green Effect and Bullet 16x16_41: 1715101558
+      Green Effect and Bullet 16x16_79: -2036687826
+      Green Effect and Bullet 16x16_210: 705232302
+      Green Effect and Bullet 16x16_304: 1297592334
+      Green Effect and Bullet 16x16_71: 1327244670
+      Green Effect and Bullet 16x16_124: 299380650
+      Green Effect and Bullet 16x16_337: 994010639
+      Green Effect and Bullet 16x16_35: 1877200360
+      Green Effect and Bullet 16x16_49: 85418316
+      Green Effect and Bullet 16x16_263: 793049680
+      Green Effect and Bullet 16x16_48: -266154780
+      Green Effect and Bullet 16x16_209: 524965460
+      Green Effect and Bullet 16x16_126: -1252987774
+      Green Effect and Bullet 16x16_294: 1867297568
+      Green Effect and Bullet 16x16_45: -788036022
+      Green Effect and Bullet 16x16_30: 1290114834
+      Green Effect and Bullet 16x16_315: 1779602519
+      Green Effect and Bullet 16x16_280: -1762773291
+      Green Effect and Bullet 16x16_1: 1723850195
+      Green Effect and Bullet 16x16_57: 683522960
+      Green Effect and Bullet 16x16_6: -196848475
+      Green Effect and Bullet 16x16_228: -1933642030
+      Green Effect and Bullet 16x16_333: -68087468
+      Green Effect and Bullet 16x16_343: -2112668718
+      Green Effect and Bullet 16x16_97: 388989621
+      Green Effect and Bullet 16x16_359: 1387970848
+      Green Effect and Bullet 16x16_260: -1280593654
+      Green Effect and Bullet 16x16_160: 565001261
+      Green Effect and Bullet 16x16_279: 1593200171
+      Green Effect and Bullet 16x16_205: 1761085955
+      Green Effect and Bullet 16x16_369: -1643519763
+      Green Effect and Bullet 16x16_305: -1657788738
+      Green Effect and Bullet 16x16_31: -2014178005
+      Green Effect and Bullet 16x16_148: -2075992593
+      Green Effect and Bullet 16x16_175: 1517027122
+      Green Effect and Bullet 16x16_109: 767309937
+      Green Effect and Bullet 16x16_332: -2053743612
+      Green Effect and Bullet 16x16_300: -492893013
+      Green Effect and Bullet 16x16_46: 650505561
+      Green Effect and Bullet 16x16_116: -375693564
+      Green Effect and Bullet 16x16_59: 394710103
+      Green Effect and Bullet 16x16_220: -509645247
+      Green Effect and Bullet 16x16_84: 635278817
+      Green Effect and Bullet 16x16_165: -970352195
+      Green Effect and Bullet 16x16_121: -528317261
+      Green Effect and Bullet 16x16_107: -1506045818
+      Green Effect and Bullet 16x16_133: -525070229
+      Green Effect and Bullet 16x16_258: -370531036
+      Green Effect and Bullet 16x16_53: 248920740
+      Green Effect and Bullet 16x16_282: 1456403854
+      Green Effect and Bullet 16x16_83: 1976966437
+      Green Effect and Bullet 16x16_76: 1493949078
+      Green Effect and Bullet 16x16_326: 627810165
+      Green Effect and Bullet 16x16_361: 1381922667
+      Green Effect and Bullet 16x16_70: -385485825
+      Green Effect and Bullet 16x16_155: 391613228
+      Green Effect and Bullet 16x16_356: 745541292
+      Green Effect and Bullet 16x16_214: 1050453230
+      Green Effect and Bullet 16x16_38: -1707076701
+      Green Effect and Bullet 16x16_9: 1992309318
+      Green Effect and Bullet 16x16_114: -1231303488
+      Green Effect and Bullet 16x16_232: 600952488
+      Green Effect and Bullet 16x16_56: -1929650092
+      Green Effect and Bullet 16x16_137: -1820480704
+      Green Effect and Bullet 16x16_265: -1423838906
+      Green Effect and Bullet 16x16_69: 128188669
+      Green Effect and Bullet 16x16_243: 1717873490
+      Green Effect and Bullet 16x16_117: -302579909
+      Green Effect and Bullet 16x16_307: 787026311
+      Green Effect and Bullet 16x16_186: 1531329957
+      Green Effect and Bullet 16x16_281: -589049296
+      Green Effect and Bullet 16x16_86: 1997565233
+      Green Effect and Bullet 16x16_296: -434685132
+      Green Effect and Bullet 16x16_36: -1324062639
+      Green Effect and Bullet 16x16_268: 39858453
+      Green Effect and Bullet 16x16_340: -1857696895
+      Green Effect and Bullet 16x16_310: 1629686368
+      Green Effect and Bullet 16x16_37: 1947509691
+      Green Effect and Bullet 16x16_311: -1127707705
+      Green Effect and Bullet 16x16_128: -629145882
+      Green Effect and Bullet 16x16_166: -1388442666
+      Green Effect and Bullet 16x16_338: -1293933081
+      Green Effect and Bullet 16x16_339: 195490814
+      Green Effect and Bullet 16x16_42: -885722961
+      Green Effect and Bullet 16x16_197: 2130206364
+      Green Effect and Bullet 16x16_129: -573269149
+      Green Effect and Bullet 16x16_309: 689327683
+      Green Effect and Bullet 16x16_336: 1158680943
+      Green Effect and Bullet 16x16_213: 402230477
+      Green Effect and Bullet 16x16_347: -1104592780
+      Green Effect and Bullet 16x16_357: -544803038
+      Green Effect and Bullet 16x16_115: -1366881625
+      Green Effect and Bullet 16x16_8: -972568469
+      Green Effect and Bullet 16x16_212: 790959288
+      Green Effect and Bullet 16x16_21: 1901554206
+      Green Effect and Bullet 16x16_63: -2040883902
+      Green Effect and Bullet 16x16_368: -932725374
+      Green Effect and Bullet 16x16_229: 1203936369
+      Green Effect and Bullet 16x16_81: -646366632
+      Green Effect and Bullet 16x16_33: 1437169170
+      Green Effect and Bullet 16x16_170: -1033563196
+      Green Effect and Bullet 16x16_73: -1422423312
+      Green Effect and Bullet 16x16_341: -1434899627
+      Green Effect and Bullet 16x16_113: 303691884
+      Green Effect and Bullet 16x16_26: 832958743
+      Green Effect and Bullet 16x16_189: 1743563160
+      Green Effect and Bullet 16x16_54: 17168128
+      Green Effect and Bullet 16x16_122: 127453272
+      Green Effect and Bullet 16x16_236: 811031337
+      Green Effect and Bullet 16x16_237: -112090204
+      Green Effect and Bullet 16x16_27: -434354823
+      Green Effect and Bullet 16x16_231: 558633579
+      Green Effect and Bullet 16x16_3: -1505641756
+      Green Effect and Bullet 16x16_25: 2012578326
+      Green Effect and Bullet 16x16_146: -2141007771
+      Green Effect and Bullet 16x16_360: 1654492320
+      Green Effect and Bullet 16x16_271: -1742376242
+      Green Effect and Bullet 16x16_352: 362131523
+      Green Effect and Bullet 16x16_198: -331354499
+      Green Effect and Bullet 16x16_365: 652294304
+      Green Effect and Bullet 16x16_185: 1031816603
+      Green Effect and Bullet 16x16_247: 89969935
+      Green Effect and Bullet 16x16_322: -453074992
+      Green Effect and Bullet 16x16_5: -1154372955
+      Green Effect and Bullet 16x16_325: 1780905057
+      Green Effect and Bullet 16x16_331: -729788870
+      Green Effect and Bullet 16x16_98: 1283268209
+      Green Effect and Bullet 16x16_276: 904511355
+      Green Effect and Bullet 16x16_188: -567534930
+      Green Effect and Bullet 16x16_100: -485395472
+      Green Effect and Bullet 16x16_233: -652865447
+      Green Effect and Bullet 16x16_299: -764804522
+      Green Effect and Bullet 16x16_91: -2040571754
+      Green Effect and Bullet 16x16_275: -287225679
+      Green Effect and Bullet 16x16_245: 2047466782
+      Green Effect and Bullet 16x16_194: 439071226
+      Green Effect and Bullet 16x16_319: -1333680587
+      Green Effect and Bullet 16x16_151: 484084490
+      Green Effect and Bullet 16x16_4: 1724742528
+      Green Effect and Bullet 16x16_355: 1409346368
+      Green Effect and Bullet 16x16_72: -45597513
+      Green Effect and Bullet 16x16_176: -1982914498
+      Green Effect and Bullet 16x16_201: -912188255
+      Green Effect and Bullet 16x16_287: 2121815435
+      Green Effect and Bullet 16x16_317: 1929905055
+      Green Effect and Bullet 16x16_85: 730021671
+      Green Effect and Bullet 16x16_266: -928707291
+      Green Effect and Bullet 16x16_184: 588028805
+      Green Effect and Bullet 16x16_87: -1190786830
+      Green Effect and Bullet 16x16_29: 316652391
+      Green Effect and Bullet 16x16_157: -378766594
+      Green Effect and Bullet 16x16_272: -949541687
+      Green Effect and Bullet 16x16_256: 588342061
+      Green Effect and Bullet 16x16_78: -266363869
+      Green Effect and Bullet 16x16_312: -1846301425
+      Green Effect and Bullet 16x16_344: -352405080
+      Green Effect and Bullet 16x16_161: -1569696850
+      Green Effect and Bullet 16x16_134: -1736989095
+      Green Effect and Bullet 16x16_316: -2047015728
+      Green Effect and Bullet 16x16_252: -2113276113
+      Green Effect and Bullet 16x16_43: -545035393
+      Green Effect and Bullet 16x16_135: 916652888
+      Green Effect and Bullet 16x16_178: -624259056
+      Green Effect and Bullet 16x16_238: 1095541760
+      Green Effect and Bullet 16x16_125: -649505749
+      Green Effect and Bullet 16x16_82: -1275226098
+      Green Effect and Bullet 16x16_183: -15279504
+      Green Effect and Bullet 16x16_99: -1748847133
+      Green Effect and Bullet 16x16_149: 287255611
+      Green Effect and Bullet 16x16_261: -1848216822
+      Green Effect and Bullet 16x16_251: -60163951
+      Green Effect and Bullet 16x16_141: 1405825505
+      Green Effect and Bullet 16x16_193: -397274163
+      Green Effect and Bullet 16x16_308: 400890002
+      Green Effect and Bullet 16x16_199: 668086128
+      Green Effect and Bullet 16x16_313: -2073642470
+      Green Effect and Bullet 16x16_225: 782000700
+      Green Effect and Bullet 16x16_353: -1314879905
+      Green Effect and Bullet 16x16_277: -1083902
+      Green Effect and Bullet 16x16_20: -2058079647
+      Green Effect and Bullet 16x16_222: -130073642
+      Green Effect and Bullet 16x16_47: -1500849287
+      Green Effect and Bullet 16x16_162: -1261481670
+      Green Effect and Bullet 16x16_351: -79040712
+      Green Effect and Bullet 16x16_172: 1834862989
+      Green Effect and Bullet 16x16_221: -57582650
+      Green Effect and Bullet 16x16_104: -1827652147
+      Green Effect and Bullet 16x16_363: -1685822592
+      Green Effect and Bullet 16x16_241: -676349943
+      Green Effect and Bullet 16x16_278: 1269710184
+      Green Effect and Bullet 16x16_264: -1166647636
+      Green Effect and Bullet 16x16_120: 2122067536
+      Green Effect and Bullet 16x16_139: 2107238644
+      Green Effect and Bullet 16x16_321: 1179051295
+      Green Effect and Bullet 16x16_142: 265607148
+      Green Effect and Bullet 16x16_298: 1677588101
+      Green Effect and Bullet 16x16_262: -375936215
+      Green Effect and Bullet 16x16_74: 938337414
+      Green Effect and Bullet 16x16_366: -251589055
+      Green Effect and Bullet 16x16_64: -1683070223
+      Green Effect and Bullet 16x16_96: -34713373
+      Green Effect and Bullet 16x16_290: -1825391814
+      Green Effect and Bullet 16x16_106: -681396939
+      Green Effect and Bullet 16x16_270: 45606661
+      Green Effect and Bullet 16x16_0: -1266447239
+      Green Effect and Bullet 16x16_66: -2048993055
+      Green Effect and Bullet 16x16_118: -2056661834
+      Green Effect and Bullet 16x16_285: -274455102
+      Green Effect and Bullet 16x16_283: 1226007217
+      Green Effect and Bullet 16x16_216: -69991753
+      Green Effect and Bullet 16x16_274: 116778554
+      Green Effect and Bullet 16x16_190: 648010827
+      Green Effect and Bullet 16x16_324: 691305516
+      Green Effect and Bullet 16x16_208: -1255444214
+      Green Effect and Bullet 16x16_358: 1862721998
+      Green Effect and Bullet 16x16_51: 1324972666
+      Green Effect and Bullet 16x16_288: 1377883668
+      Green Effect and Bullet 16x16_254: -1702021653
+      Green Effect and Bullet 16x16_17: -421193117
+      Green Effect and Bullet 16x16_211: 1142018559
+      Green Effect and Bullet 16x16_119: 1530993855
+      Green Effect and Bullet 16x16_335: -2118968911
+      Green Effect and Bullet 16x16_88: -318795739
+      Green Effect and Bullet 16x16_303: 1994130763
+      Green Effect and Bullet 16x16_196: 165834085
+      Green Effect and Bullet 16x16_292: 1555850828
+      Green Effect and Bullet 16x16_330: -577315097
+      Green Effect and Bullet 16x16_50: 1531255983
+      Green Effect and Bullet 16x16_334: -1467016349
+      Green Effect and Bullet 16x16_16: -326911542
+      Green Effect and Bullet 16x16_177: 1461499796
+      Green Effect and Bullet 16x16_240: 1882804797
+      Green Effect and Bullet 16x16_202: 625650316
+      Green Effect and Bullet 16x16_273: 1910728160
+      Green Effect and Bullet 16x16_354: -1768316767
+      Green Effect and Bullet 16x16_239: 1653776683
+      Green Effect and Bullet 16x16_164: 236104176
+      Green Effect and Bullet 16x16_204: 1379215631
+      Green Effect and Bullet 16x16_14: -823880579
+      Green Effect and Bullet 16x16_55: 1210418701
+      Green Effect and Bullet 16x16_246: -1145149331
+      Green Effect and Bullet 16x16_150: -1518768852
+      Green Effect and Bullet 16x16_327: 797352019
+      Green Effect and Bullet 16x16_10: 1244612330
+      Green Effect and Bullet 16x16_62: 167899722
+      Green Effect and Bullet 16x16_195: -1558989611
+      Green Effect and Bullet 16x16_34: -35388726
+      Green Effect and Bullet 16x16_226: -378506876
+      Green Effect and Bullet 16x16_367: -1778329240
+      Green Effect and Bullet 16x16_219: -549813259
+      Green Effect and Bullet 16x16_93: -1521585140
+      Green Effect and Bullet 16x16_127: -1239643814
+      Green Effect and Bullet 16x16_32: 1940036090
+      Green Effect and Bullet 16x16_174: 212550223
+      Green Effect and Bullet 16x16_314: 1950757169
+      Green Effect and Bullet 16x16_171: -962442548
+      Green Effect and Bullet 16x16_320: -885678102
+      Green Effect and Bullet 16x16_215: -2110604738
+      Green Effect and Bullet 16x16_156: -900279072
+      Green Effect and Bullet 16x16_169: -1117921385
+      Green Effect and Bullet 16x16_182: -308296875
+      Green Effect and Bullet 16x16_217: -1931100034
+      Green Effect and Bullet 16x16_152: -1792426502
+      Green Effect and Bullet 16x16_350: -2115166063
+      Green Effect and Bullet 16x16_173: 1087745665
+      Green Effect and Bullet 16x16_203: 2080323712
+      Green Effect and Bullet 16x16_191: -1805960132
+      Green Effect and Bullet 16x16_302: 1076089337
+      Green Effect and Bullet 16x16_163: -268909393
+      Green Effect and Bullet 16x16_167: 1977016632
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

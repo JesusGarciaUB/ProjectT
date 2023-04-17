@@ -68,7 +68,7 @@ public class SwordAttack : MonoBehaviour
             EnemyBehaviour enemy = collision.GetComponentInParent<EnemyBehaviour>();
             Rigidbody2D rb = collision.GetComponentInParent<Rigidbody2D>();
             IsHitEnemy h = collision.GetComponent<IsHitEnemy>();
-            if (enemy != null)
+            if (enemy != null && enemy.isAlive)
             {
                 if (!h.HitEnemy)
                 {

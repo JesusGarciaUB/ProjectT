@@ -97,6 +97,14 @@ public class PlayerController : MonoBehaviour
                 Canvas canvas = GameObject.FindObjectOfType<Canvas>();
                 textTransform.SetParent(canvas.transform);
 
+                //Set screen shake on hp loss
+                if (!healed)
+                {
+                    GameObject screenShake = GameObject.FindWithTag("MainCamera");
+                    screenShake.GetComponent<ScreenShake>().timeShake = 0.15f;
+
+                }
+
                 PersistentManager.Instance.hp.SetHealth(damage);
             }
 

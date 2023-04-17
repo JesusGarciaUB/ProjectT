@@ -285,5 +285,6 @@ MonoBehaviour:
   MinDistance: 0.7
   speed: 0.3
   loot: {fileID: 2103183152607103511, guid: 014dd1bffd5b9ba4db676ed4e4db7062, type: 3}
-  projectile: {fileID: 5621689950981799462, guid: 00d0c0a9e61c77345ad44f41872f2b51, type: 3}
+  projectile: {fileID: 5621689950981799462, guid: 2b8f13c0a4005f94aba4b66c622fb047, type: 3}
   projectilePos: {fileID: 4491007474888145256}
+  isLast: 0
