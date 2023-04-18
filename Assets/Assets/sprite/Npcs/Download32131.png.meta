@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: 78b99a65ae114a64eb41f84ff1fef4f2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Download32131_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4579e486bc171d947a94dfc2d449c383
+      internalID: -351973543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download32131_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e5da94d27e02a4c870f8715b010c6b
+      internalID: 11615052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download32131_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfa96bef83697b48945f54102566b3b
+      internalID: -1972689379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download32131_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32469f89e87fad40b1327f93a25105d
+      internalID: 1581055651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Download32131_15: -1972689379
+      Download32131_56: -1678088781
+      Download32131_10: -1370706656
+      Download32131_118: 1822951583
+      Download32131_132: 1345841012
+      Download32131_160: -1916336283
+      Download32131_159: 927490903
+      Download32131_85: 1110770417
+      Download32131_3: -4967287
+      Download32131_119: 720117367
+      Download32131_166: -879918766
+      Download32131_107: 1503777142
+      Download32131_136: 1495243051
+      Download32131_59: -862663652
+      Download32131_98: 236854326
+      Download32131_124: -1724942565
+      Download32131_143: -199254591
+      Download32131_94: 1331045121
+      Download32131_55: 1225153371
+      Download32131_112: 72128598
+      Download32131_105: -906734638
+      Download32131_169: -267315863
+      Download32131_9: 2088224773
+      Download32131_126: 949698227
+      Download32131_158: -101520627
+      Download32131_115: 901095638
+      Download32131_1: 728891167
+      Download32131_172: 1212808102
+      Download32131_117: 1578550278
+      Download32131_95: 264688917
+      Download32131_122: -1304794503
+      Download32131_127: 1456444014
+      Download32131_149: 842670332
+      Download32131_173: -1715607340
+      Download32131_151: -1614273004
+      Download32131_92: 1327635277
+      Download32131_153: -1794232420
+      Download32131_35: 1900278664
+      Download32131_113: -1040688787
+      Download32131_140: -1598516617
+      Download32131_157: 89314383
+      Download32131_36: 68467748
+      Download32131_80: 355115141
+      Download32131_129: -1201793708
+      Download32131_31: -2057317231
+      Download32131_168: -353211631
+      Download32131_90: -67180646
+      Download32131_178: -424742981
+      Download32131_72: 552058462
+      Download32131_103: -1248320287
+      Download32131_5: -921751123
+      Download32131_177: 1578335118
+      Download32131_162: 1550642284
+      Download32131_167: -583624729
+      Download32131_12: 1862265887
+      Download32131_48: -1554292232
+      Download32131_24: -1143457246
+      Download32131_34: -1399807399
+      Download32131_135: -1180618606
+      Download32131_53: -773346996
+      Download32131_141: 1696136712
+      Download32131_137: -225928383
+      Download32131_25: 939971569
+      Download32131_21: 2133287722
+      Download32131_61: 1000122474
+      Download32131_86: -1355747133
+      Download32131_27: -1136704269
+      Download32131_91: -62181801
+      Download32131_133: 223883421
+      Download32131_163: 1560895732
+      Download32131_97: -984147087
+      Download32131_138: -1929060972
+      Download32131_67: 80213414
+      Download32131_77: 1720624500
+      Download32131_176: -1094373952
+      Download32131_14: -1375972464
+      Download32131_46: 1014501254
+      Download32131_106: -1945523609
+      Download32131_174: -1095858729
+      Download32131_111: -1605670994
+      Download32131_83: 1640878896
+      Download32131_139: -755877509
+      Download32131_146: -813249754
+      Download32131_39: 1498625826
+      Download32131_73: -192772388
+      Download32131_145: 1943262006
+      Download32131_88: -365730338
+      Download32131_84: -1752713508
+      Download32131_28: -349686534
+      Download32131_8: 11615052
+      Download32131_23: 373537083
+      Download32131_79: 250027400
+      Download32131_57: 321357154
+      Download32131_102: -2143653940
+      Download32131_165: 963493908
+      Download32131_0: -351973543
+      Download32131_44: 180837348
+      Download32131_26: -845512638
+      Download32131_101: -130018739
+      Download32131_93: 1654029177
+      Download32131_11: -2031854687
+      Download32131_110: 748040440
+      Download32131_51: -390942581
+      Download32131_150: 2120440436
+      Download32131_40: 1140824061
+      Download32131_121: -215945262
+      Download32131_78: 1305644904
+      Download32131_170: 2090638379
+      Download32131_125: 1159882805
+      Download32131_13: -1400142094
+      Download32131_109: 1966994446
+      Download32131_152: -734160765
+      Download32131_30: -1501416926
+      Download32131_17: 1539280353
+      Download32131_41: -891620207
+      Download32131_82: -1655279499
+      Download32131_171: -1496404647
+      Download32131_49: -1693078146
+      Download32131_130: 1008204040
+      Download32131_60: 744513040
+      Download32131_148: 215803853
+      Download32131_175: -1218599332
+      Download32131_63: -459075021
+      Download32131_43: -1479575677
+      Download32131_81: -1571195830
+      Download32131_161: 311550896
+      Download32131_147: -1180844203
+      Download32131_2: 2081971007
+      Download32131_89: -765933121
+      Download32131_71: -1874022520
+      Download32131_156: -151949901
+      Download32131_20: 814848884
+      Download32131_6: -2035838862
+      Download32131_131: -2144158180
+      Download32131_32: 1599637786
+      Download32131_134: 201174867
+      Download32131_7: 1353509041
+      Download32131_18: -467239106
+      Download32131_62: -1962027160
+      Download32131_33: 794357652
+      Download32131_76: -1054849355
+      Download32131_66: 1297177375
+      Download32131_164: 366347370
+      Download32131_58: 1822931923
+      Download32131_22: 1581055651
+      Download32131_108: -428926155
+      Download32131_120: -735837307
+      Download32131_123: -59945759
+      Download32131_42: 622659027
+      Download32131_74: -789235977
+      Download32131_16: -1975286456
+      Download32131_50: -640119005
+      Download32131_69: -1134824220
+      Download32131_142: -1189521251
+      Download32131_96: -746469753
+      Download32131_144: -1801810701
+      Download32131_29: -1225140729
+      Download32131_70: -581972584
+      Download32131_87: 1806054999
+      Download32131_75: 1516531610
+      Download32131_100: -1557958455
+      Download32131_114: 1412095602
+      Download32131_99: -434824331
+      Download32131_64: 909029383
+      Download32131_45: 1757564939
+      Download32131_128: -1371484969
+      Download32131_116: -589861043
+      Download32131_4: -1307578202
+      Download32131_37: 724007
+      Download32131_38: 1929925006
+      Download32131_47: 753995236
+      Download32131_65: 888086365
+      Download32131_52: 1619400668
+      Download32131_68: 1718933547
+      Download32131_155: 1323266709
+      Download32131_154: 1267640032
+      Download32131_19: 1418874100
+      Download32131_104: -1546231180
+      Download32131_54: -544346197
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
