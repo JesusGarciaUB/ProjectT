@@ -13,49 +13,19 @@ public class DashAttack: MonoBehaviour
     private Vector3 lastMovedir;
     private bool isTouching;
     private Vector3 actualDirection;
+    private float dashDistance = 2f;
+    private Vector3 playerDashMovement;
+    [SerializeField] Rigidbody2D rb;
 
     private void Start()
     {
        
     }
 
-  
-    void Update()
+    private void OnDash()
     {
-
-        position = PersistentManager.Instance.PlayerGlobal.transform.position;
-        switch (PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().dir) //Check player facing direction to set arrow direction and position
-        {
-            case PlayerController.Direction.UP:                          //Set arrow facing up
-                actualDirection = Vector3.up;
-                detectWalls();
-                break;
-            case PlayerController.Direction.DOWN:
-                actualDirection = Vector3.down;
-                detectWalls();
-                break;
-            case PlayerController.Direction.LEFT:
-                actualDirection = Vector3.left;
-                detectWalls();
-                break;
-            case PlayerController.Direction.RIGHT:
-                actualDirection = Vector3.right;
-                detectWalls();
-                
-                break;
-
-        }
-        /*private void OnDash()
-        {
-            ;
-        }
-        */
-        /*
-         for (int i = 0; i < hits.Length; i++) //Mirar dentro de los hits
-         {
-            RaycastHit2D hit = hits[i];
-         }
-        */
+        Debug.Log("Entra");
+        movementDash();
     }
     private void detectWalls()
     {
@@ -78,9 +48,40 @@ public class DashAttack: MonoBehaviour
             isTouching = false;
         }
     }
-  
-    
-        //float dashDistance = 0.4f;
-        //transform.position += lastMovedir * dashDistance;
-    
+    private void movementDash()
+    {
+        position = PersistentManager.Instance.PlayerGlobal.transform.position;
+        switch (PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().dir) //Check player facing direction to set arrow direction and position
+        {
+            case PlayerController.Direction.UP:                          //Set arrow facing up
+                actualDirection = Vector3.up;
+                detectWalls();
+                break;
+            case PlayerController.Direction.DOWN:
+                actualDirection = Vector3.down;
+                detectWalls();
+                break;
+            case PlayerController.Direction.LEFT:
+                actualDirection = Vector3.left;
+                detectWalls();
+                rb.position = new Vector3(transform.position.x + dashDistance, -1f);
+                break;
+            case PlayerController.Direction.RIGHT:
+                actualDirection = Vector3.right;
+                detectWalls();
+                rb.position = new Vector3(transform.position.x , dashDistance, 0f);
+                break;
+
+        }
+
+    }
+    /*
+         for (int i = 0; i < hits.Length; i++) //Mirar dentro de los hits
+         {
+            RaycastHit2D hit = hits[i];
+         }
+        */
+
+
+
 }

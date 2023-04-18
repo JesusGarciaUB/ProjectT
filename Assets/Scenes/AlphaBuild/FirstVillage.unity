@@ -21485,6 +21485,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c95925581a48c4fb821b57a176bac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 750078071}
+--- !u!50 &750078071 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: -8718137416123307638, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+  m_PrefabInstance: {fileID: 1562410515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &958173841
 PrefabInstance:
   m_ObjectHideFlags: 0
