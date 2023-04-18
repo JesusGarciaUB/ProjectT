@@ -49,7 +49,7 @@ public class InteractionScreen : MonoBehaviour
         else state++;
     }
 
-    private void Finished()
+    protected void Finished()
     {
         text.text = "";
         firstInteraction = true;
