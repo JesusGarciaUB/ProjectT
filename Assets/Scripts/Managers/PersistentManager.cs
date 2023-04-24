@@ -39,6 +39,6 @@ public class PersistentManager : MonoBehaviour
 
     public Color GetOgColor
     {
-        get { return new Color(255, 255, 255, 255); }
+        get { return new Color(1, 1, 1, 1); }
     }
 }

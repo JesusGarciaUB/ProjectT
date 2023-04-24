@@ -13,7 +13,7 @@ public class IsHit : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        pl = PersistentManager.Instance.PlayerGlobal.GetComponent<SpriteRenderer>();
+        pl = GetComponentInParent<SpriteRenderer>();
         isHit = false;
         OriginalColor = PersistentManager.Instance.GetOgColor;
     }
@@ -26,24 +26,24 @@ public class IsHit : MonoBehaviour
 
     private IEnumerator colorChange()
     {
-        Color oga = new Color(255, 255, 255, 50);
+        Color oga = new Color(1, 1, 1, 0.02f);
         for (int x = 0; x < HitCooldown * Multiplier; x++)
         {
             pl.color = oga;
-            new WaitForSeconds(ticks);
-            //print("change");
-            pl.color = OriginalColor;
-            new WaitForSeconds(ticks);
-            //print("og");
+            yield return new WaitForSeconds(ticks);
+            print(x);
+            //pl.color = OriginalColor;
+            yield return new WaitForSeconds(ticks);
+            print(x + "f");
         }
         //print("done");
-        yield return null;
+        //yield return null;
         //pl.color = OriginalColor;
     }
     public void Hitted()
     {
-        StartCoroutine(colorChange());
         StartCoroutine(HitCooldownV());
+        StartCoroutine(colorChange());
     }
 
     public IEnumerator HitCooldownV()
