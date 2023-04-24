@@ -11,6 +11,7 @@ public class menu : MonoBehaviour
 
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject _soundOptions;
+    [SerializeField] GameObject _controlOptions;
 
     [SerializeField] AudioMixer _audioMixer;
 
@@ -30,6 +31,16 @@ public class menu : MonoBehaviour
     public void SoundOptions()
     {
         _soundOptions.SetActive(true);
+    }
+
+    public void ControlsOptions()
+    {
+        _controlOptions.SetActive(true);
+    }
+
+    public void ReturnFromControlsToMenu()
+    {
+        _controlOptions.SetActive(false);
     }
 
     public void SetMusicVolume(float volume)
