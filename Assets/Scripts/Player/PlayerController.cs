@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     public GameObject healthText;                           //Displays damage on player
     int health;
     private int maxHealth;
-    public GameObject spells;
+    public List<GameObject> spells;
     private bool healed = false;
     public int MagicCooldown;
     private bool CanMagic;
@@ -294,7 +294,7 @@ public class PlayerController : MonoBehaviour
 
     public void MagicAttack()
     {
-        Instantiate(spells, transform.position, Quaternion.identity);
+        Instantiate(spells[(int)currentMagic - 1], transform.position, Quaternion.identity);
         PersistentManager.Instance.ability.usedAbility(MagicCooldown);
     }
 
