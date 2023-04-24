@@ -124,6 +124,8 @@ public class EnemyBehaviour : MonoBehaviour
         canMove = false;
         Destroy(GetComponent<Rigidbody2D>());
         Destroy(GetComponent<BoxCollider2D>());
+        Destroy(transform.GetChild(0).gameObject);
+        if (transform.childCount > 1) Destroy(transform.GetChild(1).gameObject);
         animator.SetTrigger("isDeath");
 
         //transform.gameObject.SetActive(false);

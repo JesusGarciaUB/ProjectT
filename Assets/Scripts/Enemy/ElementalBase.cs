@@ -54,6 +54,7 @@ public class ElementalBase : EnemyBehaviour
     {
         GameObject droppedLoot = Instantiate(loot, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);    //instance of loot dropped
         setLootColor(droppedLoot);                                                                                                      //set color of loot to own color
+        //Destroy(transform.GetChild(1).gameObject);
         base.Defeated();
         if (isLast) PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().Win();
     }
