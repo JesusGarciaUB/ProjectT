@@ -13,14 +13,10 @@ public class DashAttack: MonoBehaviour
     private Vector3 lastMovedir;
     private bool isTouching;
     private Vector3 actualDirection;
-    private float dashDistance = 2f;
+    private float dashDistance = 19f;
     private Vector3 playerDashMovement;
     [SerializeField] Rigidbody2D rb;
 
-    private void Start()
-    {
-       
-    }
 
     private void OnDash()
     {
@@ -36,16 +32,18 @@ public class DashAttack: MonoBehaviour
 
         hits = Physics2D.RaycastAll(transform.position, actualDirection, 0.4f, layerMask);
         rayColor = Color.green;
-        Debug.DrawRay(transform.position, actualDirection * 0.4f, rayColor);
+        Debug.DrawRay(transform.position, actualDirection * 0.5f, rayColor);
         if (hits.Length > 0)
         {
             isTouching = true;
             rayColor = Color.red;
-            Debug.DrawRay(transform.position, actualDirection * 0.4f, rayColor);
+            Debug.DrawRay(transform.position, actualDirection * 0.5f, rayColor);
+            
         }
         else
         {
             isTouching = false;
+            
         }
     }
     private void movementDash()
@@ -56,32 +54,37 @@ public class DashAttack: MonoBehaviour
             case PlayerController.Direction.UP:                          //Set arrow facing up
                 actualDirection = Vector3.up;
                 detectWalls();
+                if (isTouching != true)
+                {
+                    rb.position = new Vector3(transform.position.x, transform.position.y - 0f + dashDistance * Time.fixedDeltaTime);
+                }
                 break;
             case PlayerController.Direction.DOWN:
                 actualDirection = Vector3.down;
                 detectWalls();
+                if (isTouching != true)
+                {
+                    rb.position = new Vector3(transform.position.x, transform.position.y - 1f + dashDistance * Time.fixedDeltaTime);
+                }
                 break;
             case PlayerController.Direction.LEFT:
                 actualDirection = Vector3.left;
                 detectWalls();
-                rb.position = new Vector3(transform.position.x + dashDistance, -1f);
+                if (isTouching != true)
+                {
+                    rb.position = new Vector3(transform.position.x - 1f + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
+                }
                 break;
             case PlayerController.Direction.RIGHT:
                 actualDirection = Vector3.right;
                 detectWalls();
-                rb.position = new Vector3(transform.position.x , dashDistance, 0f);
+                if (isTouching != true)
+                {
+                    rb.position = new Vector3(transform.position.x + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
+                }
                 break;
 
         }
 
     }
-    /*
-         for (int i = 0; i < hits.Length; i++) //Mirar dentro de los hits
-         {
-            RaycastHit2D hit = hits[i];
-         }
-        */
-
-
-
 }
