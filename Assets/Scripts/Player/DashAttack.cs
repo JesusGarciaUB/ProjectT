@@ -15,6 +15,8 @@ public class DashAttack: MonoBehaviour
     private Vector3 actualDirection;
     private float dashDistance = 19f;
     private Vector3 playerDashMovement;
+    private float cooldownTime = 2f;
+    private float nextfireTeam = 0f;
     [SerializeField] Rigidbody2D rb;
 
 
@@ -56,7 +58,11 @@ public class DashAttack: MonoBehaviour
                 detectWalls();
                 if (isTouching != true)
                 {
-                    rb.position = new Vector3(transform.position.x, transform.position.y - 0f + dashDistance * Time.fixedDeltaTime);
+                    if (Time.time > nextfireTeam)
+                    {
+                        nextfireTeam = Time.time + cooldownTime;
+                        rb.position = new Vector3(transform.position.x, transform.position.y - 0f + dashDistance * Time.fixedDeltaTime);
+                    }
                 }
                 break;
             case PlayerController.Direction.DOWN:
@@ -64,7 +70,11 @@ public class DashAttack: MonoBehaviour
                 detectWalls();
                 if (isTouching != true)
                 {
-                    rb.position = new Vector3(transform.position.x, transform.position.y - 1f + dashDistance * Time.fixedDeltaTime);
+                    if (Time.time > nextfireTeam)
+                    {
+                        nextfireTeam = Time.time + cooldownTime;
+                        rb.position = new Vector3(transform.position.x, transform.position.y - 1f + dashDistance * Time.fixedDeltaTime);
+                    }
                 }
                 break;
             case PlayerController.Direction.LEFT:
@@ -72,7 +82,11 @@ public class DashAttack: MonoBehaviour
                 detectWalls();
                 if (isTouching != true)
                 {
-                    rb.position = new Vector3(transform.position.x - 1f + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
+                    if (Time.time > nextfireTeam)
+                    {
+                        nextfireTeam = Time.time + cooldownTime;
+                        rb.position = new Vector3(transform.position.x - 1f + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
+                    }
                 }
                 break;
             case PlayerController.Direction.RIGHT:
@@ -80,7 +94,11 @@ public class DashAttack: MonoBehaviour
                 detectWalls();
                 if (isTouching != true)
                 {
-                    rb.position = new Vector3(transform.position.x + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
+                    if (Time.time > nextfireTeam)
+                    {
+                        nextfireTeam = Time.time + cooldownTime;
+                        rb.position = new Vector3(transform.position.x + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
+                    }
                 }
                 break;
 
