@@ -27,7 +27,6 @@ public class DashAttack: MonoBehaviour
 
     private void OnDash()
     {
-        Debug.Log("Entra");
         movementDash();
     }
     private void detectWalls()
@@ -37,7 +36,7 @@ public class DashAttack: MonoBehaviour
         RaycastHit2D[] hits;
         Color rayColor;
 
-        hits = Physics2D.RaycastAll(transform.position, actualDirection, 0.4f, layerMask);
+        hits = Physics2D.RaycastAll(transform.position, actualDirection, 0.5f, layerMask);
         rayColor = Color.green;
         Debug.DrawRay(transform.position, actualDirection * 0.5f, rayColor);
         if (hits.Length > 0)
@@ -76,8 +75,10 @@ public class DashAttack: MonoBehaviour
                 detectWalls();
                 if (isTouching != true)
                 {
+                    Debug.Log("entra");
                     if (Time.time > nextfireTeam)
                     {
+                        Debug.Log("no me puedo mover");
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x, transform.position.y - 1f + dashDistance * Time.fixedDeltaTime);
