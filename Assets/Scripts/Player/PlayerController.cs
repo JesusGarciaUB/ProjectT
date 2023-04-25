@@ -220,10 +220,7 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("bowAttack");
     }
-    void OnDash()
-    {
-        animator.SetTrigger("dashAttack");
-    }
+   
 
 
     public void SwordAttack()
