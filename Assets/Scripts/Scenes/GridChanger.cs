@@ -6,7 +6,7 @@ using static UnityEngine.Random;
 public class GridChanger : MonoBehaviour
 {
 
-    private Vector3 position = new Vector3(0,0,-10);
+    public Vector3 position = new Vector3(0,0,-10);
     private List<Transform> enemies = new List<Transform>();
     private List<Vector3> originalPosition = new List<Vector3>();
     public List<Transform> elementals = new List<Transform>();
@@ -21,8 +21,7 @@ public class GridChanger : MonoBehaviour
 
     private void Start()
     {
-        position.x = transform.position.x;
-        position.y = transform.position.y;
+        
         if (minRange != 0)
         {
             randEnemies = Range(minRange, maxEnemies + 1);

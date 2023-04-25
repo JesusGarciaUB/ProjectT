@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -3277,7 +3277,6 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       RA_Atlantis_Animated01_65: 1695630902
-      RA_Atlantis_Animated01_145: -1006218653
       RA_Atlantis_Animated01_90: 866641003
       RA_Atlantis_Animated01_6: 1244145375
       RA_Atlantis_Animated01_75: 1301837904
@@ -3358,24 +3357,24 @@ TextureImporter:
       RA_Atlantis_Animated01_132: -1750009169
       RA_Atlantis_Animated01_122: 866940455
       RA_Atlantis_Animated01_5: 1639846953
-      RA_Atlantis_Animated01_38: 329432060
       RA_Atlantis_Animated01_110: -1646070069
-      RA_Atlantis_Animated01_56: 1508152827
+      RA_Atlantis_Animated01_140: -1673503004
       RA_Atlantis_Animated01_83: 1835987604
       RA_Atlantis_Animated01_22: 544319930
-      RA_Atlantis_Animated01_138: 74200152
+      RA_Atlantis_Animated01_38: 329432060
       RA_Atlantis_Animated01_109: -1202929934
+      RA_Atlantis_Animated01_138: 74200152
       RA_Atlantis_Animated01_14: 55821075
-      RA_Atlantis_Animated01_88: -2072573397
+      RA_Atlantis_Animated01_56: 1508152827
       RA_Atlantis_Animated01_24: -1181801937
-      RA_Atlantis_Animated01_130: 645755683
+      RA_Atlantis_Animated01_88: -2072573397
       RA_Atlantis_Animated01_29: -1209455527
+      RA_Atlantis_Animated01_130: 645755683
       RA_Atlantis_Animated01_27: 1069973055
       RA_Atlantis_Animated01_59: 1301272904
       RA_Atlantis_Animated01_101: 2089652917
       RA_Atlantis_Animated01_79: -518100430
       RA_Atlantis_Animated01_57: -329351548
-      RA_Atlantis_Animated01_140: -1673503004
       RA_Atlantis_Animated01_137: 1495664982
       RA_Atlantis_Animated01_74: -510369275
       RA_Atlantis_Animated01_84: -659753491
@@ -3424,6 +3423,7 @@ TextureImporter:
       RA_Atlantis_Animated01_13: 1070998484
       RA_Atlantis_Animated01_129: 475209363
       RA_Atlantis_Animated01_52: -394853592
+      RA_Atlantis_Animated01_145: -1006218653
       RA_Atlantis_Animated01_106: 327261106
       RA_Atlantis_Animated01_118: 1558388406
   spritePackingTag: 
