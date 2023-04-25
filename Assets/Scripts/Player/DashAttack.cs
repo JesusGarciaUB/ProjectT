@@ -18,7 +18,12 @@ public class DashAttack: MonoBehaviour
     private float cooldownTime = 2f;
     private float nextfireTeam = 0f;
     [SerializeField] Rigidbody2D rb;
+    Animator animator;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void OnDash()
     {
@@ -61,6 +66,7 @@ public class DashAttack: MonoBehaviour
                     if (Time.time > nextfireTeam)
                     {
                         nextfireTeam = Time.time + cooldownTime;
+                        animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x, transform.position.y - 0f + dashDistance * Time.fixedDeltaTime);
                     }
                 }
@@ -73,6 +79,7 @@ public class DashAttack: MonoBehaviour
                     if (Time.time > nextfireTeam)
                     {
                         nextfireTeam = Time.time + cooldownTime;
+                        animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x, transform.position.y - 1f + dashDistance * Time.fixedDeltaTime);
                     }
                 }
@@ -85,6 +92,7 @@ public class DashAttack: MonoBehaviour
                     if (Time.time > nextfireTeam)
                     {
                         nextfireTeam = Time.time + cooldownTime;
+                        animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x - 1f + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
                     }
                 }
@@ -97,6 +105,7 @@ public class DashAttack: MonoBehaviour
                     if (Time.time > nextfireTeam)
                     {
                         nextfireTeam = Time.time + cooldownTime;
+                        animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
                     }
                 }
