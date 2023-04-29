@@ -5,31 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/TestChange.unity
-    guid: cb52bfca733115c438b66b62742337ea
-  - enabled: 0
-    path: "Assets/Scenes/TestingJes\xFAs.unity"
-    guid: 2af4aef7be6e7e74aaea7a9a78f3fa9d
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Demo.unity
-    guid: 6cb5501c2184a2841bcbecf982fa7185
-  - enabled: 1
-    path: Assets/Scenes/AlphaBuild/FirstVillage.unity
-    guid: 737985564c698e34a9c0cf580c47908d
-  - enabled: 1
-    path: Assets/Scenes/AlphaBuild/InitialDungeon.unity
-    guid: 286fec8ca5859504ab7842c8d6ce3627
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 573f9e773b807134eb4017698a009aca
   - enabled: 1
+    path: Assets/Scenes/BetaBuild/FirstVillage.unity
+    guid: 4b3998a6a6605b243a0344535b323db0
+  - enabled: 1
     path: Assets/Scenes/ConfigurationSound.unity
     guid: 7b801fdd70f0f474d930a0c0dcbfd4f2
+  - enabled: 1
+    path: Assets/Scenes/BetaBuild/03DungeonForest.unity
+    guid: 33404273f25ba1f41bc460a8ae680f36
   m_configObjects: {}
