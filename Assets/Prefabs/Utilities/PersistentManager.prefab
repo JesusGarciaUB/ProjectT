@@ -45,8 +45,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerGlobal: {fileID: 0}
-  EnemiesRemaining: 0
   hp: {fileID: 0}
   winlose: {fileID: 0}
   ability: {fileID: 0}
+  maxHealth: 20
+  currentHealth: 0
+  ins: {fileID: 0}
+  magic: 0
+  nextSpawn: {x: 0, y: 0, z: 0}
+  bloodType:
+  - {fileID: 5657071602619222145, guid: e02853a51a4821747816f2452b12e098, type: 3}
+  - {fileID: 5798263000820852266, guid: a4e54b411988a674297eedc06a873637, type: 3}
+  - {fileID: 2585697431499237925, guid: ad9b709554789c04f912944720c0bfcf, type: 3}
+  bloodElemental: {fileID: 4084170079160832925, guid: 0a5b24b7e1985394e86c7b7524ea02be, type: 3}
   spawnPoint: 
