@@ -336,7 +336,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (!isAlive)
         {
-            GetComponent<SpriteRenderer>().sortingOrder = -1009;
+            GetComponent<SpriteRenderer>().sortingOrder = -890;
         }
     }
 }

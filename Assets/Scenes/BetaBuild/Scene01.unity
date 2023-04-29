@@ -9476,41 +9476,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1043949420}
     - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
-      propertyPath: maxHealth
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
-      propertyPath: nextSpawn.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
-      propertyPath: nextSpawn.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
       propertyPath: PlayerGlobal
       value: 
       objectReference: {fileID: 56394289}
-    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
-      propertyPath: bloodElemental
-      value: 
-      objectReference: {fileID: 4084170079160832925, guid: 0a5b24b7e1985394e86c7b7524ea02be, type: 3}
-    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
-      propertyPath: bloodType.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
-      propertyPath: bloodType.Array.data[0]
-      value: 
-      objectReference: {fileID: 5657071602619222145, guid: e02853a51a4821747816f2452b12e098, type: 3}
-    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
-      propertyPath: bloodType.Array.data[1]
-      value: 
-      objectReference: {fileID: 5798263000820852266, guid: a4e54b411988a674297eedc06a873637, type: 3}
-    - target: {fileID: 2768256212333460943, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
-      propertyPath: bloodType.Array.data[2]
-      value: 
-      objectReference: {fileID: 2585697431499237925, guid: ad9b709554789c04f912944720c0bfcf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a185d6fa54bfa464fa65079b9cc7476c, type: 3}
 --- !u!1 &1329169729
@@ -9742,61 +9710,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8871122201067800097, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: damage
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 9061376525513825645, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9061376525513825645, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9061376525513825645, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9061376525513825645, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9061376525513825645, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9061376525513825645, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 297918969, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-    - {fileID: 357769688559613249, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-    - {fileID: 2048614022532158051, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-    - {fileID: 6511775424269026629, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
---- !u!1 &1568781457 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 931856922, guid: 820ec5439f956f741888d495d3c15c44, type: 3}
-  m_PrefabInstance: {fileID: 1562410515}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1568781461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568781457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5107aaa7a88983e49989cff12b27bf7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isHit: 0
-  HitCooldown: 2
-  Multiplier: 5
-  ticks: 0.1
 --- !u!114 &1726896727 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1542068228271766497, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
@@ -10138,7 +10053,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 0
+      m_AllTileFlags: 1073741824
   - first: {x: -2, y: -2, z: 0}
     second:
       serializedVersion: 2
