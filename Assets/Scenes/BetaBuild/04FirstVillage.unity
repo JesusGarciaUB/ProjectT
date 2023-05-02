@@ -1944,6 +1944,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 364d976f46278e34ca1a55c9ee7c0fc3, type: 3}
+--- !u!114 &130417927 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3760294961663785557, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
+  m_PrefabInstance: {fileID: 1124180194}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07731a15b8df114eb004f5b2bea7b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &157598158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38831,7 +38842,7 @@ GameObject:
   - component: {fileID: 604751457}
   - component: {fileID: 604751456}
   - component: {fileID: 604751455}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GroundColisionBehind
   m_TagString: ProjectileDeleter
   m_Icon: {fileID: 0}
@@ -39345,7 +39356,7 @@ GameObject:
   - component: {fileID: 684738124}
   - component: {fileID: 684738123}
   - component: {fileID: 684738122}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GroundColision
   m_TagString: ProjectileDeleter
   m_Icon: {fileID: 0}
@@ -47660,6 +47671,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 716073914029166710, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.24951172
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560756031957792115, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.24951172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130981644544853551, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.7381897
+      objectReference: {fileID: 0}
     - target: {fileID: 4157328377593116047, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
       propertyPath: m_fontSizeMax
       value: 40
@@ -47736,6 +47759,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8130356417608669459, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.24951172
+      objectReference: {fileID: 0}
     - target: {fileID: 8386779537565311987, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -47743,6 +47770,22 @@ PrefabInstance:
     - target: {fileID: 8386779537565311987, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690720939830874630, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 130417927}
+    - target: {fileID: 8690720939830874630, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnFromControlsToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690720939830874630, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: menu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916854284758609962, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.24951172
       objectReference: {fileID: 0}
     - target: {fileID: 8936798217607967130, guid: 7aeae9c2a75ffca44a3a1983ff87e82f, type: 3}
       propertyPath: m_Pivot.x
