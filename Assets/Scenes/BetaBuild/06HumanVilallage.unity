@@ -1926,7 +1926,7 @@ Tilemap:
       - {fileID: -739174079, guid: 7e1942af83fc6f840a666d8102d603b6, type: 3}
       - {fileID: 1175140301, guid: 7e1942af83fc6f840a666d8102d603b6, type: 3}
       - {fileID: 2111366485, guid: 7e1942af83fc6f840a666d8102d603b6, type: 3}
-      m_AnimationSpeed: 12.000001
+      m_AnimationSpeed: 12
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 12, y: -23, z: 0}
@@ -2210,7 +2210,7 @@ Tilemap:
       - {fileID: 1673409893, guid: cea83b9c5fa8f5d42849b45e08cfc4ff, type: 3}
       - {fileID: -26794814, guid: cea83b9c5fa8f5d42849b45e08cfc4ff, type: 3}
       - {fileID: -783079736, guid: cea83b9c5fa8f5d42849b45e08cfc4ff, type: 3}
-      m_AnimationSpeed: 12.000001
+      m_AnimationSpeed: 12
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 20, y: -5, z: 0}
@@ -2284,7 +2284,7 @@ Tilemap:
       - {fileID: 1128746331, guid: 9a0fac707971da74ab297a8258180207, type: 3}
       - {fileID: -1008887815, guid: 9a0fac707971da74ab297a8258180207, type: 3}
       - {fileID: -1863428945, guid: 9a0fac707971da74ab297a8258180207, type: 3}
-      m_AnimationSpeed: 12
+      m_AnimationSpeed: 12.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -7133,7 +7133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329169729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.08, y: -1.76, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
