@@ -277,7 +277,8 @@ MonoBehaviour:
   healthText: {fileID: 5449005750421041224, guid: d7e9f8ace7c9a9a4e8d8a24a749e6d1e, type: 3}
   canMove: 1
   soundAttack: {fileID: 6858112874866099363, guid: 3dd6f90e57e92b349b773358cafb3ff8, type: 3}
-  health: 60
+  deathPos: {x: 0, y: 0, z: 0}
+  health: 18
   armor: 0
   isAlive: 1
   hitting: 0
