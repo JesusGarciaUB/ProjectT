@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class DashAttack: MonoBehaviour
 {
     float moveInput;
@@ -19,6 +20,8 @@ public class DashAttack: MonoBehaviour
     private float nextfireTeam = 0f;
     [SerializeField] Rigidbody2D rb;
     Animator animator;
+    public AudioClip clipsound;
+    
 
     private void Start()
     {
@@ -51,6 +54,14 @@ public class DashAttack: MonoBehaviour
             isTouching = false;
             
         }
+    }
+    private IEnumerator SetSoundDash()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
+        audio.clip = clipsound;
+        audio.Play();
     }
     private void movementDash()
     {
