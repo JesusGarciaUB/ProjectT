@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: 632d59282b923484d826a1ed3d8941e6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC_Sarah_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4428dde2a132fa48a8e604d024d6cda
+      internalID: 1649847944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Sarah_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7618e38e6a535314b873427153dca5b4
+      internalID: 1638921215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Sarah_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0726135477a8b3c43a1e2c7342fcd167
+      internalID: 1651248636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Sarah_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a352c6b38afa6f49a46d179725b03e8
+      internalID: -185752212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NPC_Sarah_109: -714231625
+      NPC_Sarah_36: -601149558
+      NPC_Sarah_82: -1235537196
+      NPC_Sarah_39: 1626016355
+      NPC_Sarah_22: -185752212
+      NPC_Sarah_142: -837221596
+      NPC_Sarah_126: -898616654
+      NPC_Sarah_46: -1693578876
+      NPC_Sarah_48: -75020495
+      NPC_Sarah_13: -1817656121
+      NPC_Sarah_102: -880016652
+      NPC_Sarah_138: 1887670178
+      NPC_Sarah_25: 1436650459
+      NPC_Sarah_41: 81831438
+      NPC_Sarah_32: 1673206820
+      NPC_Sarah_10: 252594420
+      NPC_Sarah_97: -242181862
+      NPC_Sarah_151: -1685461903
+      NPC_Sarah_125: -1909327064
+      NPC_Sarah_88: -1214958384
+      NPC_Sarah_29: 1854528775
+      NPC_Sarah_177: -1287375234
+      NPC_Sarah_0: 1649847944
+      NPC_Sarah_49: 1738153920
+      NPC_Sarah_127: -1233355749
+      NPC_Sarah_4: 357909860
+      NPC_Sarah_91: 1093994045
+      NPC_Sarah_94: 1527934161
+      NPC_Sarah_113: 1841652148
+      NPC_Sarah_136: -733394099
+      NPC_Sarah_61: 1206442324
+      NPC_Sarah_11: -1785451617
+      NPC_Sarah_130: -1899051077
+      NPC_Sarah_66: 1753988551
+      NPC_Sarah_139: -1642321552
+      NPC_Sarah_153: 36368603
+      NPC_Sarah_40: -439206478
+      NPC_Sarah_60: -1890921133
+      NPC_Sarah_16: 376078253
+      NPC_Sarah_80: -2051082371
+      NPC_Sarah_56: 585768882
+      NPC_Sarah_95: -571226320
+      NPC_Sarah_146: -140519283
+      NPC_Sarah_135: -2007603615
+      NPC_Sarah_43: -1325415525
+      NPC_Sarah_70: 1883098768
+      NPC_Sarah_87: 1924183497
+      NPC_Sarah_54: 1313361270
+      NPC_Sarah_123: 397812606
+      NPC_Sarah_124: -412725018
+      NPC_Sarah_59: -1625844518
+      NPC_Sarah_117: 1044320226
+      NPC_Sarah_150: -1783850327
+      NPC_Sarah_50: 549985903
+      NPC_Sarah_26: -1335561947
+      NPC_Sarah_92: -321848327
+      NPC_Sarah_12: 1560159357
+      NPC_Sarah_68: 1798281020
+      NPC_Sarah_51: -18574425
+      NPC_Sarah_111: -1441856562
+      NPC_Sarah_75: 1632183907
+      NPC_Sarah_156: 2115280542
+      NPC_Sarah_174: -1511563443
+      NPC_Sarah_85: -241788485
+      NPC_Sarah_23: -1250159838
+      NPC_Sarah_155: -1861504482
+      NPC_Sarah_18: -212315805
+      NPC_Sarah_99: 2110746894
+      NPC_Sarah_34: 1212181367
+      NPC_Sarah_86: 811500012
+      NPC_Sarah_108: 944931151
+      NPC_Sarah_93: -1104065207
+      NPC_Sarah_160: -1837177622
+      NPC_Sarah_1: -245309938
+      NPC_Sarah_30: -366543673
+      NPC_Sarah_15: 1651248636
+      NPC_Sarah_178: 1668842007
+      NPC_Sarah_121: 628340368
+      NPC_Sarah_28: 2064893488
+      NPC_Sarah_114: 1438067588
+      NPC_Sarah_84: -1857610007
+      NPC_Sarah_6: -1615754066
+      NPC_Sarah_118: 2138552143
+      NPC_Sarah_9: 426176068
+      NPC_Sarah_55: -1527705355
+      NPC_Sarah_38: 615481343
+      NPC_Sarah_74: -1517653053
+      NPC_Sarah_103: 787784989
+      NPC_Sarah_62: 767475219
+      NPC_Sarah_172: -846370562
+      NPC_Sarah_115: 700287329
+      NPC_Sarah_131: 1324685356
+      NPC_Sarah_90: -598879794
+      NPC_Sarah_44: -911300408
+      NPC_Sarah_132: 598872836
+      NPC_Sarah_52: 933460032
+      NPC_Sarah_37: -1630510831
+      NPC_Sarah_145: -436907596
+      NPC_Sarah_167: -1301797358
+      NPC_Sarah_53: -574219498
+      NPC_Sarah_162: -532880958
+      NPC_Sarah_78: -197449963
+      NPC_Sarah_128: 404341957
+      NPC_Sarah_149: 123270374
+      NPC_Sarah_129: 88234650
+      NPC_Sarah_73: -1514805874
+      NPC_Sarah_33: -97957482
+      NPC_Sarah_45: 95840356
+      NPC_Sarah_106: 183004758
+      NPC_Sarah_173: -784665207
+      NPC_Sarah_14: 1504193611
+      NPC_Sarah_27: 1216861628
+      NPC_Sarah_64: 238684853
+      NPC_Sarah_119: -1435621845
+      NPC_Sarah_19: 1571073577
+      NPC_Sarah_169: 1592155018
+      NPC_Sarah_2: -74328144
+      NPC_Sarah_161: -1078509442
+      NPC_Sarah_3: 1880148204
+      NPC_Sarah_166: 275435659
+      NPC_Sarah_143: -1136230531
+      NPC_Sarah_101: -458599109
+      NPC_Sarah_5: -1361173933
+      NPC_Sarah_17: 1861941710
+      NPC_Sarah_8: 1638921215
+      NPC_Sarah_83: -499362138
+      NPC_Sarah_164: 1983234880
+      NPC_Sarah_112: 1936676418
+      NPC_Sarah_175: 496629826
+      NPC_Sarah_168: -1332057198
+      NPC_Sarah_7: 1387770197
+      NPC_Sarah_144: -1685246150
+      NPC_Sarah_116: 562172652
+      NPC_Sarah_57: -1994961224
+      NPC_Sarah_110: 989664182
+      NPC_Sarah_147: 477363088
+      NPC_Sarah_158: -247342043
+      NPC_Sarah_98: 1246647417
+      NPC_Sarah_148: -604629071
+      NPC_Sarah_176: -493558968
+      NPC_Sarah_47: -508084936
+      NPC_Sarah_170: 2002779915
+      NPC_Sarah_137: -1484444008
+      NPC_Sarah_104: 725612292
+      NPC_Sarah_58: -892506532
+      NPC_Sarah_105: -1975166086
+      NPC_Sarah_141: 2090767293
+      NPC_Sarah_42: 1527211105
+      NPC_Sarah_96: -1813536637
+      NPC_Sarah_67: 414063216
+      NPC_Sarah_107: 1147930773
+      NPC_Sarah_134: -1378662300
+      NPC_Sarah_100: 534937323
+      NPC_Sarah_79: -818829509
+      NPC_Sarah_133: 1729634473
+      NPC_Sarah_71: 1510491540
+      NPC_Sarah_89: -235995937
+      NPC_Sarah_76: 1986083695
+      NPC_Sarah_152: 351253192
+      NPC_Sarah_72: -1888262322
+      NPC_Sarah_157: -1258368437
+      NPC_Sarah_35: 56958092
+      NPC_Sarah_69: -149362918
+      NPC_Sarah_154: -338003679
+      NPC_Sarah_165: -1974028535
+      NPC_Sarah_65: -1144604384
+      NPC_Sarah_122: -85297667
+      NPC_Sarah_31: -1820089241
+      NPC_Sarah_24: -1971400421
+      NPC_Sarah_81: -129575571
+      NPC_Sarah_163: -225618220
+      NPC_Sarah_171: 430846178
+      NPC_Sarah_159: -1242412492
+      NPC_Sarah_63: 477053496
+      NPC_Sarah_120: 18652976
+      NPC_Sarah_140: 851630803
+      NPC_Sarah_77: 457245694
+      NPC_Sarah_21: 1717866680
+      NPC_Sarah_20: 47344435
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
