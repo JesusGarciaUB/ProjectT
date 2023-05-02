@@ -2317,8 +2317,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -358973395161003756, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
+      propertyPath: nextSpawn.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -358973395161003756, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
+      propertyPath: nextSpawn.y
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: -358973395161003756, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
       propertyPath: sceneBuildIndex
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4254790430412730880, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
       propertyPath: m_RootOrder
