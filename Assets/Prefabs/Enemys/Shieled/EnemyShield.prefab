@@ -220,12 +220,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackCooldown: 2
-  damage: 1
+  damage: 3
   canAttack: 0
   healthText: {fileID: 5449005750421041224, guid: d7e9f8ace7c9a9a4e8d8a24a749e6d1e, type: 3}
   canMove: 0
   soundAttack: {fileID: 3164876312433463374, guid: 991a64962902ff143984457eb6a467fc, type: 3}
-  health: 5
+  deathPos: {x: 0, y: 0, z: 0}
+  health: 10
   armor: 4
   isAlive: 1
   hitting: 0
