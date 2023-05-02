@@ -2156,7 +2156,7 @@ Tilemap:
       - {fileID: -475205466, guid: 38305dafecf4f574aa4b229e0936153d, type: 3}
       - {fileID: -165370474, guid: 38305dafecf4f574aa4b229e0936153d, type: 3}
       - {fileID: 544664423, guid: 38305dafecf4f574aa4b229e0936153d, type: 3}
-      m_AnimationSpeed: 12
+      m_AnimationSpeed: 12.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 1, y: -5, z: 0}
@@ -2192,7 +2192,7 @@ Tilemap:
       - {fileID: -2130357062, guid: c06a3f73c3f4ca946a720ff31011b31d, type: 3}
       - {fileID: 376013606, guid: c06a3f73c3f4ca946a720ff31011b31d, type: 3}
       - {fileID: 1272023764, guid: c06a3f73c3f4ca946a720ff31011b31d, type: 3}
-      m_AnimationSpeed: 12.000001
+      m_AnimationSpeed: 12
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 16, y: -5, z: 0}
@@ -2266,7 +2266,7 @@ Tilemap:
       - {fileID: -1298338390, guid: 8d8935c5b2fa61e4c873a536504306c5, type: 3}
       - {fileID: -2041416303, guid: 8d8935c5b2fa61e4c873a536504306c5, type: 3}
       - {fileID: -2031750566, guid: 8d8935c5b2fa61e4c873a536504306c5, type: 3}
-      m_AnimationSpeed: 12
+      m_AnimationSpeed: 12.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 19, y: 7, z: 0}
@@ -2795,9 +2795,9 @@ GameObject:
   - component: {fileID: 996402098}
   - component: {fileID: 996402097}
   - component: {fileID: 996402096}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: C-989
-  m_TagString: Untagged
+  m_TagString: ProjectileDeleter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37143,7 +37143,7 @@ GameObject:
   - component: {fileID: 1790119197}
   - component: {fileID: 1790119196}
   - component: {fileID: 1790119195}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Walls
   m_TagString: ProjectileDeleter
   m_Icon: {fileID: 0}
