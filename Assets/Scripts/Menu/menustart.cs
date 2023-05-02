@@ -10,6 +10,10 @@ public class menustart : MonoBehaviour
     {
         SceneManager.LoadScene(scenenum);
     }
+    public void doExitGame()
+    {
+        Application.Quit();
+    }
 
 
 }

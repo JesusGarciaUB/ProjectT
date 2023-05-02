@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: 4f125b17ddab9294ca4227aa5b30850e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC_James_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85db02a8b86db2f4dbc93937615cea87
+      internalID: 930148980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_James_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3713e9367bfc98e48b904118d3c4b004
+      internalID: -965700411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_James_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149217b383d9c1e4abc2e5dc6ba6baf2
+      internalID: -1575202311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_James_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eab1f8f0f89f214e803e1e50151e9f3
+      internalID: 96087992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NPC_James_89: -270795922
+      NPC_James_139: -1389828128
+      NPC_James_144: -724195107
+      NPC_James_116: 2016353401
+      NPC_James_29: 422105883
+      NPC_James_47: -483480492
+      NPC_James_53: -1579153290
+      NPC_James_46: 271420077
+      NPC_James_113: -1124225948
+      NPC_James_88: -1911769656
+      NPC_James_155: -301831311
+      NPC_James_24: -253393464
+      NPC_James_25: -659953101
+      NPC_James_170: -923914687
+      NPC_James_49: 23681501
+      NPC_James_159: 1510933396
+      NPC_James_19: 1150986677
+      NPC_James_78: -234001902
+      NPC_James_86: 1073067592
+      NPC_James_130: -220798741
+      NPC_James_145: -973893586
+      NPC_James_3: 205418984
+      NPC_James_150: 1520455683
+      NPC_James_15: -924716625
+      NPC_James_163: 552882356
+      NPC_James_167: 231006473
+      NPC_James_76: 1714073588
+      NPC_James_90: -1154958258
+      NPC_James_36: -125641719
+      NPC_James_81: -1656258860
+      NPC_James_164: -2006037114
+      NPC_James_152: -329905883
+      NPC_James_100: 765041007
+      NPC_James_157: 258742798
+      NPC_James_12: 1565190470
+      NPC_James_117: -1142414900
+      NPC_James_63: -1041183699
+      NPC_James_140: -257664717
+      NPC_James_178: -546167690
+      NPC_James_65: 1636110997
+      NPC_James_68: 221397991
+      NPC_James_141: -911870908
+      NPC_James_149: 1061511749
+      NPC_James_64: -1943668972
+      NPC_James_125: -1015030432
+      NPC_James_66: -618690288
+      NPC_James_62: -1947388108
+      NPC_James_177: -962563865
+      NPC_James_4: 425313919
+      NPC_James_131: 303154620
+      NPC_James_175: 1022775101
+      NPC_James_128: 207793014
+      NPC_James_14: 699886641
+      NPC_James_138: 597609468
+      NPC_James_114: -1718845558
+      NPC_James_39: 2129532082
+      NPC_James_120: 1109877825
+      NPC_James_151: -837519436
+      NPC_James_0: 930148980
+      NPC_James_80: -1644238163
+      NPC_James_26: -1481500083
+      NPC_James_9: 852939057
+      NPC_James_41: -78760428
+      NPC_James_148: -1468519706
+      NPC_James_93: 991273851
+      NPC_James_162: 1302242570
+      NPC_James_57: 2114014201
+      NPC_James_106: -963992957
+      NPC_James_75: -1857973366
+      NPC_James_11: -1271253537
+      NPC_James_174: -1490238850
+      NPC_James_50: 96377479
+      NPC_James_1: -868244684
+      NPC_James_137: -124992207
+      NPC_James_59: -1169012705
+      NPC_James_121: 1805941472
+      NPC_James_48: -1567873722
+      NPC_James_154: 1542045392
+      NPC_James_179: 688406443
+      NPC_James_40: 2102176347
+      NPC_James_54: -1449305841
+      NPC_James_70: -622193701
+      NPC_James_84: 689884572
+      NPC_James_136: 1703104239
+      NPC_James_123: -2030844281
+      NPC_James_35: 1249202996
+      NPC_James_85: -1914492065
+      NPC_James_67: -573950926
+      NPC_James_107: 539819299
+      NPC_James_119: -1208281172
+      NPC_James_103: -761357169
+      NPC_James_158: 356910638
+      NPC_James_168: -844089208
+      NPC_James_94: 487732993
+      NPC_James_51: 1102412913
+      NPC_James_99: -921246009
+      NPC_James_98: -1130314108
+      NPC_James_104: 945180871
+      NPC_James_161: -1297062181
+      NPC_James_127: -2039063180
+      NPC_James_105: 1766395074
+      NPC_James_97: 2012981442
+      NPC_James_135: -922944222
+      NPC_James_96: -1793866186
+      NPC_James_108: -2003401902
+      NPC_James_17: -266453513
+      NPC_James_166: -1188716439
+      NPC_James_34: -2115964594
+      NPC_James_33: -865830940
+      NPC_James_61: 2064012332
+      NPC_James_37: -1189669627
+      NPC_James_112: 786844492
+      NPC_James_142: 1682721155
+      NPC_James_8: 164125704
+      NPC_James_95: -946143512
+      NPC_James_79: 14682084
+      NPC_James_102: -1422245461
+      NPC_James_173: 2136780527
+      NPC_James_7: -965700411
+      NPC_James_143: -1224166099
+      NPC_James_38: -1528516376
+      NPC_James_134: -1887938824
+      NPC_James_160: -1528729006
+      NPC_James_77: -2142451190
+      NPC_James_30: -1848240092
+      NPC_James_122: 1200486632
+      NPC_James_109: -294754864
+      NPC_James_71: -449430791
+      NPC_James_27: 1682169985
+      NPC_James_172: -681514251
+      NPC_James_110: 1630511595
+      NPC_James_82: -608753324
+      NPC_James_6: -1430848520
+      NPC_James_52: -379196579
+      NPC_James_115: 1210984611
+      NPC_James_58: -1601075035
+      NPC_James_28: -315735169
+      NPC_James_74: 1539871033
+      NPC_James_42: 734867011
+      NPC_James_2: -502541778
+      NPC_James_22: 38272520
+      NPC_James_45: 1103058941
+      NPC_James_133: -840850984
+      NPC_James_13: -1133221265
+      NPC_James_18: -2088374268
+      NPC_James_44: -2117747911
+      NPC_James_16: -1575202311
+      NPC_James_169: -1500857289
+      NPC_James_92: -928439249
+      NPC_James_32: 520971452
+      NPC_James_124: -1809076844
+      NPC_James_146: 553035262
+      NPC_James_55: 367831888
+      NPC_James_56: -892088334
+      NPC_James_83: -1424974072
+      NPC_James_23: 96087992
+      NPC_James_69: 750599293
+      NPC_James_153: 516892466
+      NPC_James_171: -940485590
+      NPC_James_72: -1255068153
+      NPC_James_129: -1026014852
+      NPC_James_101: -1852662754
+      NPC_James_111: -1374556995
+      NPC_James_165: 438961781
+      NPC_James_87: 1680944953
+      NPC_James_91: -809220894
+      NPC_James_147: 1840730849
+      NPC_James_118: -504043529
+      NPC_James_20: -547269005
+      NPC_James_10: -576022503
+      NPC_James_5: -1311691448
+      NPC_James_31: -1651157043
+      NPC_James_21: 1295942255
+      NPC_James_156: -894858564
+      NPC_James_73: -1089270117
+      NPC_James_132: -1286369904
+      NPC_James_176: -293152881
+      NPC_James_60: -1725303139
+      NPC_James_43: 1175069742
+      NPC_James_126: 325605258
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

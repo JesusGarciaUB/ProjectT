@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: 0e36eac869ffb424f904316efcbc0d0d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC_Marie_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce6dc0c7fb2cba47b37d9b5ff80ea42
+      internalID: 1722508926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Marie_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7875dcdb3b701409e8d0924b22cd1e
+      internalID: 1517263641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Marie_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea83057462e4944bafaee360aa72bf0
+      internalID: 560899586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Marie_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d28402837cc954995423588d7722d4
+      internalID: -1697906071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NPC_Marie_86: -939749079
+      NPC_Marie_119: 1359326899
+      NPC_Marie_135: -99694232
+      NPC_Marie_59: -926205513
+      NPC_Marie_40: -1647567649
+      NPC_Marie_68: 373871835
+      NPC_Marie_159: 1188842351
+      NPC_Marie_175: 1210568496
+      NPC_Marie_103: 1109127912
+      NPC_Marie_141: -1135914378
+      NPC_Marie_58: -1301252967
+      NPC_Marie_77: -1055885619
+      NPC_Marie_62: 1188135827
+      NPC_Marie_63: 2081015458
+      NPC_Marie_84: -832670117
+      NPC_Marie_144: -115313624
+      NPC_Marie_36: -1170261673
+      NPC_Marie_51: 1075557874
+      NPC_Marie_61: 1562243932
+      NPC_Marie_153: 70366106
+      NPC_Marie_110: -1157962636
+      NPC_Marie_123: -1593877365
+      NPC_Marie_89: -1760515701
+      NPC_Marie_82: -1040713450
+      NPC_Marie_131: -802464987
+      NPC_Marie_146: -1837705418
+      NPC_Marie_83: 1943217067
+      NPC_Marie_147: 862153803
+      NPC_Marie_143: -263643576
+      NPC_Marie_154: 90207677
+      NPC_Marie_23: -502431632
+      NPC_Marie_64: -877284663
+      NPC_Marie_102: 37162976
+      NPC_Marie_115: -832752727
+      NPC_Marie_26: 1324251332
+      NPC_Marie_127: -760812976
+      NPC_Marie_7: 2123496620
+      NPC_Marie_85: -216479732
+      NPC_Marie_116: -748101100
+      NPC_Marie_8: 1517263641
+      NPC_Marie_45: 2136521807
+      NPC_Marie_145: -326486582
+      NPC_Marie_178: -509797321
+      NPC_Marie_173: 308734383
+      NPC_Marie_25: -169593235
+      NPC_Marie_109: 1732287601
+      NPC_Marie_139: 834762729
+      NPC_Marie_70: 1976829993
+      NPC_Marie_140: 38090034
+      NPC_Marie_2: 477183183
+      NPC_Marie_67: -266943492
+      NPC_Marie_171: 126806284
+      NPC_Marie_111: -1705920738
+      NPC_Marie_118: -892070881
+      NPC_Marie_167: -1549083385
+      NPC_Marie_169: -553403736
+      NPC_Marie_87: -392104678
+      NPC_Marie_20: 1020353626
+      NPC_Marie_149: 1787806046
+      NPC_Marie_121: 1120034217
+      NPC_Marie_150: -1797387178
+      NPC_Marie_177: -2073239965
+      NPC_Marie_1: -1258578719
+      NPC_Marie_15: 560899586
+      NPC_Marie_120: -1234798362
+      NPC_Marie_88: 829198702
+      NPC_Marie_164: -1832111294
+      NPC_Marie_75: -1387857856
+      NPC_Marie_4: -1995591235
+      NPC_Marie_130: 101545759
+      NPC_Marie_114: 1380511208
+      NPC_Marie_0: 1722508926
+      NPC_Marie_138: 1953554669
+      NPC_Marie_124: -1198871063
+      NPC_Marie_160: -1509137974
+      NPC_Marie_126: 684955254
+      NPC_Marie_99: -240542384
+      NPC_Marie_14: -2099724201
+      NPC_Marie_71: -1787395675
+      NPC_Marie_32: -257042719
+      NPC_Marie_170: -166166613
+      NPC_Marie_96: -2032024196
+      NPC_Marie_55: -275912987
+      NPC_Marie_104: -755913784
+      NPC_Marie_73: -1387940972
+      NPC_Marie_76: -913119365
+      NPC_Marie_80: -205145955
+      NPC_Marie_29: -2081569042
+      NPC_Marie_117: 440625149
+      NPC_Marie_30: 497805278
+      NPC_Marie_11: -787243204
+      NPC_Marie_17: 1966076271
+      NPC_Marie_35: 2138252452
+      NPC_Marie_57: -17365938
+      NPC_Marie_94: -1613851024
+      NPC_Marie_22: -1697906071
+      NPC_Marie_93: -704410314
+      NPC_Marie_113: 1036829713
+      NPC_Marie_42: -1199952233
+      NPC_Marie_81: -1356947029
+      NPC_Marie_100: -2047789215
+      NPC_Marie_5: 526538395
+      NPC_Marie_134: 1102341381
+      NPC_Marie_132: -890149860
+      NPC_Marie_90: -1736806375
+      NPC_Marie_3: 547101156
+      NPC_Marie_161: -899122836
+      NPC_Marie_50: -883745183
+      NPC_Marie_21: -1674333379
+      NPC_Marie_168: 101167073
+      NPC_Marie_52: -126427787
+      NPC_Marie_165: 1673683046
+      NPC_Marie_9: -1059333229
+      NPC_Marie_43: 217828919
+      NPC_Marie_136: 1205548858
+      NPC_Marie_101: -628822846
+      NPC_Marie_24: 661915877
+      NPC_Marie_38: 681079180
+      NPC_Marie_95: -2117840477
+      NPC_Marie_19: 1322649894
+      NPC_Marie_44: 1465488663
+      NPC_Marie_79: 1559555791
+      NPC_Marie_54: 566650848
+      NPC_Marie_60: -1054173147
+      NPC_Marie_151: 1078100908
+      NPC_Marie_176: 1495280892
+      NPC_Marie_27: -1097768587
+      NPC_Marie_137: -19256819
+      NPC_Marie_46: -1349668096
+      NPC_Marie_10: -236673253
+      NPC_Marie_148: -1342551235
+      NPC_Marie_152: -1275889030
+      NPC_Marie_128: -651999098
+      NPC_Marie_49: 10944569
+      NPC_Marie_166: 1963504291
+      NPC_Marie_155: -1974200315
+      NPC_Marie_156: -545532230
+      NPC_Marie_18: -1777540762
+      NPC_Marie_48: -1866896937
+      NPC_Marie_158: 716444357
+      NPC_Marie_172: -563517452
+      NPC_Marie_53: 920954051
+      NPC_Marie_105: -1944403417
+      NPC_Marie_41: 1560921295
+      NPC_Marie_162: 142274154
+      NPC_Marie_34: 1254015481
+      NPC_Marie_13: -1726792286
+      NPC_Marie_163: 1038834354
+      NPC_Marie_47: 1482829534
+      NPC_Marie_92: -1178414550
+      NPC_Marie_106: 1789552469
+      NPC_Marie_122: 504654735
+      NPC_Marie_78: -1991029853
+      NPC_Marie_133: -211852924
+      NPC_Marie_112: 1253733680
+      NPC_Marie_142: -944740965
+      NPC_Marie_33: 990402649
+      NPC_Marie_174: 883668082
+      NPC_Marie_72: 1634195181
+      NPC_Marie_157: -725260535
+      NPC_Marie_97: 2145515339
+      NPC_Marie_37: 947801387
+      NPC_Marie_98: -915096719
+      NPC_Marie_129: 113964257
+      NPC_Marie_65: -1980401923
+      NPC_Marie_28: 2024667155
+      NPC_Marie_16: -1383079564
+      NPC_Marie_74: 1992572535
+      NPC_Marie_39: -316487294
+      NPC_Marie_56: 1744454908
+      NPC_Marie_125: 996474411
+      NPC_Marie_31: 754915640
+      NPC_Marie_66: -256366924
+      NPC_Marie_6: 1812154656
+      NPC_Marie_91: -420299814
+      NPC_Marie_107: -882914034
+      NPC_Marie_108: -1417431807
+      NPC_Marie_69: 22674993
+      NPC_Marie_12: -730070840
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

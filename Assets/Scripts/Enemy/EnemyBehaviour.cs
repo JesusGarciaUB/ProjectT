@@ -229,9 +229,12 @@ public class EnemyBehaviour : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         canMove = false;
         yield return new WaitForSeconds(duration);
-        canMove = true;
-        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-        isAffected = false;
+        if (isAlive)
+        {
+            canMove = true;
+            gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            isAffected = false;
+        }
     }
 
     public void Stolen(int damage)
@@ -336,7 +339,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (!isAlive)
         {
-            GetComponent<SpriteRenderer>().sortingOrder = -1009;
+            GetComponent<SpriteRenderer>().sortingOrder = -890;
         }
     }
 }

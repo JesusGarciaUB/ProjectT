@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: cd49e4e5899ef5f459ba877778397f10
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC_Michael_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d8938349d9bc7478eada3d8cc5bec6
+      internalID: 415744721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Michael_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c876d4004b610e44ca2b17ccd461a8a5
+      internalID: 1179674009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Michael_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3516bf94f275ca4fa007438c8f9e444
+      internalID: 1008416353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Michael_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ce7dfa68ed2ee4b9f2eddcce6655d9
+      internalID: -914028530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NPC_Michael_64: 386594123
+      NPC_Michael_110: -2038412297
+      NPC_Michael_28: -920871244
+      NPC_Michael_176: 257711401
+      NPC_Michael_15: 1008416353
+      NPC_Michael_45: 2118219488
+      NPC_Michael_9: 1922955491
+      NPC_Michael_53: -235444100
+      NPC_Michael_16: 1485643292
+      NPC_Michael_44: -1513406928
+      NPC_Michael_92: 145507607
+      NPC_Michael_153: 2050723084
+      NPC_Michael_93: -258696635
+      NPC_Michael_172: -51101556
+      NPC_Michael_104: -1662122628
+      NPC_Michael_178: 1213416991
+      NPC_Michael_111: 829875979
+      NPC_Michael_51: 1388682290
+      NPC_Michael_56: -810313319
+      NPC_Michael_63: 1757971130
+      NPC_Michael_74: 1094505330
+      NPC_Michael_116: 124178834
+      NPC_Michael_123: -2098661703
+      NPC_Michael_130: 1759014274
+      NPC_Michael_31: -1138550114
+      NPC_Michael_35: 1912887203
+      NPC_Michael_102: -92246402
+      NPC_Michael_98: -1476339506
+      NPC_Michael_19: 974457620
+      NPC_Michael_83: 714991907
+      NPC_Michael_13: -9726298
+      NPC_Michael_155: -1808553068
+      NPC_Michael_129: -1583938362
+      NPC_Michael_37: -173458861
+      NPC_Michael_177: -873131086
+      NPC_Michael_156: -385487236
+      NPC_Michael_26: 2023863268
+      NPC_Michael_85: 1778416823
+      NPC_Michael_76: 96769169
+      NPC_Michael_94: -1520018591
+      NPC_Michael_148: 1686056749
+      NPC_Michael_6: -461062327
+      NPC_Michael_23: 610975353
+      NPC_Michael_125: 1153593811
+      NPC_Michael_119: 8755071
+      NPC_Michael_150: -93328603
+      NPC_Michael_34: -1755842202
+      NPC_Michael_38: 391281777
+      NPC_Michael_120: -2132780366
+      NPC_Michael_75: -2060257359
+      NPC_Michael_52: 783460112
+      NPC_Michael_32: -360210179
+      NPC_Michael_58: 1345943459
+      NPC_Michael_66: 128521714
+      NPC_Michael_173: 2002854143
+      NPC_Michael_159: 1605590662
+      NPC_Michael_154: -7432212
+      NPC_Michael_115: -125758417
+      NPC_Michael_8: 1179674009
+      NPC_Michael_97: 1102264020
+      NPC_Michael_133: 2032267283
+      NPC_Michael_59: -1707187582
+      NPC_Michael_174: 67739069
+      NPC_Michael_20: 679032300
+      NPC_Michael_143: 726533949
+      NPC_Michael_152: 595449554
+      NPC_Michael_90: -518061355
+      NPC_Michael_91: 1470875136
+      NPC_Michael_158: -128458791
+      NPC_Michael_160: 158810450
+      NPC_Michael_40: 1562054782
+      NPC_Michael_65: 558393312
+      NPC_Michael_137: 6747810
+      NPC_Michael_18: -627718608
+      NPC_Michael_103: -302468013
+      NPC_Michael_47: -2044868387
+      NPC_Michael_62: 1606382885
+      NPC_Michael_50: -1448155527
+      NPC_Michael_106: -1365908994
+      NPC_Michael_169: -2109548634
+      NPC_Michael_127: -1356805721
+      NPC_Michael_95: -882629433
+      NPC_Michael_175: 1758331125
+      NPC_Michael_5: 820511311
+      NPC_Michael_117: -1929825490
+      NPC_Michael_36: -1137973236
+      NPC_Michael_73: -708142262
+      NPC_Michael_165: -954737052
+      NPC_Michael_105: 1156475713
+      NPC_Michael_49: -1294482888
+      NPC_Michael_43: -217930967
+      NPC_Michael_166: -380547030
+      NPC_Michael_144: -374051565
+      NPC_Michael_151: -67517124
+      NPC_Michael_54: -1281727193
+      NPC_Michael_21: -1343883659
+      NPC_Michael_101: -3417500
+      NPC_Michael_167: 5181715
+      NPC_Michael_124: -421596604
+      NPC_Michael_99: -1351102893
+      NPC_Michael_135: -1446053492
+      NPC_Michael_136: 1338985598
+      NPC_Michael_2: -93950035
+      NPC_Michael_27: 1077212374
+      NPC_Michael_77: -896394703
+      NPC_Michael_122: -1786480400
+      NPC_Michael_142: -2115400286
+      NPC_Michael_118: -48398097
+      NPC_Michael_68: -1080090889
+      NPC_Michael_157: -1215868776
+      NPC_Michael_100: 1933649084
+      NPC_Michael_161: -1076554321
+      NPC_Michael_131: -927863032
+      NPC_Michael_146: -2044415382
+      NPC_Michael_70: -1472263818
+      NPC_Michael_145: 528900438
+      NPC_Michael_107: -698970753
+      NPC_Michael_149: -646980096
+      NPC_Michael_60: -1183400638
+      NPC_Michael_113: 1098279566
+      NPC_Michael_25: -508111464
+      NPC_Michael_162: 773185547
+      NPC_Michael_128: -1243488438
+      NPC_Michael_17: 779364769
+      NPC_Michael_86: -1464205936
+      NPC_Michael_87: -407231253
+      NPC_Michael_72: -1006590952
+      NPC_Michael_138: -535558930
+      NPC_Michael_48: -1887121629
+      NPC_Michael_112: 1701594690
+      NPC_Michael_79: 1683820384
+      NPC_Michael_96: -782208473
+      NPC_Michael_41: -1507497031
+      NPC_Michael_1: 152869585
+      NPC_Michael_33: 1395207471
+      NPC_Michael_114: -1313709108
+      NPC_Michael_108: 1220957071
+      NPC_Michael_3: -515072644
+      NPC_Michael_121: -852869707
+      NPC_Michael_171: 440122837
+      NPC_Michael_69: 1295911730
+      NPC_Michael_141: 1781157696
+      NPC_Michael_11: 734445512
+      NPC_Michael_4: 1806589334
+      NPC_Michael_12: 1177372672
+      NPC_Michael_14: 514850821
+      NPC_Michael_170: 413269419
+      NPC_Michael_88: -1833131486
+      NPC_Michael_55: 842742743
+      NPC_Michael_61: 779759479
+      NPC_Michael_163: -936993622
+      NPC_Michael_81: -1460933126
+      NPC_Michael_147: 1197420957
+      NPC_Michael_134: -1198934733
+      NPC_Michael_39: 1611634785
+      NPC_Michael_82: 40428686
+      NPC_Michael_78: 851744319
+      NPC_Michael_46: 2096692002
+      NPC_Michael_67: -1486284649
+      NPC_Michael_168: -1619252648
+      NPC_Michael_80: 473802370
+      NPC_Michael_109: 1920113046
+      NPC_Michael_30: -92812442
+      NPC_Michael_42: 1245959052
+      NPC_Michael_84: 1148778353
+      NPC_Michael_139: -1271637613
+      NPC_Michael_10: 526692205
+      NPC_Michael_71: 1476530412
+      NPC_Michael_57: 1063532848
+      NPC_Michael_24: 1142049254
+      NPC_Michael_140: 2004466755
+      NPC_Michael_132: -641671769
+      NPC_Michael_0: 415744721
+      NPC_Michael_164: -1015698373
+      NPC_Michael_29: 343595987
+      NPC_Michael_126: 930326363
+      NPC_Michael_89: -811603068
+      NPC_Michael_7: -332280836
+      NPC_Michael_22: -914028530
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
