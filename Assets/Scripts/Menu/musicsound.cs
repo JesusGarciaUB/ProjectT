@@ -27,7 +27,7 @@ public class musicsound : MonoBehaviour
     {
         float volume = musicSlider.value;
         myMixer.SetFloat("Music", Mathf.Log10(volume)*20);
-        PlayerPrefs.SetFloat("MusicVolume", volume);
+        PlayerPrefs.SetFloat("musicVolume", volume);
     }
 
     public void SetSFXVolume()
