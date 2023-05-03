@@ -658,7 +658,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.7200012, y: -1.3599854}
+  m_AnchoredPosition: {x: 2.7200317, y: -1.3599854}
   m_SizeDelta: {x: 27.19, y: 19.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697845709
@@ -1119,6 +1119,7 @@ GameObject:
   - component: {fileID: 1173077821}
   - component: {fileID: 1173077820}
   - component: {fileID: 1173077819}
+  - component: {fileID: 1173077823}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1213,6 +1214,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1173077823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173077818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5caabbb0becf1f47984cee0a6a9eb5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myMixer: {fileID: 24100000, guid: 96901cb539286604a859c9c8eed9d863, type: 2}
+  musicSlider: {fileID: 1410502178}
+  sfxSlider: {fileID: 2136089465}
 --- !u!1 &1225500104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,9 +1563,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1410502177}
   - component: {fileID: 1410502178}
-  - component: {fileID: 1410502179}
   m_Layer: 5
-  m_Name: Music
+  m_Name: musicVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1622,16 +1637,16 @@ MonoBehaviour:
   m_FillRect: {fileID: 1225500105}
   m_HandleRect: {fileID: 327918585}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 2
+  m_MinValue: 0.0001
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1410502179}
+      - m_Target: {fileID: 1173077823}
         m_TargetAssemblyTypeName: musicsound, Assembly-CSharp
-        m_MethodName: ChangeVolume
+        m_MethodName: SetMusicVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1641,19 +1656,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1410502179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410502176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5caabbb0becf1f47984cee0a6a9eb5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 1410502178}
 --- !u!1 &1691665295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,9 +1818,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2136089464}
   - component: {fileID: 2136089465}
-  - component: {fileID: 2136089466}
   m_Layer: 5
-  m_Name: SFX
+  m_Name: SFXVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1891,16 +1892,16 @@ MonoBehaviour:
   m_FillRect: {fileID: 858470191}
   m_HandleRect: {fileID: 1958491035}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 2
+  m_MinValue: 0.0001
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2136089466}
+      - m_Target: {fileID: 1173077823}
         m_TargetAssemblyTypeName: musicsound, Assembly-CSharp
-        m_MethodName: ChangeVolume
+        m_MethodName: SetSFXVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1910,16 +1911,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2136089466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136089463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5caabbb0becf1f47984cee0a6a9eb5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 2136089465}
