@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class king : EnemyBehaviour
 {
@@ -15,7 +17,7 @@ public class king : EnemyBehaviour
     {
         if (isAttack)
         {
-            float randomNum = Random.Range(0, 2);
+            float randomNum = Random.Range(0, 3);
             switch (randomNum)
             {
                 case 0:
@@ -25,7 +27,7 @@ public class king : EnemyBehaviour
                     animator.SetTrigger("randomBullShit");
                     break;
                 case 2:
-                    print("cosa3");
+                    animator.SetTrigger("finalAttack");
                     break;
             }
             isAttack = false;        }
@@ -62,7 +64,6 @@ public class king : EnemyBehaviour
 
     IEnumerator ActivateRandomBullShit()
     {
-        print("random");
         for (int i = 3; i < 7; i++)
         {
             gameObject.transform.GetChild(i).gameObject.SetActive(true);
@@ -78,10 +79,32 @@ public class king : EnemyBehaviour
 
     }
 
+    protected void FinalAttack()
+    {
+        StartCoroutine(ActivateFinalAttack());
+        StartCoroutine(Interval());
+    }
+
+    IEnumerator ActivateFinalAttack()
+    {
+        for (int i = 7; i < 13; i++)
+        {
+            gameObject.transform.GetChild(i).gameObject.SetActive(true);
+            gameObject.transform.GetChild(i).GetComponent<laserBeam>().SetSound();
+            yield return new WaitForSeconds(0.75f);
+        }
+
+        for (int i = 7; i < 13; i++)
+        {
+            gameObject.transform.GetChild(i).gameObject.SetActive(false);
+            yield return new WaitForSeconds(0.75f);
+        }
+
+    }
+
     IEnumerator Interval()
     {
         yield return new WaitForSeconds(intervalAttacks);
-        print("ya ta");
         isAttack = true;
     }
 
@@ -89,5 +112,14 @@ public class king : EnemyBehaviour
     {
         //Instantiate(loot, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
         base.Defeated();
+        StartCoroutine(EndScene());
+    }
+
+    IEnumerator EndScene()
+    {
+        yield return new WaitForSeconds(3.0f);
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
+        Destroy(PersistentManager.Instance);
+        SceneManager.LoadScene(3);
     }
 }

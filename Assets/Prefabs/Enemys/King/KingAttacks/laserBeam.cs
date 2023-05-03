@@ -9,8 +9,8 @@ public class laserBeam : MonoBehaviour
 
     public void SetSound()
     {
-        Instantiate(sound);
-        Destroy(sound, 1.5f);
+        GameObject cosa = Instantiate(sound);
+        Destroy(cosa, 1.5f);
     }
 
     protected void DeactivateCollider()
