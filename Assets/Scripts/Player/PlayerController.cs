@@ -293,9 +293,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public List<GameObject> soundMagic;
     public void MagicAttack()
     {
         Instantiate(spells[(int)currentMagic - 1], transform.position, Quaternion.identity);
+        GameObject mySound = Instantiate(soundMagic[(int)currentMagic - 1]);
+        Destroy(mySound, 2f);
         PersistentManager.Instance.ability.usedAbility(MagicCooldown);
     }
 

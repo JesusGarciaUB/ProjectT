@@ -388,6 +388,10 @@ MonoBehaviour:
   Ins: {fileID: 0}
   swordSound: {fileID: 2260607133514380705, guid: b42adc7f0790bfb4698f50df2d15c180, type: 3}
   _bowSound: {fileID: 4927498706288794585, guid: fa8a865f7bb60c949a4144e65287d59c, type: 3}
+  soundMagic:
+  - {fileID: 4291156380468186488, guid: 565bb2b9415984846a88779a745d6a04, type: 3}
+  - {fileID: 6858112874866099363, guid: 3dd6f90e57e92b349b773358cafb3ff8, type: 3}
+  - {fileID: 4017587387481453823, guid: 5339082bcf8cffd4ebe34d4c63ecd90d, type: 3}
 --- !u!95 &6686875965164495011
 Animator:
   serializedVersion: 4
