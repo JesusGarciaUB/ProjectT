@@ -193,7 +193,9 @@ MonoBehaviour:
   isAlive: 1
   hitting: 0
   laserBeam: {fileID: 4222685300259800118, guid: dfb50d228f6e6124cade3cdab7fedb8a, type: 3}
-  intervalAttacks: 6
+  intervalAttacks: 4
+  intervalAttacks2: 2
+  intervalAttacks3: 2
 --- !u!1 &6855701337537280115
 GameObject:
   m_ObjectHideFlags: 0

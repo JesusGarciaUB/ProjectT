@@ -7,6 +7,8 @@ public class king : EnemyBehaviour
 {
     public GameObject laserBeam;
     public float intervalAttacks;
+    public float intervalAttacks2;
+    public float intervalAttacks3;
 
     private float count;
     private bool isAttack = true;
@@ -51,13 +53,12 @@ public class king : EnemyBehaviour
             gameObject.transform.GetChild(i).gameObject.SetActive(false);
         }
 
-        StartCoroutine(Interval());
+        StartCoroutine(Interval(intervalAttacks));
     }
 
     protected void RandomBullShit()
     {
         StartCoroutine(ActivateRandomBullShit());
-        StartCoroutine(Interval());
     }
 
     IEnumerator ActivateRandomBullShit()
@@ -75,12 +76,12 @@ public class king : EnemyBehaviour
             yield return new WaitForSeconds(0.75f);
         }
 
+        StartCoroutine(Interval(intervalAttacks2));
     }
 
     protected void FinalAttack()
     {
         StartCoroutine(ActivateFinalAttack());
-        StartCoroutine(Interval());
     }
 
     IEnumerator ActivateFinalAttack()
@@ -98,11 +99,12 @@ public class king : EnemyBehaviour
             yield return new WaitForSeconds(0.75f);
         }
 
+        StartCoroutine(Interval(intervalAttacks3));
     }
 
-    IEnumerator Interval()
+    IEnumerator Interval(float ia)
     {
-        yield return new WaitForSeconds(intervalAttacks);
+        yield return new WaitForSeconds(ia);
         isAttack = true;
     }
 
