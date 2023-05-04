@@ -116,8 +116,9 @@ public class king : EnemyBehaviour
     IEnumerator EndScene()
     {
         yield return new WaitForSeconds(3.0f);
+
         Destroy(GameObject.FindGameObjectWithTag("Canvas"));
-        Destroy(PersistentManager.Instance);
+        Destroy(GameObject.FindGameObjectWithTag("PersistentManager"));
         Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
         SceneManager.LoadScene(3);
     }
