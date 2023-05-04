@@ -39,7 +39,7 @@ public class DashAttack: MonoBehaviour
         RaycastHit2D[] hits;
         Color rayColor;
 
-        hits = Physics2D.RaycastAll(transform.position, actualDirection, 0.6f, layerMask);
+        hits = Physics2D.RaycastAll(transform.position, actualDirection, 0.8f, layerMask);
         rayColor = Color.green;
         Debug.DrawRay(transform.position, actualDirection * 0.6f, rayColor);
         if (hits.Length > 0)
@@ -75,6 +75,7 @@ public class DashAttack: MonoBehaviour
                 {
                     if (Time.time > nextfireTeam)
                     {
+                        SetSoundDash();
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x - 0f, transform.position.y + 0.20f + dashDistance * Time.fixedDeltaTime);
@@ -89,6 +90,7 @@ public class DashAttack: MonoBehaviour
                     Debug.Log("entra");
                     if (Time.time > nextfireTeam)
                     {
+                        SetSoundDash();
                         Debug.Log("no me puedo mover");
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
@@ -103,6 +105,7 @@ public class DashAttack: MonoBehaviour
                 {
                     if (Time.time > nextfireTeam)
                     {
+                        SetSoundDash();
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x  - 1f + dashDistance  * Time.fixedDeltaTime, transform.position.y - 0f);
@@ -117,6 +120,7 @@ public class DashAttack: MonoBehaviour
                 {
                     if (Time.time > nextfireTeam)
                     {
+                        SetSoundDash();
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x + 0.20f + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
