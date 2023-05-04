@@ -482,7 +482,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1253737706600343683, guid: d75e0dc0b4981c941b63f72d52039c0b, type: 3}
       propertyPath: health
-      value: 100
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253737706600343683, guid: d75e0dc0b4981c941b63f72d52039c0b, type: 3}
+      propertyPath: intervalAttacks
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4292783158212081497, guid: d75e0dc0b4981c941b63f72d52039c0b, type: 3}
       propertyPath: m_RootOrder
