@@ -116,16 +116,17 @@ public class PlayerController : MonoBehaviour
     }
     private void Defeated()
     {
-        /*StartCoroutine(EndScene());
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         GameObject screenShake = GameObject.FindWithTag("MainCamera");
         screenShake.GetComponent<ScreenShake>().timeShake = 0.0f;
-        PersistentManager.Instance.winlose.SetActive(true);*/
+        PersistentManager.Instance.winlose.SetActive(true);
+        animator.SetTrigger("isDeath");
+        StartCoroutine(EndScene());
 
-        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
+        /*Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         Destroy(GameObject.FindGameObjectWithTag("PersistentManager"));
         Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(3);*/
     }
 
     IEnumerator EndScene()
@@ -142,7 +143,7 @@ public class PlayerController : MonoBehaviour
     {
         SetLayer();
         SetLastPosition();
-        if (canMove)
+        if (canMove && health > 0)
         {
             
             if (playerMovement != Vector2.zero)
