@@ -510,6 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenenum: 0
+  myMixer: {fileID: 24100000, guid: 96901cb539286604a859c9c8eed9d863, type: 2}
 --- !u!1001 &930706255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1094,6 +1095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenenum: 1
+  myMixer: {fileID: 24100000, guid: 96901cb539286604a859c9c8eed9d863, type: 2}
 --- !u!1 &1738004941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenenum: 2
+  myMixer: {fileID: 24100000, guid: 96901cb539286604a859c9c8eed9d863, type: 2}
 --- !u!1 &2026907295
 GameObject:
   m_ObjectHideFlags: 0
