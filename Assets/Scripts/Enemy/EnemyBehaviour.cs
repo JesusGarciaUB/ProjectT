@@ -41,6 +41,7 @@ public class EnemyBehaviour : MonoBehaviour
         canMove = true;
         hitting = false;
         canAttack = true;
+        isFrozen = false;
         //canMoveChecker = true;
     }
     /// <summary>
@@ -223,12 +224,15 @@ public class EnemyBehaviour : MonoBehaviour
         }
         isAffected = false;
     }
+    bool isFrozen;
     private IEnumerator WaitForFreeze(float duration)
     {
+        isFrozen = true;
         isAffected = true;
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         canMove = false;
         yield return new WaitForSeconds(duration);
+        isFrozen = false;
         if (isAlive)
         {
             canMove = true;
@@ -329,7 +333,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void UnLockMovement()
     {
-        if(isAlive) canMove = true;
+        if(isAlive && !isFrozen) canMove = true;
     }
 
     protected void SetLayer()

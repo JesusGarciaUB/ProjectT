@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8337488630051494328}
   - component: {fileID: 1663725646}
   m_Layer: 0
-  m_Name: Barrel
+  m_Name: Fake_wall
   m_TagString: Explodable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 16537029, guid: 672a8c56f8252c849a8fb08a373e5a8b, type: 3}
+  m_Sprite: {fileID: -2047601330, guid: 672a8c56f8252c849a8fb08a373e5a8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,7 +126,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 0.32, y: 0.48}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -145,7 +145,7 @@ Animator:
   m_GameObject: {fileID: 4614790678144220783}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c82796b36ac6baf4ca3a6f4191064898, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1799adedc5a004640b654e7a25d62047, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

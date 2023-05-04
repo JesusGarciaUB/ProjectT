@@ -31,10 +31,8 @@ public class IsHit : MonoBehaviour
         {
             pl.color = oga;
             yield return new WaitForSeconds(ticks);
-            print(x);
             //pl.color = OriginalColor;
             yield return new WaitForSeconds(ticks);
-            print(x + "f");
         }
         //print("done");
         //yield return null;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ExplodableBehavior : MonoBehaviour
 {
+    public GameObject sound;
     private void Start()
     {
         SetLayer();
@@ -11,6 +12,8 @@ public class ExplodableBehavior : MonoBehaviour
     public void Explode()
     {
         GetComponent<Animator>().SetTrigger("Explode");
+        GameObject toexplode = Instantiate(sound);
+        Destroy(toexplode, 2f);
     }
 
     public void FinishAnimation()
