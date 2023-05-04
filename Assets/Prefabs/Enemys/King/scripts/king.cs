@@ -118,6 +118,7 @@ public class king : EnemyBehaviour
         yield return new WaitForSeconds(3.0f);
         Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         Destroy(PersistentManager.Instance);
+        Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
         SceneManager.LoadScene(3);
     }
 }
