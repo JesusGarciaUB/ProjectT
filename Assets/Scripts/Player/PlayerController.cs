@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -115,16 +116,23 @@ public class PlayerController : MonoBehaviour
     }
     private void Defeated()
     {
-        PersistentManager.Instance.winlose.SetActive(true);
+        StartCoroutine(EndScene());
         Time.timeScale = 0f;
+        GameObject screenShake = GameObject.FindWithTag("MainCamera");
+        screenShake.GetComponent<ScreenShake>().timeShake = 0.0f;
+        PersistentManager.Instance.winlose.SetActive(true);
     }
 
-    public void Win()
+    IEnumerator EndScene()
     {
-        PersistentManager.Instance.winlose.GetComponent<TMP_InputField>().text = "YOU WIN!!";
-        PersistentManager.Instance.winlose.SetActive(true);
-        Time.timeScale = 0f;
+        yield return new WaitForSeconds(3.0f);
+
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
+        Destroy(GameObject.FindGameObjectWithTag("PersistentManager"));
+        Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
+        SceneManager.LoadScene(3);
     }
+
     private void Update()
     {
         SetLayer();

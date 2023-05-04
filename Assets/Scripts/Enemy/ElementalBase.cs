@@ -56,7 +56,6 @@ public class ElementalBase : EnemyBehaviour
         setLootColor(droppedLoot);                                                                                                      //set color of loot to own color
         //Destroy(transform.GetChild(1).gameObject);
         base.Defeated();
-        if (isLast) PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().Win();
     }
 
     /// <summary>
