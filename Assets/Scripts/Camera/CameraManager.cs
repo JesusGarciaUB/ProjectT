@@ -15,7 +15,7 @@ public class CameraManager : MonoBehaviour
 
     private void Start()
     {
-        transform.position = PersistentManager.Instance.nextSpawn;
+        transform.position = new Vector3(0, 0, -10);
     }
     private void LateUpdate()
     {
