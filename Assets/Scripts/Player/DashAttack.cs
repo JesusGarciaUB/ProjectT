@@ -105,7 +105,7 @@ public class DashAttack: MonoBehaviour
                     {
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
-                        rb.position = new Vector3(transform.position.x - 1f + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
+                        rb.position = new Vector3(transform.position.x  - 1f + dashDistance  * Time.fixedDeltaTime, transform.position.y - 0f);
                         
                     }
                 }
@@ -119,7 +119,7 @@ public class DashAttack: MonoBehaviour
                     {
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
-                        rb.position = new Vector3(transform.position.x  + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f).normalized;
+                        rb.position = new Vector3(transform.position.x + 0.20f + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
                         
                     }
                 }
