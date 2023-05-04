@@ -707,7 +707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4900981487179218139, guid: 2f32e0c8314e746449cc889f7ccecbca, type: 3}
       propertyPath: TextToShow
-      value: 'Marie: My favourite instrument is the trom-bone!'
+      value: 'Marie: Why are you here!? GUARDS!'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f32e0c8314e746449cc889f7ccecbca, type: 3}
@@ -1814,7 +1814,7 @@ Tilemap:
       - {fileID: 1017569500, guid: 23d4adaeee917424a86b1463e28b7be0, type: 3}
       - {fileID: -1584373490, guid: 23d4adaeee917424a86b1463e28b7be0, type: 3}
       - {fileID: -1611978756, guid: 23d4adaeee917424a86b1463e28b7be0, type: 3}
-      m_AnimationSpeed: 12
+      m_AnimationSpeed: 12.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 35, y: -27, z: 0}
@@ -2024,7 +2024,7 @@ Tilemap:
       - {fileID: -1298338390, guid: 8d8935c5b2fa61e4c873a536504306c5, type: 3}
       - {fileID: -2041416303, guid: 8d8935c5b2fa61e4c873a536504306c5, type: 3}
       - {fileID: -2031750566, guid: 8d8935c5b2fa61e4c873a536504306c5, type: 3}
-      m_AnimationSpeed: 12.000001
+      m_AnimationSpeed: 12
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 73, y: -7, z: 0}
@@ -2062,7 +2062,7 @@ Tilemap:
       - {fileID: -475205466, guid: 38305dafecf4f574aa4b229e0936153d, type: 3}
       - {fileID: -165370474, guid: 38305dafecf4f574aa4b229e0936153d, type: 3}
       - {fileID: 544664423, guid: 38305dafecf4f574aa4b229e0936153d, type: 3}
-      m_AnimationSpeed: 12.000001
+      m_AnimationSpeed: 12
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 1, y: -5, z: 0}
@@ -3334,7 +3334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4900981487179218139, guid: 9c1e23f2c0889a0428687caa122565f6, type: 3}
       propertyPath: TextToShow
-      value: 'Sarah: Mi husband was a guard at the gate, looks like it''s starting
+      value: 'Sarah: My husband was a guard at the gate, looks like it''s starting
         to rain...'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
