@@ -224,7 +224,7 @@ public class EnemyBehaviour : MonoBehaviour
         }
         isAffected = false;
     }
-    bool isFrozen;
+    protected bool isFrozen;
     private IEnumerator WaitForFreeze(float duration)
     {
         isFrozen = true;

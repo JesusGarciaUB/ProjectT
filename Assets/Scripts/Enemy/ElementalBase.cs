@@ -95,7 +95,7 @@ public class ElementalBase : EnemyBehaviour
     }
     private void SetterAttack()
     {
-        if (canAttack)
+        if (canAttack && !isFrozen)
         {
             animator.SetTrigger("shooting");
             StartCoroutine(StartCooldown());
