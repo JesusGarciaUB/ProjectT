@@ -978,7 +978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3060984049334610591, guid: 3b9df8c1672039048898925839ed63c6, type: 3}
       propertyPath: m_fontSize
-      value: 27.25
+      value: 23.95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b9df8c1672039048898925839ed63c6, type: 3}
@@ -1081,6 +1081,14 @@ PrefabInstance:
     - target: {fileID: 2080498334111664720, guid: 5c1262cfa91051c4f96cacaad30f9d62, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ControlsOptions
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128876161117111107, guid: 5c1262cfa91051c4f96cacaad30f9d62, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3760294961663785557}
+    - target: {fileID: 5128876161117111107, guid: 5c1262cfa91051c4f96cacaad30f9d62, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnToMainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 8427544801888642666, guid: 5c1262cfa91051c4f96cacaad30f9d62, type: 3}
       propertyPath: m_AnchoredPosition.x

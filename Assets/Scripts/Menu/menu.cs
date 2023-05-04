@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour
 {
@@ -56,6 +57,15 @@ public class menu : MonoBehaviour
     public void ReturnToMenu()
     {
         _soundOptions.SetActive(false);
+    }
+
+    public void ReturnToMainMenu()
+    {
+        ResumeGame();
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
+        Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
+        Destroy(GameObject.FindGameObjectWithTag("PersistentManager"));
+        SceneManager.LoadScene(0);
     }
 
     void OnMenu()

@@ -22,6 +22,8 @@ TagManager:
   - ProjectileDeleter
   - Checker
   - Explodable
+  - EventSystem
+  - PersistentManager
   layers:
   - Default
   - TransparentFX
