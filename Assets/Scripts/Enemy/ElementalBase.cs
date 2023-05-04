@@ -28,7 +28,7 @@ public class ElementalBase : EnemyBehaviour
     {
         SetLayer();
 
-        if (canMove)
+        if (canMove && !isFrozen)
         {
             //follow target if not in min distance
             if (Vector3.Distance(player.transform.position, transform.position) > MinDistance)
