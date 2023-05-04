@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator EndScene()
     {
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(1.5f);
 
         Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         Destroy(GameObject.FindGameObjectWithTag("PersistentManager"));
