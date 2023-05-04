@@ -116,11 +116,16 @@ public class PlayerController : MonoBehaviour
     }
     private void Defeated()
     {
-        StartCoroutine(EndScene());
+        /*StartCoroutine(EndScene());
         Time.timeScale = 0f;
         GameObject screenShake = GameObject.FindWithTag("MainCamera");
         screenShake.GetComponent<ScreenShake>().timeShake = 0.0f;
-        PersistentManager.Instance.winlose.SetActive(true);
+        PersistentManager.Instance.winlose.SetActive(true);*/
+
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
+        Destroy(GameObject.FindGameObjectWithTag("PersistentManager"));
+        Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
+        SceneManager.LoadScene(3);
     }
 
     IEnumerator EndScene()
