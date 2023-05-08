@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private Palanca palanca;
     public GameObject swordSound;
     public GameObject _bowSound;
+    public bool hasKey;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,7 @@ public class PlayerController : MonoBehaviour
         currentMagic = PersistentManager.Instance.magic;
         transform.position = PersistentManager.Instance.nextSpawn;
         attacking = false;
+        hasKey = false;
     }
 
     public Palanca SetP { set { palanca = value; } }
