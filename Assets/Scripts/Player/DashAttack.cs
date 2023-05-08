@@ -27,7 +27,11 @@ public class DashAttack: MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-
+    private void Update()
+    {
+        Debug.DrawRay(transform.position, actualDirection * 0.6f, Color.green);
+        Debug.DrawRay(transform.position + Vector3.down + Vector3.up + Vector3.right + Vector3.left * 0.2f, actualDirection * 0.6f, Color.green);
+    }
     private void OnDash()
     {
         movementDash();
