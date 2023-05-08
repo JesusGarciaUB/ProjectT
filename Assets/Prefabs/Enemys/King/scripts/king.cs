@@ -124,4 +124,23 @@ public class king : EnemyBehaviour
         Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
         SceneManager.LoadScene(3);
     }
+
+    protected override void blikOnHit()
+    {
+        if (!isAffected)
+        {
+            base.blikOnHit();
+            Color c = new Color(1, 0, 0, 0.8f);
+            StartCoroutine(redBlick(c, 0.5f));
+        }
+    }
+
+    private IEnumerator redBlick(Color color, float duration)
+    {
+        SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+
+        sr.color = color;
+        yield return new WaitForSeconds(duration);
+        sr.color = og;
+    }
 }
