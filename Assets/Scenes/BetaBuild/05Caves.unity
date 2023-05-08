@@ -317,7 +317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.133
+      value: 8.109
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.y
@@ -576,12 +576,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: maxEnemies
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: position.x
       value: 6.72
       objectReference: {fileID: 0}
+    - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
+      propertyPath: elementals.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
+      propertyPath: enemyPrefab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
+      propertyPath: elementals.Array.data[0]
+      value: 
+      objectReference: {fileID: 1763106821}
+    - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
+      propertyPath: enemyPrefab.Array.data[1]
+      value: 
+      objectReference: {fileID: 6983229987186262259, guid: 9bc7f8ae1c1987e449f305cdb042b11f, type: 3}
     - target: {fileID: 5427926934776098649, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -21666,7 +21682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.133
+      value: 8.109
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29434,7 +29450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.133
+      value: 8.109
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29605,6 +29621,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: minRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
+      propertyPath: maxEnemies
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
@@ -30173,7 +30193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: maxEnemies
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: position.x
@@ -30181,6 +30201,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: elementals.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
+      propertyPath: enemyPrefab.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
@@ -30526,7 +30550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.133
+      value: 8.109
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30583,7 +30607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8119961526532233681, guid: 1ed9803f64d749a41bb9ddda3a6e9593, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.262
+      value: 7.367
       objectReference: {fileID: 0}
     - target: {fileID: 8119961526532233681, guid: 1ed9803f64d749a41bb9ddda3a6e9593, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30973,12 +30997,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: enemyPrefab.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: elementals.Array.data[0]
       value: 
       objectReference: {fileID: 95875843}
+    - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
+      propertyPath: enemyPrefab.Array.data[0]
+      value: 
+      objectReference: {fileID: 6036832529811767044, guid: b7aa492db823db345978f6ae15e7d1ea, type: 3}
     - target: {fileID: 4023407609140897099, guid: 4c1b1fc4349ca2141bf0934ce45097d5, type: 3}
       propertyPath: enemyPrefab.Array.data[3]
       value: 
@@ -31046,7 +31074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.133
+      value: 8.109
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33857,7 +33885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.133
+      value: 8.109
       objectReference: {fileID: 0}
     - target: {fileID: 4614790678144220779, guid: 08e5a1eb6af01e54d9f2a2aee97b6520, type: 3}
       propertyPath: m_LocalPosition.y
