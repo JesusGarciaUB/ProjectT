@@ -27,7 +27,12 @@ public class DashAttack: MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
+    private void Update()
+    {
+        detectWalls(); 
+     
 
+    }
     private void OnDash()
     {
         movementDash();
@@ -42,12 +47,14 @@ public class DashAttack: MonoBehaviour
         hits = Physics2D.RaycastAll(transform.position, actualDirection, 0.8f, layerMask);
         rayColor = Color.green;
         Debug.DrawRay(transform.position, actualDirection * 0.6f, rayColor);
+        Debug.DrawRay(transform.position - Vector3.left * 0.1f, actualDirection * 0.6f, rayColor);
         if (hits.Length > 0)
         {
             isTouching = true;
             rayColor = Color.red;
             Debug.DrawRay(transform.position, actualDirection * 0.6f, rayColor);
-            
+            Debug.DrawRay(transform.position - Vector3.left * 0.1f, actualDirection * 0.6f, rayColor);
+
         }
         else
         {
