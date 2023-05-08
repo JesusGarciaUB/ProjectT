@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
         Ins = PersistentManager.Instance.ins;
         currentMagic = PersistentManager.Instance.magic;
         transform.position = PersistentManager.Instance.nextSpawn;
+        attacking = false;
     }
 
     public Palanca SetP { set { palanca = value; } }
@@ -225,9 +226,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private bool attacking; 
     void OnSword()
     {
-        animator.SetTrigger("swordAttack");
+        if (!attacking) animator.SetTrigger("swordAttack");
     }
 
     void OnBow()
@@ -239,6 +241,7 @@ public class PlayerController : MonoBehaviour
 
     public void SwordAttack()
     {
+        attacking = true;
         GameObject sound = Instantiate(swordSound);
         Destroy(sound, 1f);
         LockMovement();
@@ -277,6 +280,7 @@ public class PlayerController : MonoBehaviour
     {
         swordAttack.StopAttack();
         UnlockMovement();
+        attacking = false;
     }
 
     public void LockMovement() {
