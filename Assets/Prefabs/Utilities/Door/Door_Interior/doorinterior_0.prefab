@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5d893864b041d49b63e49ede94a0f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openDoorSound: {fileID: 0}
-  TimeToDestroy: 0
+  openDoorSound: {fileID: 2532255760224667055, guid: 9e34507e5f0e72e45be0819e753962cc, type: 3}
+  TimeToDestroy: 2
 --- !u!61 &6632895002634988684
 BoxCollider2D:
   m_ObjectHideFlags: 0
