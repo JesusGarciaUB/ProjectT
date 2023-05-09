@@ -51,7 +51,7 @@ public class DashAttack: MonoBehaviour
         Debug.DrawRay(transform.position, actualDirection_second * 0.6f, rayColor);
         //Debug.DrawRay(transform.position - Vector3.up * 0.1f, actualDirection * 0.6f, rayColor);
         //Debug.DrawRay(transform.position - Vector3.left * 0.1f, actualDirection * 0.6f, rayColor);
-        if (hits.Length > 0)
+        if (hits.Length > 0 || hit.Length > 0)
         {
             isTouching = true;
             rayColor = Color.red;
@@ -82,7 +82,7 @@ public class DashAttack: MonoBehaviour
         {
             case PlayerController.Direction.UP:                          //Set arrow facing up
                 actualDirection = Vector3.up;
-                actualDirection_second = Vector3.up;
+                actualDirection_second = transform.position + Vector3.up * 0.4f;
                 detectWalls();
                 if (isTouching != true)
                 {
