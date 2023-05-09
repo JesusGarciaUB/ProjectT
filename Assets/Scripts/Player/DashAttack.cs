@@ -27,12 +27,16 @@ public class DashAttack: MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
+    private void Update()
+    {
+        detectWalls();
+    }
 
     private void OnDash()
     {
         movementDash();
     }
-    private void detectWalls()
+    private void  detectWalls()
     {
         layerMask = LayerMask.GetMask("CollisionWall");
 
@@ -42,6 +46,7 @@ public class DashAttack: MonoBehaviour
         hits = Physics2D.RaycastAll(transform.position, actualDirection, 0.8f, layerMask);
         rayColor = Color.green;
         Debug.DrawRay(transform.position, actualDirection * 0.6f, rayColor);
+        Debug.DrawRay(transform.position - Vector3.up, actualDirection * 0.6f, rayColor);
         if (hits.Length > 0)
         {
             isTouching = true;
@@ -70,7 +75,7 @@ public class DashAttack: MonoBehaviour
         {
             case PlayerController.Direction.UP:                          //Set arrow facing up
                 actualDirection = Vector3.up;
-                detectWalls();
+               detectWalls();
                 if (isTouching != true)
                 {
                     if (Time.time > nextfireTeam)
