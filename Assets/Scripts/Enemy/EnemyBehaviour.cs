@@ -11,7 +11,7 @@ public class EnemyBehaviour : MonoBehaviour
     public bool canAttack;                                  //auxiliary to know if can attack
     public GameObject healthText;                           //floating damage UI
     public bool canMove;
-    private bool isAffected;
+    protected bool isAffected;
     protected Color og;
     protected Animator animator;
     Vector3 previousPosition;
@@ -67,6 +67,8 @@ public class EnemyBehaviour : MonoBehaviour
                 //Set health loss text inside the canvas
                 Canvas canvas = GameObject.FindObjectOfType<Canvas>();
                 textTransform.SetParent(canvas.transform);
+
+                blikOnHit();
             }
 
             health = value;
@@ -224,7 +226,7 @@ public class EnemyBehaviour : MonoBehaviour
         }
         isAffected = false;
     }
-    bool isFrozen;
+    protected bool isFrozen;
     private IEnumerator WaitForFreeze(float duration)
     {
         isFrozen = true;
@@ -345,5 +347,10 @@ public class EnemyBehaviour : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sortingOrder = -890;
         }
+    }
+
+    protected virtual void blikOnHit()
+    {
+        
     }
 }

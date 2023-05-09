@@ -230,6 +230,7 @@ MonoBehaviour:
   armor: 4
   isAlive: 1
   hitting: 0
+  shieldBreak: {fileID: 5877324654044338855, guid: 726fec53182140543858490554e4229f, type: 3}
   speed: 0.3
 --- !u!95 &942121500822468483
 Animator:

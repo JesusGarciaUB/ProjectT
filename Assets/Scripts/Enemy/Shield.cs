@@ -7,6 +7,8 @@ public class Shield : EnemyBehaviour
     // Update is called once per frame
     private bool changed = false;
     SpriteRenderer sr;
+    public GameObject shieldBreak;
+
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -22,6 +24,8 @@ public class Shield : EnemyBehaviour
         SetLayer();
         if (Armor <= 0 && !changed)
         {
+            GameObject soundBreack = Instantiate(shieldBreak);
+            Destroy(soundBreack, 2f);
             animator.SetTrigger("noShield");
             //sr.color = Color.red;
             changed = true;

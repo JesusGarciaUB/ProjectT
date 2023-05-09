@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private Palanca palanca;
     public GameObject swordSound;
     public GameObject _bowSound;
+    public bool hasKey;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,8 @@ public class PlayerController : MonoBehaviour
         Ins = PersistentManager.Instance.ins;
         currentMagic = PersistentManager.Instance.magic;
         transform.position = PersistentManager.Instance.nextSpawn;
+        attacking = false;
+        hasKey = false;
     }
 
     public Palanca SetP { set { palanca = value; } }
@@ -115,21 +119,34 @@ public class PlayerController : MonoBehaviour
     }
     private void Defeated()
     {
+        //Time.timeScale = 0f;
+        GameObject screenShake = GameObject.FindWithTag("MainCamera");
+        screenShake.GetComponent<ScreenShake>().timeShake = 0.0f;
         PersistentManager.Instance.winlose.SetActive(true);
-        Time.timeScale = 0f;
+        animator.SetTrigger("isDeath");
+        StartCoroutine(EndScene());
+
+        /*Destroy(GameObject.FindGameObjectWithTag("Canvas"));
+        Destroy(GameObject.FindGameObjectWithTag("PersistentManager"));
+        Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
+        SceneManager.LoadScene(3);*/
     }
 
-    public void Win()
+    IEnumerator EndScene()
     {
-        PersistentManager.Instance.winlose.GetComponent<TMP_InputField>().text = "YOU WIN!!";
-        PersistentManager.Instance.winlose.SetActive(true);
-        Time.timeScale = 0f;
+        yield return new WaitForSeconds(1.5f);
+
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
+        Destroy(GameObject.FindGameObjectWithTag("PersistentManager"));
+        Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
+        SceneManager.LoadScene(3);
     }
+
     private void Update()
     {
         SetLayer();
         SetLastPosition();
-        if (canMove)
+        if (canMove && health > 0)
         {
             
             if (playerMovement != Vector2.zero)
@@ -211,9 +228,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private bool attacking; 
     void OnSword()
     {
-        animator.SetTrigger("swordAttack");
+        if (!attacking) animator.SetTrigger("swordAttack");
     }
 
     void OnBow()
@@ -225,6 +243,7 @@ public class PlayerController : MonoBehaviour
 
     public void SwordAttack()
     {
+        attacking = true;
         GameObject sound = Instantiate(swordSound);
         Destroy(sound, 1f);
         LockMovement();
@@ -263,6 +282,7 @@ public class PlayerController : MonoBehaviour
     {
         swordAttack.StopAttack();
         UnlockMovement();
+        attacking = false;
     }
 
     public void LockMovement() {

@@ -28,7 +28,7 @@ public class ElementalBase : EnemyBehaviour
     {
         SetLayer();
 
-        if (canMove)
+        if (canMove && !isFrozen)
         {
             //follow target if not in min distance
             if (Vector3.Distance(player.transform.position, transform.position) > MinDistance)
@@ -56,7 +56,6 @@ public class ElementalBase : EnemyBehaviour
         setLootColor(droppedLoot);                                                                                                      //set color of loot to own color
         //Destroy(transform.GetChild(1).gameObject);
         base.Defeated();
-        if (isLast) PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().Win();
     }
 
     /// <summary>
@@ -96,7 +95,7 @@ public class ElementalBase : EnemyBehaviour
     }
     private void SetterAttack()
     {
-        if (canAttack)
+        if (canAttack && !isFrozen)
         {
             animator.SetTrigger("shooting");
             StartCoroutine(StartCooldown());

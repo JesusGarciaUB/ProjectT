@@ -398,10 +398,10 @@ RectTransform:
   m_Father: {fileID: 707378254}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.68200004, y: 0.18241297}
-  m_AnchorMax: {x: 0.90800005, y: 0.27088058}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
-  m_SizeDelta: {x: -74, y: -16.554}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -265.5, y: -199.00006}
+  m_SizeDelta: {x: 217, y: 49.446}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876471795
 MonoBehaviour:
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8784314, g: 0.75686276, b: 0.5254902, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -479,8 +479,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 35bd4b47a6fe56f42a5656403044f7aa, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -510,6 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenenum: 0
+  myMixer: {fileID: 24100000, guid: 96901cb539286604a859c9c8eed9d863, type: 2}
 --- !u!1001 &930706255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -982,10 +983,10 @@ RectTransform:
   m_Father: {fileID: 707378254}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.68200004, y: 0.4092389}
-  m_AnchorMax: {x: 0.90800005, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015258789, y: 1.7000122}
-  m_SizeDelta: {x: -74, y: -17.554}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -266.00012, y: -31.799988}
+  m_SizeDelta: {x: 218, y: 47.445984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1638542179
 MonoBehaviour:
@@ -1009,7 +1010,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8784314, g: 0.75686276, b: 0.5254902, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1063,8 +1064,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 35bd4b47a6fe56f42a5656403044f7aa, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1094,6 +1095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenenum: 1
+  myMixer: {fileID: 24100000, guid: 96901cb539286604a859c9c8eed9d863, type: 2}
 --- !u!1 &1738004941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,10 +1132,10 @@ RectTransform:
   m_Father: {fileID: 707378254}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.68200004, y: 0.29488057}
-  m_AnchorMax: {x: 0.90800005, y: 0.3887065}
-  m_AnchoredPosition: {x: -0.000091552734, y: 1.2000198}
-  m_SizeDelta: {x: -74, y: -19.554}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -266.50012, y: -114.29997}
+  m_SizeDelta: {x: 219, y: 49.446}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1738004943
 MonoBehaviour:
@@ -1157,7 +1159,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8784314, g: 0.75686276, b: 0.5254902, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1211,8 +1213,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 35bd4b47a6fe56f42a5656403044f7aa, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1242,6 +1244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenenum: 2
+  myMixer: {fileID: 24100000, guid: 96901cb539286604a859c9c8eed9d863, type: 2}
 --- !u!1 &2026907295
 GameObject:
   m_ObjectHideFlags: 0
