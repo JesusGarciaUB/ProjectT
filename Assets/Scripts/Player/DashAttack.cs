@@ -14,6 +14,7 @@ public class DashAttack: MonoBehaviour
     private Vector3 lastMovedir;
     private bool isTouching;
     private Vector3 actualDirection;
+    private Vector3 actualDirection_second;
     private float dashDistance = 19f;
     private Vector3 playerDashMovement;
     private float cooldownTime = 2f;
@@ -30,8 +31,6 @@ public class DashAttack: MonoBehaviour
     private void Update()
     {
         detectWalls(); 
-     
-
     }
     private void OnDash()
     {
@@ -42,18 +41,24 @@ public class DashAttack: MonoBehaviour
         layerMask = LayerMask.GetMask("CollisionWall");
 
         RaycastHit2D[] hits;
+        RaycastHit2D[] hit;
         Color rayColor;
 
+        hit = Physics2D.RaycastAll(transform.position, actualDirection_second, 0.8f, layerMask);
         hits = Physics2D.RaycastAll(transform.position, actualDirection, 0.8f, layerMask);
         rayColor = Color.green;
         Debug.DrawRay(transform.position, actualDirection * 0.6f, rayColor);
-        Debug.DrawRay(transform.position - Vector3.left * 0.1f, actualDirection * 0.6f, rayColor);
-        if (hits.Length > 0)
+        Debug.DrawRay(transform.position, actualDirection_second * 0.6f, rayColor);
+        //Debug.DrawRay(transform.position - Vector3.up * 0.1f, actualDirection * 0.6f, rayColor);
+        //Debug.DrawRay(transform.position - Vector3.left * 0.1f, actualDirection * 0.6f, rayColor);
+        if (hits.Length > 0 || hit.Length > 0)
         {
             isTouching = true;
             rayColor = Color.red;
             Debug.DrawRay(transform.position, actualDirection * 0.6f, rayColor);
-            Debug.DrawRay(transform.position - Vector3.left * 0.1f, actualDirection * 0.6f, rayColor);
+            Debug.DrawRay(transform.position, actualDirection_second * 0.6f, rayColor);
+            //Debug.DrawRay(transform.position - Vector3.up * 0.1f, actualDirection * 0.6f, rayColor);
+            //Debug.DrawRay(transform.position - Vector3.left * 0.1f, actualDirection * 0.6f, rayColor);
 
         }
         else
@@ -77,6 +82,7 @@ public class DashAttack: MonoBehaviour
         {
             case PlayerController.Direction.UP:                          //Set arrow facing up
                 actualDirection = Vector3.up;
+                actualDirection_second = transform.position + Vector3.up * 0.4f;
                 detectWalls();
                 if (isTouching != true)
                 {
@@ -91,10 +97,10 @@ public class DashAttack: MonoBehaviour
                 break;
             case PlayerController.Direction.DOWN:
                 actualDirection = Vector3.down;
+                actualDirection_second = Vector3.down;
                 detectWalls();
                 if (isTouching != true)
                 {
-                    Debug.Log("entra");
                     if (Time.time > nextfireTeam)
                     {
                         SetSoundDash();
@@ -107,6 +113,7 @@ public class DashAttack: MonoBehaviour
                 break;
             case PlayerController.Direction.LEFT:
                 actualDirection = Vector3.left;
+                actualDirection_second = Vector3.left;
                 detectWalls();
                 if (isTouching != true)
                 {
@@ -116,12 +123,12 @@ public class DashAttack: MonoBehaviour
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x  - 1f + dashDistance  * Time.fixedDeltaTime, transform.position.y - 0f);
-                        
                     }
                 }
                 break;
             case PlayerController.Direction.RIGHT:
                 actualDirection = Vector3.right;
+                actualDirection_second = Vector3.right;
                 detectWalls();
                 if (isTouching != true)
                 {
@@ -131,7 +138,6 @@ public class DashAttack: MonoBehaviour
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x + 0.20f + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
-                        
                     }
                 }
                 break;
