@@ -236,7 +236,11 @@ public class PlayerController : MonoBehaviour
 
     void OnBow()
     {
-        animator.SetTrigger("bowAttack");
+        if (!attacking)
+        {
+            attacking = true;
+            animator.SetTrigger("bowAttack");
+        }
     }
    
 
@@ -272,6 +276,10 @@ public class PlayerController : MonoBehaviour
         bowAttack.Attack();
     }
 
+    public void EndBowAttack()
+    {
+        attacking = false;
+    }
     public void SetSoundBow()
     {
         GameObject sound = Instantiate(_bowSound);
