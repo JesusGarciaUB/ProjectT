@@ -82,7 +82,7 @@ public class DashAttack: MonoBehaviour
         {
             case PlayerController.Direction.UP:                          //Set arrow facing up
                 actualDirection = Vector3.up;
-                actualDirection_second = transform.position + Vector3.up * 0.4f;
+                actualDirection_second = Vector3.up ;
                 detectWalls();
                 if (isTouching != true)
                 {
