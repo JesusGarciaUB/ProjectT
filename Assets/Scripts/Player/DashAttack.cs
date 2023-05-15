@@ -82,7 +82,7 @@ public class DashAttack: MonoBehaviour
         {
             case PlayerController.Direction.UP:                          //Set arrow facing up
                 actualDirection = Vector3.up;
-                actualDirection_second = Vector3.up ;
+                actualDirection_second = Vector3.up;
                 detectWalls();
                 if (isTouching != true)
                 {
@@ -104,7 +104,6 @@ public class DashAttack: MonoBehaviour
                     if (Time.time > nextfireTeam)
                     {
                         SetSoundDash();
-                        Debug.Log("no me puedo mover");
                         nextfireTeam = Time.time + cooldownTime;
                         animator.SetTrigger("dashAttack");
                         rb.position = new Vector3(transform.position.x - 0f, transform.position.y - 1f + dashDistance * Time.fixedDeltaTime);         
