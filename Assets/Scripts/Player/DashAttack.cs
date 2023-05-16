@@ -22,6 +22,7 @@ public class DashAttack: MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     Animator animator;
     public AudioClip clipsound;
+
     
 
     private void Start()
@@ -82,7 +83,7 @@ public class DashAttack: MonoBehaviour
         {
             case PlayerController.Direction.UP:                          //Set arrow facing up
                 actualDirection = Vector3.up;
-                actualDirection_second = Vector3.up;
+                actualDirection_second = actualDirection - Vector3.right * 0.1f;
                 detectWalls();
                 if (isTouching != true)
                 {
@@ -97,7 +98,7 @@ public class DashAttack: MonoBehaviour
                 break;
             case PlayerController.Direction.DOWN:
                 actualDirection = Vector3.down;
-                actualDirection_second = Vector3.down;
+                actualDirection_second = actualDirection - Vector3.left * 0.1f;
                 detectWalls();
                 if (isTouching != true)
                 {
@@ -140,7 +141,6 @@ public class DashAttack: MonoBehaviour
                     }
                 }
                 break;
-
         }
 
     }
