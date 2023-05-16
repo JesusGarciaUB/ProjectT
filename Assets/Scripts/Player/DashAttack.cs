@@ -6,67 +6,37 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class DashAttack: MonoBehaviour
 {
-    float moveInput;
-    RaycastHit2D hit;
+
+    float maxDashLength = 1f;
+    float minDashLength = 0.1f;
+
+    Vector3 safeDashPosition;
+    Vector3 position;
+
     int layerMask = 1 << 11;
-    private Vector3 trans;
-    private Vector3 position;
-    private Vector3 lastMovedir;
-    private bool isTouching;
     private Vector3 actualDirection;
-    private Vector3 actualDirection_second;
-    private float dashDistance = 19f;
-    private Vector3 playerDashMovement;
     private float cooldownTime = 2f;
-    private float nextfireTeam = 0f;
+    private float timeSinceLastDash = 0f;
     [SerializeField] Rigidbody2D rb;
     Animator animator;
     public AudioClip clipsound;
-
-    
 
     private void Start()
     {
         animator = GetComponent<Animator>();
     }
+
     private void Update()
     {
-        detectWalls(); 
+        timeSinceLastDash += Time.deltaTime;
+        position = PersistentManager.Instance.PlayerGlobal.transform.position + (Vector3)PersistentManager.Instance.PlayerGlobal.GetComponent<CapsuleCollider2D>().offset; //position of the feet
+        safeDashPosition = CalculateSafeDashPosition();
     }
+
     private void OnDash()
     {
-        movementDash();
-    }
-    private void detectWalls()
-    {
-        layerMask = LayerMask.GetMask("CollisionWall");
-
-        RaycastHit2D[] hits;
-        RaycastHit2D[] hit;
-        Color rayColor;
-
-        hit = Physics2D.RaycastAll(transform.position, actualDirection_second, 0.8f, layerMask);
-        hits = Physics2D.RaycastAll(transform.position, actualDirection, 0.8f, layerMask);
-        rayColor = Color.green;
-        Debug.DrawRay(transform.position, actualDirection * 0.6f, rayColor);
-        Debug.DrawRay(transform.position, actualDirection_second * 0.6f, rayColor);
-        //Debug.DrawRay(transform.position - Vector3.up * 0.1f, actualDirection * 0.6f, rayColor);
-        //Debug.DrawRay(transform.position - Vector3.left * 0.1f, actualDirection * 0.6f, rayColor);
-        if (hits.Length > 0 || hit.Length > 0)
-        {
-            isTouching = true;
-            rayColor = Color.red;
-            Debug.DrawRay(transform.position, actualDirection * 0.6f, rayColor);
-            Debug.DrawRay(transform.position, actualDirection_second * 0.6f, rayColor);
-            //Debug.DrawRay(transform.position - Vector3.up * 0.1f, actualDirection * 0.6f, rayColor);
-            //Debug.DrawRay(transform.position - Vector3.left * 0.1f, actualDirection * 0.6f, rayColor);
-
-        }
-        else
-        {
-            isTouching = false;
-            
-        }
+        if (Vector3.Distance(position, safeDashPosition) > minDashLength)
+            Dash();
     }
     private IEnumerator SetSoundDash()
     {
@@ -76,72 +46,83 @@ public class DashAttack: MonoBehaviour
         audio.clip = clipsound;
         audio.Play();
     }
-    private void movementDash()
+
+    private void Dash()
     {
-        position = PersistentManager.Instance.PlayerGlobal.transform.position;
-        switch (PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().dir) //Check player facing direction to set arrow direction and position
+        if (timeSinceLastDash > cooldownTime)
         {
-            case PlayerController.Direction.UP:                          //Set arrow facing up
+            SetSoundDash();
+            timeSinceLastDash = 0.0f;
+            animator.SetTrigger("dashAttack");
+            rb.MovePosition(safeDashPosition - (Vector3)PersistentManager.Instance.PlayerGlobal.GetComponent<CapsuleCollider2D>().offset);
+        }
+    }
+    
+    Vector3 CalculateSafeDashPosition()
+    {
+        layerMask = LayerMask.GetMask("CollisionWall");
+
+        List<RaycastHit2D> hits = new List<RaycastHit2D>();
+        Color rayColor = Color.green;
+        float delta = 0.0f;
+        switch (PersistentManager.Instance.PlayerGlobal.GetComponent<PlayerController>().dir)
+        {
+            case PlayerController.Direction.NONE:
+                actualDirection = Vector3.zero;
+                break;
+            case PlayerController.Direction.UP:
+                delta = 0.08f;
                 actualDirection = Vector3.up;
-                actualDirection_second = actualDirection - Vector3.right * 0.1f;
-                detectWalls();
-                if (isTouching != true)
-                {
-                    if (Time.time > nextfireTeam)
-                    {
-                        SetSoundDash();
-                        nextfireTeam = Time.time + cooldownTime;
-                        animator.SetTrigger("dashAttack");
-                        rb.position = new Vector3(transform.position.x - 0f, transform.position.y + 0.20f + dashDistance * Time.fixedDeltaTime);
-                    }
-                }
                 break;
             case PlayerController.Direction.DOWN:
+                delta = 0.08f;
                 actualDirection = Vector3.down;
-                actualDirection_second = actualDirection - Vector3.left * 0.1f;
-                detectWalls();
-                if (isTouching != true)
-                {
-                    if (Time.time > nextfireTeam)
-                    {
-                        SetSoundDash();
-                        nextfireTeam = Time.time + cooldownTime;
-                        animator.SetTrigger("dashAttack");
-                        rb.position = new Vector3(transform.position.x - 0f, transform.position.y - 1f + dashDistance * Time.fixedDeltaTime);         
-                    }
-                }
                 break;
             case PlayerController.Direction.LEFT:
+                delta = 0.05f;
                 actualDirection = Vector3.left;
-                actualDirection_second = Vector3.left;
-                detectWalls();
-                if (isTouching != true)
-                {
-                    if (Time.time > nextfireTeam)
-                    {
-                        SetSoundDash();
-                        nextfireTeam = Time.time + cooldownTime;
-                        animator.SetTrigger("dashAttack");
-                        rb.position = new Vector3(transform.position.x  - 1f + dashDistance  * Time.fixedDeltaTime, transform.position.y - 0f);
-                    }
-                }
                 break;
             case PlayerController.Direction.RIGHT:
+                delta = 0.05f;
                 actualDirection = Vector3.right;
-                actualDirection_second = Vector3.right;
-                detectWalls();
-                if (isTouching != true)
-                {
-                    if (Time.time > nextfireTeam)
-                    {
-                        SetSoundDash();
-                        nextfireTeam = Time.time + cooldownTime;
-                        animator.SetTrigger("dashAttack");
-                        rb.position = new Vector3(transform.position.x + 0.20f + dashDistance * Time.fixedDeltaTime, transform.position.y - 0f);
-                    }
-                }
                 break;
         }
 
+        for (int i = -1; i <= 1; i++) {
+            hits.Add(Physics2D.Raycast(position + Vector3.Cross(Vector3.forward, actualDirection) * delta * (float)i, actualDirection, maxDashLength, layerMask));
+            Debug.DrawRay(position + Vector3.Cross(Vector3.forward, actualDirection) * delta * (float)i, actualDirection * maxDashLength, rayColor);
+        }
+
+        for(int i = hits.Count - 1; i >= 0; i--)
+        {
+            if (hits[i].transform == null)
+                hits.RemoveAt(i);
+        }
+
+        bool hitSomething = hits.Count > 0;
+
+        if (hitSomething)
+        {
+            Vector3 closest = hits[0].point - (Vector2)actualDirection * delta * 2f;
+            Debug.Log(hits.Count);
+            Debug.DrawRay(position, closest - position, Color.yellow);
+
+            for (int i = 1; i < hits.Count; i++)
+            {
+                Debug.DrawRay(position, (hits[i].point - (Vector2)actualDirection * delta * 2f) - (Vector2)position, Color.yellow);
+
+                if (Vector3.Distance(position, closest) > Vector3.Distance(position, hits[i].point - (Vector2)actualDirection * delta * 2f))
+                {
+                    closest = hits[i].point - (Vector2)actualDirection * delta * 2f;
+                }
+            }
+            Debug.DrawRay(position, Vector3.Project(closest - position, actualDirection), Color.magenta);
+            return Vector3.Project(closest - position, actualDirection) + position;
+        }
+        else
+        {
+            Debug.DrawRay(position, actualDirection * maxDashLength - actualDirection * delta * 2f, Color.yellow);
+            return position + actualDirection * maxDashLength - actualDirection * delta * 2f;
+        }
     }
 }
