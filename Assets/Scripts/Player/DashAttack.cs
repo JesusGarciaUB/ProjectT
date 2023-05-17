@@ -35,6 +35,7 @@ public class DashAttack: MonoBehaviour
 
     private void OnDash()
     {
+
         if (Vector3.Distance(position, safeDashPosition) > minDashLength)
             Dash();
     }
