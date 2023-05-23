@@ -55,7 +55,7 @@ public class DashAttack: MonoBehaviour
             SetSoundDash();
             timeSinceLastDash = 0.0f;
             animator.SetTrigger("dashAttack");
-            rb.MovePosition(safeDashPosition - (Vector3)PersistentManager.Instance.PlayerGlobal.GetComponent<CapsuleCollider2D>().offset);
+            PersistentManager.Instance.PlayerGlobal.transform.position = safeDashPosition - (Vector3)PersistentManager.Instance.PlayerGlobal.GetComponent<CapsuleCollider2D>().offset;
         }
     }
     
