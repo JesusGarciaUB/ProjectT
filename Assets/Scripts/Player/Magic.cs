@@ -19,6 +19,7 @@ public class Magic : ElementalShoot
         Vector3 dir = SetDirection();
         rb2.velocity = new Vector2 (dir.x, dir.y).normalized * speed;
         transform.rotation = Quaternion.Euler(0, 0, 0);
+        particles.Play();
     }
 
     private Vector3 SetDirection()

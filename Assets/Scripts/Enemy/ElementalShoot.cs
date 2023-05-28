@@ -11,6 +11,7 @@ public class ElementalShoot : MonoBehaviour
     public float extraRotation;                                                             //extra rotation for sprite accuracity (usually 90)
     private bool canDamage;
     public bool isElemental;
+    public ParticleSystem particles;
     private void Start()
     {
         Vector3 playerPos = PersistentManager.Instance.PlayerGlobal.transform.position;     //get player position
@@ -22,6 +23,7 @@ public class ElementalShoot : MonoBehaviour
         float rotation = Mathf.Atan2(-dir.y, -dir.x) * Mathf.Rad2Deg;                       //calculate angle of shooting
         transform.rotation = Quaternion.Euler(0, 0, rotation + extraRotation);
         canDamage = true;
+        particles.Play();
     }
 
     void Update()
