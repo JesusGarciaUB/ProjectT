@@ -18,6 +18,7 @@ public class GridChanger : MonoBehaviour
     public int minRange;
     private List<bool> spawnedBloods = new List<bool>();
     private List<bool> spawnedBloodsElemental = new List<bool>();
+    public bool isPrincipal;
 
     private void Start()
     {
@@ -34,7 +35,7 @@ public class GridChanger : MonoBehaviour
                 enemies[x].GetComponent<EnemyBehaviour>().SetUp();
                 enemies[x].gameObject.SetActive(false);
                 spawnedBloods.Add(false);
-                GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft++;
+                if (isPrincipal) GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft++;
             }
         }
         if (elementals.Count != 0)
@@ -45,7 +46,7 @@ public class GridChanger : MonoBehaviour
                 elementals[i].GetComponent<EnemyBehaviour>().SetUp();
                 elementals[i].gameObject.SetActive(false);
                 spawnedBloodsElemental.Add(false);
-                GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft++;
+                if (isPrincipal) GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft++;
             }
         }
     }
@@ -106,6 +107,14 @@ public class GridChanger : MonoBehaviour
             {
                 enemies[x].transform.position = originalPosition[x];
                 enemies[x].gameObject.SetActive(false);
+                if (!enemies[x].GetComponent<EnemyBehaviour>().isAlive)
+                {
+                    if (isPrincipal && !enemies[x].GetComponent<EnemyBehaviour>().counted)
+                    {
+                        GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft--;
+                        enemies[x].GetComponent<EnemyBehaviour>().counted = true;
+                    }
+                }
             }
 
             if (elementals.Count != 0)
@@ -114,6 +123,14 @@ public class GridChanger : MonoBehaviour
                 {
                     elementals[i].transform.position = originalPositionElementals[i];
                     elementals[i].gameObject.SetActive(false);
+                    if (!elementals[i].GetComponent<ElementalBase>().isAlive)
+                    {
+                        if (isPrincipal && !elementals[i].GetComponent<ElementalBase>().counted)
+                        {
+                            GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft--;
+                            elementals[i].GetComponent<ElementalBase>().counted = true;
+                        }
+                    }
                 }
             }
         }
