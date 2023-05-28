@@ -17,6 +17,7 @@ public class PersistentManager : MonoBehaviour
     public Vector3 nextSpawn;
     public List<GameObject> bloodType = new List<GameObject>();
     public GameObject bloodElemental;
+    public AbilityUI dashUI;
 
     public int MaxHealth { get { return maxHealth; } }
     public int CurrentHealth { get { return currentHealth; } set { currentHealth = value; } }

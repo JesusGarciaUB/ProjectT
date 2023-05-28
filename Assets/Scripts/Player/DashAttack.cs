@@ -56,6 +56,7 @@ public class DashAttack: MonoBehaviour
             timeSinceLastDash = 0.0f;
             animator.SetTrigger("dashAttack");
             PersistentManager.Instance.PlayerGlobal.transform.position = safeDashPosition - (Vector3)PersistentManager.Instance.PlayerGlobal.GetComponent<CapsuleCollider2D>().offset;
+            PersistentManager.Instance.dashUI.usedAbility(Mathf.FloorToInt(cooldownTime));
         }
     }
     
