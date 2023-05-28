@@ -34,6 +34,7 @@ public class GridChanger : MonoBehaviour
                 enemies[x].GetComponent<EnemyBehaviour>().SetUp();
                 enemies[x].gameObject.SetActive(false);
                 spawnedBloods.Add(false);
+                GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft++;
             }
         }
         if (elementals.Count != 0)
@@ -44,6 +45,7 @@ public class GridChanger : MonoBehaviour
                 elementals[i].GetComponent<EnemyBehaviour>().SetUp();
                 elementals[i].gameObject.SetActive(false);
                 spawnedBloodsElemental.Add(false);
+                GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft++;
             }
         }
     }
