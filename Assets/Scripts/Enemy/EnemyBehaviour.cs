@@ -21,9 +21,11 @@ public class EnemyBehaviour : MonoBehaviour
     public GameObject soundAttack;
     public Vector3 deathPos;
     //public GameObject checkHorizontal, checkVertical; DEPRECATED
+    public bool counted;
 
     protected void Start()
     {
+        counted = false;
         og = PersistentManager.Instance.GetOgColor;
         SetUp();
         player = PersistentManager.Instance.PlayerGlobal;   //get player from global variables
@@ -130,8 +132,6 @@ public class EnemyBehaviour : MonoBehaviour
         Destroy(transform.GetChild(0).gameObject);
         if (transform.childCount > 1) Destroy(transform.GetChild(1).gameObject);
         animator.SetTrigger("isDeath");
-        GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft--;
-
         //transform.gameObject.SetActive(false);
     }
 
