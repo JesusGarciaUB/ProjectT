@@ -23,6 +23,8 @@ TagManager:
   - Checker
   - Explodable
   - EventSystem
+  - PersistentManager
+  - SceneManager
   layers:
   - Default
   - TransparentFX

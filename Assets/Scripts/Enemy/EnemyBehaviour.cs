@@ -130,6 +130,7 @@ public class EnemyBehaviour : MonoBehaviour
         Destroy(transform.GetChild(0).gameObject);
         if (transform.childCount > 1) Destroy(transform.GetChild(1).gameObject);
         animator.SetTrigger("isDeath");
+        GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManagerScript>().enemiesLeft--;
 
         //transform.gameObject.SetActive(false);
     }

@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class SceneManagerScript : MonoBehaviour
 {
-    public GameObject Player;
-    private void Start()
+    public int enemiesLeft;
+    public GameObject Interaction;
+    private void Update()
     {
-        Player.transform.position = getSpawnPoint(); 
-    }
-
-    public Vector3 getSpawnPoint()
-    {
-        if (PersistentManager.Instance.spawnPoint == "top") return GameObject.FindWithTag("SpawnBot").transform.position;
-        if (PersistentManager.Instance.spawnPoint == "bot") return GameObject.FindWithTag("SpawnTop").transform.position;
-        if (PersistentManager.Instance.spawnPoint == "left") return GameObject.FindWithTag("SpawnRight").transform.position;
-        if (PersistentManager.Instance.spawnPoint == "right") return GameObject.FindWithTag("SpawnLeft").transform.position;
-        return new Vector3(0,0,0);
+        if (enemiesLeft == 0)
+        {
+            Destroy(Interaction);
+            Destroy(gameObject);
+        }
     }
 }
