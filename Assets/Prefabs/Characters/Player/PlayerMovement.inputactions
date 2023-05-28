@@ -76,6 +76,51 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Scene5",
+                    "type": "Button",
+                    "id": "b8dbfec3-7b0e-4aab-8300-77fd26d0d89c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Scene6",
+                    "type": "Button",
+                    "id": "cf9f0fe0-3bae-48cb-8db4-3150da1f3827",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Scene7",
+                    "type": "Button",
+                    "id": "b00da6bc-a2a4-4f5c-a1db-c9fa94754155",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Scene8",
+                    "type": "Button",
+                    "id": "666c317d-87d7-448d-9ae8-22d1bccd7bc7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Scene9",
+                    "type": "Button",
+                    "id": "23591902-94ac-4e4e-bbf1-1f973ac1a473",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -252,6 +297,61 @@
                     "processors": "",
                     "groups": "",
                     "action": "Scene4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "738677fc-40dc-459e-9599-2774d00ceeba",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scene5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "87129a31-0cf0-454b-9750-3c0ab96585f8",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scene6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "94721636-0fca-42c9-8e4e-8a1418282433",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scene7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3405995-4144-4ebe-bce6-3ce734d88d89",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scene8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c116a8f3-9b73-457c-a0fa-c9fceeed4ca6",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scene9",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

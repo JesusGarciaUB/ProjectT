@@ -354,10 +354,50 @@ public class PlayerController : MonoBehaviour
         int layer = Mathf.FloorToInt((transform.position.y - 0.11f) * 100);
         GetComponent<SpriteRenderer>().sortingOrder = -layer;
     }
-   /*private void OnDash()
+    /*private void OnDash()
+     {
+         GetComponent<DashAttack>().DashMovement();
+         animator.SetTrigger("dashAttack");
+     }
+    */
+
+    void OnScene4()
     {
-        GetComponent<DashAttack>().DashMovement();
-        animator.SetTrigger("dashAttack");
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
+        Destroy(GameObject.FindGameObjectWithTag("PersistentManager"));
+        Destroy(GameObject.FindGameObjectWithTag("EventSystem"));
+
+        PersistentManager.Instance.nextSpawn = new Vector3(0, -0.18f,0);
+        SceneManager.LoadScene(4, LoadSceneMode.Single);
     }
-   */
+
+    void OnScene5()
+    {
+        PersistentManager.Instance.nextSpawn = new Vector3(0f, -0.75f, 0);
+        SceneManager.LoadScene(5, LoadSceneMode.Single);
+    }
+
+    void OnScene6()
+    {
+        PersistentManager.Instance.nextSpawn = new Vector3(-0.896f, 0.649f, 0);
+        SceneManager.LoadScene(6, LoadSceneMode.Single);
+    }
+
+    void OnScene7()
+    {
+        PersistentManager.Instance.nextSpawn = new Vector3(0.24f, -0.6f, 0);
+        SceneManager.LoadScene(7, LoadSceneMode.Single);
+    }
+
+    void OnScene8()
+    {
+        PersistentManager.Instance.nextSpawn = new Vector3(0.1f, -0.793f, 0);
+        SceneManager.LoadScene(8, LoadSceneMode.Single);
+    }
+
+    void OnScene9()
+    {
+        PersistentManager.Instance.nextSpawn = new Vector3(1.115f, 0.372f, 0);
+        SceneManager.LoadScene(9, LoadSceneMode.Single);
+    }
 }
