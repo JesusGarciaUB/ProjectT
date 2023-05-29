@@ -19,7 +19,6 @@ public class DashAttack: MonoBehaviour
     private float timeSinceLastDash = 0f;
     [SerializeField] Rigidbody2D rb;
     Animator animator;
-    public AudioClip clipsound;
 
     private void Start()
     {
@@ -39,12 +38,9 @@ public class DashAttack: MonoBehaviour
         if (Vector3.Distance(position, safeDashPosition) > minDashLength)
             Dash();
     }
-    private IEnumerator SetSoundDash()
+    private void SetSoundDash()
     {
         AudioSource audio = GetComponent<AudioSource>();
-        audio.Play();
-        yield return new WaitForSeconds(audio.clip.length);
-        audio.clip = clipsound;
         audio.Play();
     }
 

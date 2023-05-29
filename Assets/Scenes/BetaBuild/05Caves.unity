@@ -32989,6 +32989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneChange
       objectReference: {fileID: 0}
+    - target: {fileID: 8308449217513820112, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ac15d38bbcda4443922accdc8e0aa37, type: 3}
 --- !u!1 &1329169729
